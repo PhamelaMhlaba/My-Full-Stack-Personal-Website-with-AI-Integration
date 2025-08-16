@@ -41,6 +41,45 @@ export default function HomePage ()  {
           </div>
         </div>
       </section>
+
+      {/* Sucess stories/ Stats Section */}
+      <section> 
+        <div>
+          <div>
+            <h6>
+              150+
+            </h6>
+            <p>
+              Projects Delivered
+            </p>
+          </div>
+          <div>
+            <h6>
+              50+
+            </h6>
+            <p>
+              Happy Clients
+            </p>
+          </div>
+          <div>
+            <h6>
+              8+
+            </h6>
+            <p>
+              Years of Experience
+            </p>
+          </div>
+          <div>
+            <h6>
+              24/7
+            </h6>
+            <p>
+              Support Available
+            </p>
+          </div>
+        </div>
+      </section>
+
     </div>
   )
 }
