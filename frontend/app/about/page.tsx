@@ -148,6 +148,21 @@ export default function AboutPage() {
                 </div>
             </div>
           </section>
+
+          {/* Professional Journey, Digital CV Timeline. I can add more professional careers which makes this section scalable  */}
+          <section>
+            <h2>
+                Professional Journey
+            </h2>
+            <div>
+            <div>
+                2025
+            </div>
+            <p><strong>Full Stack AI Engineer & Project Manager</strong></p>
+            <p>Proto Care Pty (ltd)</p>
+            <p>Developed the User Interface of the Proto Care Main Website. Currently developing the Patient Portal where I am involved in both frontend and backend development </p>
+            </div>
+          </section>
         </div>
-    )
-}
+    );
+};
