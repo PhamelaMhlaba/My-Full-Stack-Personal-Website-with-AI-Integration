@@ -71,6 +71,31 @@ export default function AboutPage() {
               </div>
             </div>
           </section>
+
+          {/*Core expertise Section */}
+          <section>
+            <h2>
+                Core Expertise
+            </h2>
+            <p>
+                A comprehensive skill set spanning frontend, backend, AI/ML, and cloud technologies
+            </p>
+            <div>
+                {/* Skills Section */}
+                <button>JavaScript</button>
+                <button>TypeScript</button>
+                <button>React</button>
+                <button>Node.js</button>
+                <button>Express</button>
+                <button>MongoDB</button>
+                <button>Python</button>
+                <button>TensorFlow</button>
+                <button>AI/ML</button>
+                <button>Docker</button>
+                <button>Git</button>
+                <button>Next.js</button>
+            </div>
+          </section>
         </div>
     )
 }
