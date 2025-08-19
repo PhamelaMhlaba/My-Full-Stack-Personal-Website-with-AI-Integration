@@ -96,6 +96,58 @@ export default function AboutPage() {
                 <button>Next.js</button>
             </div>
           </section>
+
+          {/*My Stack Information */}
+          <section>
+            <div>
+                {/*Frontend Technologies */}
+                <div>
+                    <h5>
+                        Frontend Development
+                    </h5>
+                    <p>
+                        Creating responsive perfomant user interfaces with modern frameworks and libraries
+                    </p>
+                    <ul>
+                        <li>React, Next.js</li>
+                        <li>Typescript, Javascript, Python</li>
+                        <li>Tailwind CSS</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+
+                {/*Backend Technologies*/}
+                <div>
+                    <h5>
+                        Backend & API
+                    </h5>
+                    <p>
+                        Building scalable server architecture and robust API systems 
+                    </p>
+                    <ul>
+                        <li>Node.js, Python, FASTAPI</li>
+                        <li>PostgreSQL, MongoDB</li>
+                        <li>GraphQL, REST API's</li>
+                    </ul>
+                </div>
+
+                {/*AI and Machine Learning */}
+                <div>
+                    <h5>
+                        AI & Machine Learning
+                    </h5>
+                    <p>
+                        Implementing inteliigent solutions using cutting-edge AI technologies
+                    </p>
+                    <ul>
+                        <li>OpenAIGPT-4, Claude, Gemini</li>
+                        <li>TensorFlow, Sci-Kit Learn</li>
+                        <li>Model Development</li>
+                        <li>LLM, NLP</li>
+                    </ul>
+                </div>
+            </div>
+          </section>
         </div>
     )
 }
