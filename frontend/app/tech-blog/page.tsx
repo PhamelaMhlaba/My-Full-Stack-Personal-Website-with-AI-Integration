@@ -31,5 +31,42 @@ export default function TechBlogPage () {
               "Designing scalable, cost- effective API's with serverless functions and event-driven architecture",
             date: "March 5, 2024"
         },    
-    ]
-}
+    ];
+
+    return (
+        <div>
+            {/* Page Title & Intro */}
+            <section>
+                <h2>
+                    Tech Blog
+                </h2>
+                <p>
+                    Sharing insights, tutorials, and thoughts on AI, web development, and technology trends 
+                </p>
+            </section>
+
+            {/* Blog cards */}
+            <section>
+        <div>
+          {posts.map((post) => (
+            <article key={post.id}>
+              <header>
+                <div>
+                  <span>{post.category}</span>
+                  <span> • {post.readTime}</span>
+                </div>
+                <h3>{post.title}</h3>
+              </header>
+              <p>{post.excerpt}</p>
+              <footer>
+                <time>{post.date}</time>
+                <a href="#">Read More →</a>
+              </footer>
+            </article>
+          ))}
+        </div>
+      </section>
+                   
+                
+            
+        
