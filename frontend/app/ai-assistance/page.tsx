@@ -65,7 +65,81 @@ export default function AiAssistancePage() {
                 <li>✔ workflow optimization</li>
               </ul>
             </div>
-            </section>     
+            </section>  
+
+            {/*Pricing Section */}   
+            <section>
+                <h2>
+                    Choose Your AI Solution
+                </h2>
+                <p>
+                    Flexible pricing oprtions to fit different business sizes and requirements. 
+                </p>
+                
+            <div>
+                {/* Starter Plan */}
+                <article>
+                    <h3>
+                        Starter 
+                    </h3>
+                    <p>
+                        $2,500
+                    </p>
+                    <p>
+                        Perfect for small business getting started with AI
+                    </p>
+                    <ul>
+                        <li>Basic Chatbot setup</li>
+                        <li>1,000 montly interactions</li>
+                        <li>Email Support</li>
+                        <li>30-day implementation</li>
+                    </ul>
+                    <button>Get started</button>
+                </article>
+                
+                {/*Professional Plan */} 
+                <article>
+                    <h3>
+                        Professional (Popular)
+                    </h3>
+                    <p>
+                        &7,700
+                    </p>
+                    <p>
+                        Advanced AI Solutions for growing business
+                    </p>
+                    <ul>
+                      <li>Custom AI model training</li>
+                      <li>10, 000 montly interactions</li>
+                      <li>Priority Support</li>
+                      <li>Analytics dashboard</li>
+                      <li>45- day implemenmtation</li>
+                    </ul>
+                    <button>Get started</button>
+                </article>
+
+                {/* Enterprise Plan */}
+                <article>
+                    <h3>
+                        Enterprise
+                    </h3>
+                    <p>
+                        Custom
+                    </p>
+                    <p>
+                        Tailored AI solutions for large organizations.
+                    </p>
+                    <ul>
+                        <li>Full AI ecosystem</li>
+                        <li>Unlimited interactions</li>
+                        <li>24/7 dedicated supoort</li>
+                        <li>Custom integrations</li>
+                        <li>Ongoing optimization</li>
+                    </ul>
+                    <button>Contact Sales</button>
+                </article>
+            </div>
+            </section>
         </main>
     )
 }
