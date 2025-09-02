@@ -14,7 +14,7 @@ export default function LifeStylePage () {
                 </p>
             </section>
 
-            {/*Feature Articles */}
+            {/*Over view about tech lifestyle */}
             <section>
                 <article>
                     <h2>
@@ -31,6 +31,44 @@ export default function LifeStylePage () {
                 <div>
                     <img src="placeholder-image.jpg for the image on the right hand side" alt="Work-life Integration image" />
                 </div>
+            </section>
+
+            {/*Insights / Mini Articles */}
+            <section>
+                <ul>
+                    <li>
+                        <h5>
+                            Daily meditation and mindful practices.
+                        </h5>
+                        <p>
+                            Starting each day with 15 minutes of meditation to maintain focus and clarity.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>
+                            Structured learning connections in the tech community
+                        </h5>
+                        <p>
+                            Dedicating 1 hour daily to learning a new concept in AI & ML.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>
+                            Building meaningful connections in the tech community.
+                        </h5>
+                        <p>
+                            Actively participating in tech meetups, conferences, and mentoring and share my learning on LinkedIn.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>
+                            Setting boundaries between work and personal time.
+                        </h5>
+                        <p>
+                            Maintaining a healthy work-life balance through time blocking and digital detox periods. 
+                        </p>
+                    </li>
+                </ul>
             </section>
         </div>
 
