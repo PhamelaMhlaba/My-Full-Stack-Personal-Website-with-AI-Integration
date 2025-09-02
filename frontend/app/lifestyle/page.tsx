@@ -105,6 +105,72 @@ export default function LifeStylePage () {
                         </ul>
                 </div>
             </section>
+
+            {/* Latest Insights Tips Articles */}
+            <section>
+                <h3>
+                    Latest Insights
+                </h3>
+                <p>
+                    Practical advice and reflections on building a sustainable tech career.
+                </p>
+                <div>
+                    <p>
+                        <span>Productivity</span>
+                        <span>6 minute read </span>
+                    </p>
+                    <h5>
+                        The Developers's guide to Deep Work
+                    </h5>
+                    <p>
+                        Short description placeholder for the blog 
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div>
+                    <p>
+                        <span>Wellness</span>
+                        <span>4 minute read </span>
+                    </p>
+                    <h5>
+                        Preventing Developer Burnout
+                    </h5>
+                    <p>
+                        Short description placeholder for the blog 
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div>
+                    <p>
+                        <span>Learning</span>
+                        <span>5 minute read</span>
+                    </p>
+                    <h5>
+                        Building a scalable learning Routine
+                    </h5>
+                    <p>
+                        Short description placeholder for the blog 
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div>
+                    <p>
+                        <span>Collaboration</span>
+                        <span>4 minute read</span>
+                    </p>
+                    <h5>
+                        The Art of Code Reviews.
+                    </h5>
+                    <p>
+                        Short description placeholder for the blog 
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+                <button>View All Posts</button>
+            </section>
         </div>
 
     )
