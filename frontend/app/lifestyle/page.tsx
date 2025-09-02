@@ -171,6 +171,10 @@ export default function LifeStylePage () {
                 </div>
                 <button>View All Posts</button>
             </section>
+
+            {/*Daily Routine Section, still thinking about whether I should add this section or not*/}
+
+            <button>Get In Touch</button>
         </div>
 
     )
