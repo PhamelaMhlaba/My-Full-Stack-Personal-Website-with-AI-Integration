@@ -70,6 +70,41 @@ export default function LifeStylePage () {
                     </li>
                 </ul>
             </section>
+           
+            {/* Development Philiophy section*/}
+            <section>
+                <div>
+                    <h2>
+                        My Development Philosophy.
+                    </h2>
+                        <ul>
+                            <li>
+                                <h3>
+                                    Purpose-Driven Philosophy.
+                                </h3>
+                                <p>
+                                    Every line of code should solve a real problem and create genuine value for the user and business. 
+                                </p>
+                            </li>
+                            <li>
+                                <h3>
+                                    Continuous Growth
+                                </h3>
+                                <p>
+                                    Embracing lifelong learning while maintaining sustainable practices that prevent burnout.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>
+                                    Collaborative Impact
+                                </h3>
+                                <p>
+                                    Building not just great software, but also great teams and meaningful profesional reationships.
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+            </section>
         </div>
 
     )
