@@ -69,6 +69,45 @@ export default function ContactMePage () {
                         <button type="button">Send Message</button>
                     </form>
                 </div>
+
+                    {/* Contact Info cards*/}
+                    <div>
+                        {/* Direct Contact*/}
+                        <div>
+                            <h3>
+                                Direct Contact
+                            </h3>
+                            <ul>
+                                <li>
+                                    <strong>Email:</strong>
+                                    <p>phamelamhlaba@gmail.com</p>
+                                </li>
+                                <li>
+                                    <strong>Phone:</strong>
+                                    <p>+27 75 324 6472</p>
+                                </li>
+                                <li>
+                                    <strong>Schedule a Call:</strong>
+                                    <p>Book a free consultation</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Social Links*/}
+                        <section>
+                            <div>
+                                <h3>
+                                    Follow Me
+                                </h3>
+                                <ul>
+                                    <li><a href="#">LinkedIn</a></li>
+                                    <li><a href="#">Github</a></li>
+                                    <li><a href="#">Instagram</a></li>
+                                    <li><a href="#">Tik Tok</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                </div>
             </section>
         </div>
     )
