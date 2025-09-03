@@ -109,6 +109,46 @@ export default function ContactMePage () {
                         </section>
                 </div>
             </section>
+
+            {/*FAQ Section*/}
+            <section>
+                <h2>Frequently Asked Quenstions </h2>
+                <div>
+                    <h4>
+                        How long does a typical project take?
+                    </h4>
+                    <p>
+                        Project timelines vary based on complexity, but mots AI inegrations take 4-8 weeks, while full web applications can take 8-16 weeks. I will provide a details timeline during our initial consultation.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>
+                        Do you work with startups?
+                    </h4>
+                    <p>
+                        Absolutely! I love working with startups and understand the unique challenges they face. I offer flexible pricing and can even concider equity arranagments for the right projects. 
+                    </p>
+                </div>
+
+                <div>
+                    <h4>
+                        What's included in ongoing support?
+                    </h4>
+                    <p>
+                        All projects include 30 days of fee support after launch. Ongoing support packages include bug fixes, performacne monitoring, feature updates, and priority reponses times. 
+                    </p>
+                </div>
+
+                <div>
+                    <h4>
+                        Can you help with existing projects?
+                    </h4>
+                    <p>
+                        Yes! I can help optimize existing applications, add AI features to current systems, or provide code reviews and architectural guidance for your development team. 
+                    </p>
+                </div>
+            </section>
         </div>
     )
 }
