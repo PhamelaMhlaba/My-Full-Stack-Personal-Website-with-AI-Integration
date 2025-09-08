@@ -176,6 +176,6 @@ export default function LifeStylePage () {
 
             <button>Get In Touch</button>
         </div>
+    );
+};
 
-    )
-}
