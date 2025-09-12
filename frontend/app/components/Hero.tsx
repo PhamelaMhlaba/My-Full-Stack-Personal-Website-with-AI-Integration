@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
               </div>
               
               <p className={styles.newsletterDescription}>
-                Join 10,000+ developers getting cutting-edge tips
+                Join 100+ developers getting cutting-edge tips
               </p>
               
               <div className={styles.emailForm}>
@@ -68,8 +68,10 @@ const Hero: React.FC = () => {
               {/* Profile Image Container */}
               <div className={styles.profileImageWrapper}>
                 <img
-                  src="/path-to-your-image.jpg"
+                  src="/images/hero-profile.jpg"
                   alt="Phamela Mhlaba - Full Stack AI Engineer"
+                  width={400}
+                  height={500}   
                   className={styles.profileImage}
                 />
                 
