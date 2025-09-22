@@ -26,8 +26,8 @@
 
 /* Logo/Brand Section */
 .logo {
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-size: 1.375rem;
+    font-weight: 600;
     color: #1f2937;
     text-decoration: none;
     display: flex;
@@ -36,7 +36,7 @@
 }
 
 .brandText {
-    background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+    background: linear-gradient(135deg, #a855f7 0%, #8b5cf6 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -47,10 +47,13 @@
 .navLinks {
     display: none;
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
     list-style: none;
     margin: 0;
     padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .navLink {
@@ -61,14 +64,15 @@
     font-size: 1rem;
     transition: all 0.2s ease;
     padding: 0.5rem 0;
+    white-space: nowrap;
 }
 
 .navLink:hover {
-    color: #7c3aed;
+    color: #a855f7;
 }
 
 .navLink.active {
-    color: #7c3aed;
+    color: #a855f7;
     font-weight: 600;
 }
 
@@ -76,11 +80,11 @@
 .navLink::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+    background: linear-gradient(135deg, #a855f7 0%, #8b5cf6 100%);
     transition: width 0.2s ease;
 }
 
@@ -91,11 +95,11 @@
 
 /* CTA Button */
 .ctaButton {
-    background: #7c3aed;
+    background: #a855f7;
     color: white;
     padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
+    border-radius: 0.75rem;
+    font-weight: 500;
     font-size: 0.95rem;
     border: none;
     cursor: pointer;
@@ -105,12 +109,19 @@
     display: inline-flex;
     align-items: center;
     white-space: nowrap;
+    min-height: auto;
+    line-height: 1.2;
 }
 
 .ctaButton:hover {
-    background: #6d28d9;
-    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+    background: #9333ea;
+    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
     transform: translateY(-1px);
+}
+
+/* Desktop Only Utility */
+.desktopOnly {
+    display: none;
 }
 
 /* Mobile Menu Toggle */
@@ -189,8 +200,8 @@
 .mobileNavLink:hover,
 .mobileNavLink.active {
     background: #f9fafb;
-    color: #7c3aed;
-    border-left-color: #7c3aed;
+    color: #a855f7;
+    border-left-color: #a855f7;
 }
 
 .mobileCta {
@@ -202,11 +213,6 @@
     width: 100%;
     justify-content: center;
     padding: 0.875rem 1.5rem;
-}
-
-/* Desktop Only Utility */
-.desktopOnly {
-    display: none;
 }
 
 /* Desktop Responsive */
@@ -224,7 +230,15 @@
     }
 
     .container {
-        padding: 0 1.5rem;
+        padding: 0 2rem;
+    }
+
+    .navContent {
+        padding: 1.25rem 0;
+    }
+
+    .logo {
+        font-size: 1.5rem;
     }
 }
 
@@ -253,11 +267,11 @@
 .navLink:focus,
 .mobileNavLink:focus,
 .ctaButton:focus {
-    outline: 2px solid #7c3aed;
+    outline: 2px solid #a855f7;
     outline-offset: 2px;
 }
 
 .mobileMenuToggle:focus {
-    outline: 2px solid #7c3aed;
+    outline: 2px solid #a855f7;
     outline-offset: 2px;
 }
