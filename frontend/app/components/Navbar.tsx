@@ -10,7 +10,7 @@ export default function Navbar() {
         {/* Logo/Brand */}
         <Link href="/" className={styles.brand}>
           <span className={styles.brandText}>
-            Full Stack <span className={styles.gradientText}>AI Engineer</span>
+            Full Stack <span className={styles.gradientText}> AI Engineer</span>
           </span>
         </Link>
 
