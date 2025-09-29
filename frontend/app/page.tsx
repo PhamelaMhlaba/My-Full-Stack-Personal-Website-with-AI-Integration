@@ -8,6 +8,9 @@ export default function HomePage ()  {
     <div>
       {/* Hero Section */}
       <Hero />
+
+      {/* Service Section */}
+      <Service />
       
       {/*Client Success Stories Section*/}
 
