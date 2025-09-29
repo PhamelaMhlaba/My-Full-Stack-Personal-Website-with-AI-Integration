@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "./components/Hero";
+import Service from "./components/Service";
 
 
 export default function HomePage ()  {
@@ -7,6 +8,7 @@ export default function HomePage ()  {
     <div>
       {/* Hero Section */}
       <Hero />
+      <Service />
     
       {/* Service Section */}
       <section>
