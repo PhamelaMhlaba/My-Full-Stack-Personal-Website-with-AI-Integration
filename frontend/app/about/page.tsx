@@ -41,9 +41,7 @@ export default function AboutPage() {
                     </div>
                 </div>
             </section>
-        </main>
-        
-        
+           
           {/*Profile Section: Image on the left and text on the right*/}
         <div>   
           <section>
@@ -195,5 +193,6 @@ export default function AboutPage() {
             </div>
           </section>
         </div>
+    </main>
     );
 };
