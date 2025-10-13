@@ -21,7 +21,10 @@ export default function AboutPage() {
                     {/* Left side: Profile Image */}
                     <div className={styles.imageColumn}>
                         <div className={styles.profileImage}>
-                            <span>The Picture/Image</span>
+                            <img
+                              src="/images/coding-image.jpg"
+                              alt="Engineering image"
+                            />
                         </div>                 
                     </div>
                 </div>
