@@ -1,20 +1,51 @@
 import React from "react";
+import styles from './About-me.module.css'
 
 export default function AboutPage() {
     return (
 
-        <div>
-          {/* Top Section :Intro*/}
-          <section>
-            <h3>
-                About Me
-            </h3>
-            <p>
-                Passionate about creating intelligent solutions that make a real difference in business and everyday life
-            </p>
-          </section>
+        <main className={styles.main}>
+            {/* Centered Header Section */}
+            <div className={styles.sectionHeader}>
+                <h1 className={styles.sectionTitle}>
+                    About Me <span className={styles.gradientText}>Phamela Mhlaba</span>
+                </h1>
+                <p className={styles.sectionDescription}>
+                    Passionate about building intelligent, scalable solutions that make a real difference in business and everyday life.
+                </p>
+            </div>
 
+            {/* Two Column Bio Section */}
+            <section className={styles.bioSection}>
+                <div className={styles.bioContainer}>
+                    {/* Left side: Profile Image */}
+                    <div className={styles.imageColumn}>
+                        <div className={styles.profileImage}>
+                            <span>The Picture/Image</span>
+                        </div>                 
+                    </div>
+                </div>
+
+                {/* Right side: Bio Content */}
+                <div className={styles.contentColumn}>
+                    <h2 className={styles.BioTitle}>
+                        Engineering AI Solutions at Scale
+                    </h2>
+                    <div className={styles.bioText}>
+                        <p>
+                            With over 2 years of Full-Stack Engineering experience and 2 years specializing in AI/ML Solutions, I architect and build production-ready AI applications that serve users. My expertise spans from backend infrastructure to frontend interfaces, with deep knowledge in machine learning ops.
+                        </p>
+                        <p>
+                            I specialize in translating complex AI capabilities into intuitive user experiences, building the entire technology stack from data pipelines to deployment infrastructure. My approach combines software engineering best practices with cutting-edge AI research to deliver reliable, scalable solutions.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        
           {/*Profile Section: Image on the left and text on the right*/}
+        <div>   
           <section>
             <div>
               {/*Left side: Profile image */}
