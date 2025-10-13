@@ -21,7 +21,10 @@ export default function AboutPage() {
                     {/* Left side: Profile Image */}
                     <div className={styles.imageColumn}>
                         <div className={styles.profileImage}>
-                            <span>The Picture/Image</span>
+                            <img
+                              src="/images/coding-image.jpg"
+                              alt="Engineering image"
+                            />
                         </div>                 
                     </div>
                 </div>
@@ -41,9 +44,7 @@ export default function AboutPage() {
                     </div>
                 </div>
             </section>
-        </main>
-        
-        
+           
           {/*Profile Section: Image on the left and text on the right*/}
         <div>   
           <section>
@@ -195,5 +196,6 @@ export default function AboutPage() {
             </div>
           </section>
         </div>
+    </main>
     );
 };
