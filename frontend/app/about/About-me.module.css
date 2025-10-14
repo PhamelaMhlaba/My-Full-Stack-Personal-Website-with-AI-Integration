@@ -7,23 +7,17 @@
 /* Section Header */
 .sectionHeader {
     text-align: center;
-    margin-bottom: 4rem;
-    padding: 2rem 2rem 0;
+    margin-bottom: 14rem; /* Increased from 6rem to 8rem */
+    padding: 6rem 2rem 2rem; /* Added bottom padding and increased top padding */
 }
 
 .sectionTitle {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #1f2937;
-    margin: 0 0 1rem 0;
-    line-height: 1.2;
-}
-
-.gradientText {
-    background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #000000;
+    margin: 0 0 2rem 0; /* Increased from 1.5rem to 2rem */
+    line-height: 1.1;
+    letter-spacing: -0.025em;
 }
 
 .sectionDescription {

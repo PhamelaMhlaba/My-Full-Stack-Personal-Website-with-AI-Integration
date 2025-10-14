@@ -7,7 +7,7 @@ export default function AboutPage() {
             {/* Centered Header Section */}
             <div className={styles.sectionHeader}>
                 <h1 className={styles.sectionTitle}>
-                    About <span className={styles.gradientText}>Me</span>
+                    About Me
                 </h1>
                 <p className={styles.sectionDescription}>
                     Passionate about building intelligent, scalable solutions that make a real difference in business and everyday life.
