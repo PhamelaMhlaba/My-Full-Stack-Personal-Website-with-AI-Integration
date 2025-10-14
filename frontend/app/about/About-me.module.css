@@ -7,7 +7,7 @@
 /* Section Header */
 .sectionHeader {
     text-align: center;
-    margin-bottom: 14rem; /* Increased from 6rem to 8rem */
+    margin-bottom: 14rem; 
     padding: 6rem 2rem 2rem; /* Added bottom padding and increased top padding */
 }
 
@@ -37,7 +37,7 @@
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 500px 1fr;
     gap: 4rem;
     align-items: start;
 }
@@ -55,7 +55,8 @@
 
 .imageWrapper {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
+    height: 310px;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -63,7 +64,7 @@
 
 .image {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
 }
 
@@ -88,7 +89,7 @@
 }
 
 .bioText p {
-    font-size: 1.125rem;
+    font-size: 0.899rem;
     line-height: 1.7;
     color: #4b5563;
     margin: 0;
@@ -97,17 +98,26 @@
 /* Statistics Grid */
 .statsGrid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
 }
 
 .statCard {
     background: #f8fafc;
-    padding: 2rem;
+    padding: 0.1rem;
     border-radius: 12px;
     border: 1px solid #e2e8f0;
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* these make the grid a square */
+    aspect-ratio: 1 / 1; /* Makes element square */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Set a max-width to control size */
+    max-width: 100px;
+    margin: 0 auto;
 }
 
 .statCard:hover {
@@ -117,14 +127,14 @@
 
 .statNumber {
     display: block;
-    font-size: 2.5rem;
+    font-size: 1rem;
     font-weight: 800;
     background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
 }
 
 .statLabel {
