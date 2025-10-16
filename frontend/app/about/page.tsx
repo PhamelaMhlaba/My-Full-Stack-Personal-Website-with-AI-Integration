@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './About-me.module.css';
-import AboutMeCoreSkills from "../components/AboutMeCoreSkills";
+import AboutMeCoreSkills from '../components/AboutMeCoreSkills';
 
 export default function AboutPage() {
     return (
