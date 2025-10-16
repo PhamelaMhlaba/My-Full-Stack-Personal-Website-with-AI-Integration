@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '/AboutMeCoreSkills.module.css';
+import styles from './AboutMeCoreSkills.module.css';
 
 export default function AboutMeCoreSkills() {
     return (
