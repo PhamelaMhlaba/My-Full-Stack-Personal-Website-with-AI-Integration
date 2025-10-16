@@ -1,5 +1,7 @@
 import React from "react";
 import styles from './About-me.module.css';
+import AboutMeCoreSkills from "../components/AboutMeCoreSkills";
+
 
 export default function AboutPage() {
     return (
@@ -65,6 +67,9 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </div>
+
+                {/* Hero Section */}
+                <AboutMeCoreSkills />
             </section>
     
 
