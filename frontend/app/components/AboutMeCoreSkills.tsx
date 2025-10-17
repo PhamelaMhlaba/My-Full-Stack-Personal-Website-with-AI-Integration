@@ -3,8 +3,8 @@ import styles from './AboutMeCoreSkills.module.css';
 
 export default function AboutMeCoreSkills() {
     return (
-        <div className={styles.coreExperiseHeader}>
-            <h2 className={styles.coreExpertise}>
+        <div className={styles.coreExpertiseHeader}>
+            <h2 className={styles.coreExpertiseTitle}>
                 Core Expertise
             </h2>
             <p className={styles.coreExpertiseDescription}>

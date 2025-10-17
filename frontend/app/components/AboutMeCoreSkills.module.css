@@ -1,0 +1,25 @@
+/* Core Expertise Section */
+.coreExpertiseHeader {
+    text-align : center;
+    margin-bottom: 5rem;
+    margin-top: 10rem;
+    padding: 6rem 2rem 2rem;
+
+}
+
+.coreExpertiseTitle {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #000000;
+    margin: 0 0 2rem 0;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+}
+
+.coreExpertiseDescription {
+    font-size: 1.25rem;
+    color: #6b7280;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
