@@ -71,14 +71,6 @@ export default function AboutPage() {
                 <AboutMeCoreSkills />
             </section>
     
-         {/*Core expertise Section */}
-          <section>
-            <h2>
-                Core Expertise
-            </h2>
-            <p>
-                A comprehensive skill set spanning frontend, backend, AI/ML, and cloud technologies
-            </p>
             <div>
                 {/* Skills Section */}
                 <button>JavaScript</button>
@@ -94,7 +86,7 @@ export default function AboutPage() {
                 <button>Git</button>
                 <button>Next.js</button>
             </div>
-          </section>
+        
 
           {/*My Stack Information */}
           <section>
