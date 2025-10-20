@@ -23,3 +23,29 @@
     max-width: 600px;
     margin: 0 auto;
 }
+
+.skillsContainer {
+    margin-bottom: 6rem;
+}
+
+.skillsFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skillButton {
+    flex-shrink : 0;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 50px;
+    background: #a555ef;
+    font-weight: 600;
+    color: #ebeef1;
+   
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
+}
+

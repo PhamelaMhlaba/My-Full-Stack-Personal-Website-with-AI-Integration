@@ -9,7 +9,7 @@ export default function AboutMeCoreSkills() {
         },
         {
             title: "Backend Engineering",
-            Skills: ["Node,js", "Express.js", "Python", "MongoDB", "SQL", "PostegreSQL"]
+            skills: ["Node,js", "Express.js", "Python", "MongoDB", "SQL", "PostegreSQL"]
         },
         {
             title: "AI/ML",
@@ -17,7 +17,7 @@ export default function AboutMeCoreSkills() {
         }
     ];
 
-    const skillsButtons =  ["React", "TypeScript", "Node.js", "Python", "AWS", "TensorFlow", "PostgreSQL", "Docker"];
+    const skillsButtons =  ["React", "TypeScript", "Next.js", "C3", "Blazor", "Node.js", "Python", "AWS", "TensorFlow","Pytorch", "Numpy", "PostgreSQL", "Docker"];
     return (
         <section className={styles.container}>
             <div className={styles.coreExpertiseHeader}>
@@ -31,12 +31,12 @@ export default function AboutMeCoreSkills() {
 
             {/* Horizontal Skills List Buttons */}
             <div className={styles.skillsContainer}>
-                <div className={styles.Skillsscroll}>
+                <div className={styles.skillsFlexContainer}>
                     {skillsButtons.map((skill, index) => (
                         <button
                             key={index}
                             className={styles.skillButton}
-                            aria-label={`skill:${skill}`}
+                            aria-label={skill}
                         >
                             {skill}
                         </button>
