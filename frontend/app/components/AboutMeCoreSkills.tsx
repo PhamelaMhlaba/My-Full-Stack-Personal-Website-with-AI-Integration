@@ -5,14 +5,17 @@ export default function AboutMeCoreSkills() {
     const skillsCategories =[
         {
             title: "Frontend Engineering",
+            description: "Creating responsive, performant user interfaces with modern frameworks and libraries.",
             skills:["React", "Javascript", "TypeScript", "C#", "Blazor", "Bootsrap", "Tailwind CSS"]
         },
         {
             title: "Backend Engineering",
+            description: "Building scalable server architectures and robust API systems.",
             skills: ["Node,js", "Express.js", "Python", "MongoDB", "SQL", "PostegreSQL"]
         },
         {
             title: "AI/ML",
+            description: "Implementing intelligent solutions using cutting-edge AI technologies.",
             skills: ["Tensorflow", "Pytorch", "Scikit_learn", "OpenAI", "Numpy", "Pandas", "Matplotlib"]
         }
     ];
@@ -49,6 +52,7 @@ export default function AboutMeCoreSkills() {
               {skillsCategories.map((category, index) => (
                 <div key={index} className={styles.categoryCard}>
                   <h3 className={styles.categoryTitle}>{category.title}</h3>
+                  <p className={styles.categoryDescription}>{category.description}</p>
                   <ul className={styles.skillsList}>
                     {category.skills.map((skill, skillIndex) => (
                       <li key={skillIndex} className={styles.skillItem}>
