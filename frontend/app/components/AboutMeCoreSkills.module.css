@@ -56,6 +56,16 @@
     margin-top: 6rem;
 }
 
+.categoryCard {
+    background: #ffffff;
+    border: 1px solid #f3f4f6;
+    border-radius:  14px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
 .categoryCard:hover {
     transform: translateY(-4px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -70,6 +80,13 @@
     line-height: 1.3;
 }
 
+.categoryDescription {
+    font-size: 1.rem;
+    color: #6b7280;
+    line-height: 1.6;
+    
+}
+
 .skillsList {
     list-style: none;
     padding: 0;
@@ -77,4 +94,5 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+
 }
