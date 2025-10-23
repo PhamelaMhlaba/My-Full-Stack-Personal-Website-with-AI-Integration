@@ -63,6 +63,11 @@ export default function AboutMeCoreSkills() {
                 </div>
              ))}
         </div>
+
+        {/* Professional Journey */}
+        <div className={styles.professionalJourneyContainer}>
+            
+        </div>
     </section>
     );
 }
