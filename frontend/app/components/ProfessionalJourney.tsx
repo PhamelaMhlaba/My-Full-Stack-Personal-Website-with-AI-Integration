@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from 'ProfessionalJourney.module.css';
+import styles from './ProfessionalJourney.module.css';
 
 export default function ProfessionalJourney() {
 
@@ -33,7 +33,7 @@ export default function ProfessionalJourney() {
             <div className={styles.timeLine}>
                 {professionalExperiences.map((experience, index) => (
                     <div key={index} className={styles.timelineItem}>
-                        <div className={styles.timeLineContext}>
+                        <div className={styles.timeLineItem}>
                             {/* Put in the job details in the box*/}
                             <h3 className={styles.jobTitle}>{experience.title}</h3>
                             <p className={styles.company}>{experience.company}</p>
