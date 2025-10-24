@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './About-me.module.css';
 import AboutMeCoreSkills from '../components/AboutMeCoreSkills';
+import ProfessionalJourney from "../components/ProfessionalJourney";    
 
 export default function AboutPage() {
     return (
@@ -69,91 +70,8 @@ export default function AboutPage() {
 
                 {/* Core expertise Section */}
                 <AboutMeCoreSkills />
-            </section>
-    
-            <div>
-                {/* Skills Section */}
-                <button>JavaScript</button>
-                <button>TypeScript</button>
-                <button>React</button>
-                <button>Node.js</button>
-                <button>Express</button>
-                <button>MongoDB</button>
-                <button>Python</button>
-                <button>TensorFlow</button>
-                <button>AI/ML</button>
-                <button>Docker</button>
-                <button>Git</button>
-                <button>Next.js</button>
-            </div>
-        
-
-          {/*My Stack Information */}
-          <section>
-            <div>
-                {/*Frontend Technologies */}
-                <div>
-                    <h5>
-                        Frontend Development
-                    </h5>
-                    <p>
-                        Creating responsive perfomant user interfaces with modern frameworks and libraries
-                    </p>
-                    <ul>
-                        <li>React, Next.js</li>
-                        <li>Typescript, Javascript, Python</li>
-                        <li>Tailwind CSS</li>
-                        <li>Figma</li>
-                    </ul>
-                </div>
-
-                {/*Backend Technologies*/}
-                <div>
-                    <h5>
-                        Backend & API
-                    </h5>
-                    <p>
-                        Building scalable server architecture and robust API systems 
-                    </p>
-                    <ul>
-                        <li>Node.js, Python, FASTAPI</li>
-                        <li>PostgreSQL, MongoDB</li>
-                        <li>GraphQL, REST API's</li>
-                    </ul>
-                </div>
-
-                {/*AI and Machine Learning */}
-                <div>
-                    <h5>
-                        AI & Machine Learning
-                    </h5>
-                    <p>
-                        Implementing inteliigent solutions using cutting-edge AI technologies
-                    </p>
-                    <ul>
-                        <li>OpenAIGPT-4, Claude, Gemini</li>
-                        <li>TensorFlow, Sci-Kit Learn</li>
-                        <li>Model Development</li>
-                        <li>LLM, NLP</li>
-                    </ul>
-                </div>
-            </div>
-          </section>
-
-          {/* Professional Journey, Digital CV Timeline. I can add more professional careers which makes this section scalable  */}
-          <section>
-            <h2>
-                Professional Journey
-            </h2>
-            <div>
-            <div>
-                2025
-            </div>
-            <p><strong>Full Stack AI Engineer & Project Manager</strong></p>
-            <p>Proto Care Pty (ltd)</p>
-            <p>Developed the User Interface of the Proto Care Main Website. Currently developing the Patient Portal where I am involved in both frontend and backend development </p>
-            </div>
-          </section>
+                <ProfessionalJourney />
+            </section> 
         </main>
     );
 };
