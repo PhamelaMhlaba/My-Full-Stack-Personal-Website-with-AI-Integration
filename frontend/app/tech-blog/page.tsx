@@ -34,16 +34,13 @@ export default function TechBlogPage () {
     ];
 
     return (
+
         <div>
-            {/* Page Title & Intro */}
-            <section>
-                <h2>
-                    Tech Blog
-                </h2>
-                <p>
-                    Sharing insights, tutorials, and thoughts on AI, web development, and technology trends 
-                </p>
-            </section>
+        <TechBlogPage />
+      
+              
+              
+              
 
             {/* Blog cards */}
             <section>

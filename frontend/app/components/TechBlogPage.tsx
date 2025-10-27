@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './TechBlogPage,module.css';
+import styles from './TechBlogPage.module.css';
 
-export default function TechblogPage(){
+export default function TechBlogPage(){
     return (
         <section className={styles.techContainer}>
             {/* Tech Blog Header */}
