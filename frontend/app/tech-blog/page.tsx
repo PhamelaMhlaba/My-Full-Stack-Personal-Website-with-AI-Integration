@@ -1,4 +1,6 @@
 import React from "react";
+import TechBlog from "../components/TechBlogHeader";
+
 export default function TechBlogPage () {
 
     //Placeholder posts (content only; no data fetching yet)
@@ -36,7 +38,7 @@ export default function TechBlogPage () {
     return (
 
         <div>
-        <TechBlogPage />
+        <TechBlog />
       
               
               
