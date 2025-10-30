@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '/TechBlogGrid.module.css';
+import styles from './TechBlogGrid.module.css';
 
 export default function TechBlogGrid () {
 
