@@ -1,10 +1,12 @@
 import React from "react";
 import TechBlog from "../components/TechBlogHeader";
+import TechBlogGrid from "../components/TechBlogGrid";
 
 export default function TechBlogPage () {
     return (
         <div>
             <TechBlog />
+            <TechBlogGrid />
        {/* Newsletter Subscription */}
       <section>
         <h2>Stay Updated with Latest Posts</h2>
