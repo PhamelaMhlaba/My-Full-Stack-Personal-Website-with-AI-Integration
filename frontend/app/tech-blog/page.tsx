@@ -1,7 +1,7 @@
 import React from 'react';
 import TechBlog from "../components/TechBlogHeader";
 import TechBlogGrid from "../components/TechBlogGrid";
-import styles from './TechBlog.module.css';
+import styles from "./TechBlog.module.css";
 
 export default function TechBlogPage () {
     return (
@@ -9,7 +9,7 @@ export default function TechBlogPage () {
             <TechBlog />
             <TechBlogGrid />
         {/* Newsletter Subscription */}
-        <div className={styles.newsletterSection}>
+        <div className={styles.newsLetterSection}>
             <h3 className={styles.title}>
                 Stay Updated with Latest Posts
             </h3>
