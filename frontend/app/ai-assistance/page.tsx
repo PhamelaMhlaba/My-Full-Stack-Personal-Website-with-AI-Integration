@@ -1,17 +1,19 @@
 import React from "react";
+import styles from "./AiAssistance.module.css";
+
 export default function AiAssistancePage() {
     return (
-        <main>
+        <main className={styles.container}>
             {/* Hero Section */}
-            <section>
-                <h1>
+            <div className={styles.header}>
+                <h1 className={styles.headerTitle}>
                     AI Engineering Solutions
                 </h1>
-                <p>
-                    End-to-end AI systems engineered with production-ready infrastructure and scalable arhcitecture.
+                <p className={styles.headerDescription}>
+                     End-to-End AI systems engineered with production-ready infrastructure.
                 </p>
-            </section>
-
+            </div>
+                           
             {/* Service Section */}
             <section>
               <h2>
