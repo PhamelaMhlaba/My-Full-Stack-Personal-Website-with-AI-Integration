@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./AiAssistance.module.css";
+import Service from "../components/Service";
 
 export default function AiAssistancePage() {
     return (
@@ -13,7 +14,10 @@ export default function AiAssistancePage() {
                      End-to-End AI systems engineered with production-ready infrastructure.
                 </p>
             </div>
-                           
+
+            {/* Service Section */}
+            <Service />
+
             {/* Service Section */}
             <section>
               <h2>
