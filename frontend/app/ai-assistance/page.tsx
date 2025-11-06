@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./AiAssistance.module.css";
 import Service from "../components/Service";
+import Pricing from "../components/PricingSolutions";
 
 export default function AiAssistancePage() {
     return (
@@ -17,6 +18,9 @@ export default function AiAssistancePage() {
 
             {/* Service Section */}
             <Service />
+             {/* Pricing Section */}
+            <Pricing />
+            
 
             {/* Service Section */}
             <section>
