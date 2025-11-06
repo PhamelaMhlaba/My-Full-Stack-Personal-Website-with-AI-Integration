@@ -1,0 +1,22 @@
+.container {
+    padding: 5rem 0;
+    background: #ffffff;
+}
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.headerTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+}
+.headerDescription {
+    font-size: 1.25rem;
+    color: #6b7280;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
