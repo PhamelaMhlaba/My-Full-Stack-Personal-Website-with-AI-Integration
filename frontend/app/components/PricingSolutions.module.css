@@ -20,3 +20,19 @@
     max-width: 600px;
     margin: 0 auto;
 }
+.pricingGrid {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.pricingCard {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 1px solid #f3f4f6;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+
