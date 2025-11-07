@@ -5,7 +5,8 @@ const Pricing: React.FC = () => {
     const pricing = [
         {
             icon: '🤖',
-            title: 'AI-Powered Applications',
+            title: 'Starter',
+            value: "$2000",
             description: 'Full-Stack applications with integrated LLM capabilities, from intelligent chatbots to automated workflow',
             feature: [
                 'Custom LLM inegration',
@@ -16,7 +17,8 @@ const Pricing: React.FC = () => {
         },
         {
             icon: '⚙️',
-            title: 'ML Pipeline Engineering',
+            title: 'Professional',
+            value: "$7000",
             description: 'Production-ready machine learning infrastrcture with automated training, deployment, and monitoring systems',
             feature: [
                 'MLOps infrastructure',
@@ -27,7 +29,8 @@ const Pricing: React.FC = () => {
         },
         {
             icon: '🚀',
-            title: 'Intelligent Automation',
+            title: 'Enterprise',
+            value: "Custom",
             description: 'Full- stack automation platforms that leverages AI to optimize complex business processes and decison workflows',
             feature: [
                 'API-first architecture',
@@ -39,7 +42,7 @@ const Pricing: React.FC = () => {
     ];
 
     return (
-        <section className={styles.conatainer}>
+        <section className={styles.container}>
             <div className={styles.header}>
                 <h1 className={styles.headerTitle}>
                     Choose Your AI Solution
@@ -50,12 +53,13 @@ const Pricing: React.FC = () => {
             </div>
 
             {/* Pricing Grid */}
-            <div className={styles.PricingGrid}>
+            <div className={styles.pricingGrid}>
                 {pricing.map((pricing, index) => (
-                    <div key={index} className={styles.serviceCard}>
-                    <div className={styles.serviceIcon}>{pricing.icon}</div>
-                    <h3 className={styles.serviceTitle}>{pricing.title}</h3>
-                    <p className={styles.serviceDescription}>{pricing.description}</p>
+                    <div key={index} className={styles.pricingCard}>
+                    <div className={styles.pricingIcon}>{pricing.icon}</div>
+                    <h2 className={styles.pricingTitle}>{pricing.title}</h2>
+                    <h3 className={styles.pricingValue}>{pricing.value}</h3>
+                    <p className={styles.pricingDescription}>{pricing.description}</p>
                     <ul className={styles.featuresList}>
                         {pricing.feature.map((feature, featureIndex) => (
                             <li key={featureIndex} className={styles.featureItem}>
