@@ -34,5 +34,29 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
+.pricingCard {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.pricingTitle {
+    text-align: center;
+    font-weight: 500px;
+
+}
+.pricingValue {
+    text-align: center;
+    font-size: 2rem;
+    color: #ad5dd2;
+}
+.pricingDescription {
+    color: #6b7280;
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+}
+.featuresList {
+    color:  #6b7280;
+    line-height: 1.6;
+
+}
 
 
