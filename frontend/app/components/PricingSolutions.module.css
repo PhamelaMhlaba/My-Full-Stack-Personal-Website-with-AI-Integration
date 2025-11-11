@@ -56,7 +56,12 @@
 .featuresList {
     color:  #6b7280;
     line-height: 1.6;
-
+}
+.button {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 50px;
 }
 
 

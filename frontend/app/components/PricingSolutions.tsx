@@ -26,6 +26,7 @@ const Pricing: React.FC = () => {
             ]
         },
         {
+
             title: 'Enterprise',
             value: "Custom",
             description: 'Full- stack automation platforms that leverages AI to optimize complex business processes and decison workflows',
@@ -64,6 +65,7 @@ const Pricing: React.FC = () => {
                             </li>
                            ))}
                         </ul>
+                        <button className={styles.button}>Get Started</button>
                     </div>
                 ))}
             </div>
