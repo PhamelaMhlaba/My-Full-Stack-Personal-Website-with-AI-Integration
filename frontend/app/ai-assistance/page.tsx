@@ -20,56 +20,6 @@ export default function AiAssistancePage() {
             <Service />
              {/* Pricing Section */}
             <Pricing />
-            
-            {/* Process Section */}
-            <section>
-                <h2>Our Process</h2>
-                <p>
-                    A proven methodology to deliver AI solutions that drive real results
-                </p>
-
-                <div>
-                    {/* Step 1 */}
-                    <article>
-                        <h3>
-                            1.Discovery
-                        </h3>
-                        <p>
-                            We analyze your business needs and identify the best AI opportunity
-                        </p>
-                    </article>
-
-                    {/* Step 2 */}
-                    <article>
-                        <h3>
-                            2. Design
-                        </h3>
-                        <p>
-                            Custom AI solution arhitecture tailord to your specific requirements. 
-                        </p>
-                    </article>
-
-                    {/* Step 3 */}
-                    <article>
-                        <h3>
-                            3. Development
-                        </h3>
-                        <p>
-                            Build and train your AI models with rigorous testing and optimization. 
-                        </p>
-                    </article>
-
-                    {/* Step 4 */}
-                    <article>
-                        <h3>
-                            4. Deploy
-                        </h3>
-                        <p>
-                            Seamless integration with ongoing support and performance monitoring. 
-                        </p>
-                    </article>                         
-                </div>
-            </section>
 
             {/*Client Success Stories Section*/}
 
