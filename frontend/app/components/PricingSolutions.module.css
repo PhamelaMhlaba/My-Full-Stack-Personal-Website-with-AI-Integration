@@ -61,7 +61,13 @@
     display: block;
     margin: 0 auto;
     width: 250px;
-    height: 50px;
+    height: 40px;
+    background-color: rgb(201, 106, 230);
+    border-radius: 10px;
+    border-style: 2px;
+}
+.button:hover {
+    background-color: rgb(198, 118, 216)
 }
 
 
