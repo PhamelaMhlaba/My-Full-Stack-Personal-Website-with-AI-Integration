@@ -6,16 +6,7 @@ import Pricing from "../components/PricingSolutions";
 export default function AiAssistancePage() {
     return (
         <main className={styles.container}>
-            {/* Hero Section */}
-            <div className={styles.header}>
-                <h1 className={styles.headerTitle}>
-                    AI Engineering Solutions
-                </h1>
-                <p className={styles.headerDescription}>
-                     End-to-End AI systems engineered with production-ready infrastructure.
-                </p>
-            </div>
-
+            {/* Hero Section is the integrated Service section */}
             {/* Service Section */}
             <Service />
              {/* Pricing Section */}
