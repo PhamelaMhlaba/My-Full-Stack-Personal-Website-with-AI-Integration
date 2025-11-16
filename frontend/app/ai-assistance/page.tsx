@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./AiAssistance.module.css";
 import Service from "../components/Service";
 import Pricing from "../components/PricingSolutions";
+import ClientStories from "../components/ClientStories";
 
 export default function AiAssistancePage() {
     return (
@@ -11,6 +12,9 @@ export default function AiAssistancePage() {
             <Service />
              {/* Pricing Section */}
             <Pricing />
+            {/*Client Success Stories Section*/}
+            <ClientStories />
+
             
         </main>  
     );
