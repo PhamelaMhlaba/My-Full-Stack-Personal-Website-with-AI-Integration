@@ -46,7 +46,7 @@
 .pricingValue {
     text-align: center;
     font-size: 2rem;
-    color: #ad5dd2;
+    color: #7C3BED;
 }
 .pricingDescription {
     color: #6b7280;
@@ -54,7 +54,7 @@
     margin: 0 0 1.5rem 0;
 }
 .featuresList {
-    color:  #6b7280;
+    color:  black;
     line-height: 1.6;
 }
 .button {
@@ -62,12 +62,16 @@
     margin: 0 auto;
     width: 250px;
     height: 40px;
-    background-color: rgb(201, 106, 230);
+    background-color: #7C3BED;
     border-radius: 10px;
     border-style: 2px;
+    font-size: 0.8rem;
+    font-weight: 600;   
+    color: white;
+    border: 1px solid #7C3BED
 }
 .button:hover {
-    background-color: rgb(198, 118, 216)
+    background-color: #8f5ee3;
 }
 
 
