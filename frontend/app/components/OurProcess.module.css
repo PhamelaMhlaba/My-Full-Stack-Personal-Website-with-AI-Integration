@@ -3,12 +3,13 @@
     margin: 0 auto;
     padding: 6rem 2rem;
     background: #fdfdfd;
+    padding: 5rem 0;
 }
 .ourProcessHeader {
     text-align: center;
     margin-bottom: 5rem;
 }
-.ourProcessTitle {
+.ourProcessHeaderTitle {
     font-size: 3.5rem;
     font-weight: 800;
     color: #000000;
@@ -22,4 +23,29 @@
     line-height: 1.6;
     max-width: 600px;
     margin: 0 auto;
+}
+.ourProcessGrid {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.ourProcessCard {
+    padding: 2rem;
+}
+.ourProcessValue {
+    background-color: #9264A6;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 0.8rem;
+}
+.ourProcessTitle {
+    font-size: 1.2rem;
+}
+.ourProcessDescription {
+    max-width: 600px;
 }
