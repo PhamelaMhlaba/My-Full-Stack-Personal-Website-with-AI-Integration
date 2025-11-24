@@ -7,7 +7,7 @@
 }
 .ourProcessHeader {
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 .ourProcessHeaderTitle {
     font-size: 3.5rem;
@@ -16,6 +16,7 @@
     margin: 0 0 2rem 0;
     line-height: 1.1;
     letter-spacing: -0.025em;
+    margin-bottom: 2rem;
 }
 .ourProcessDescription {
     font-size: 1.25rem;
