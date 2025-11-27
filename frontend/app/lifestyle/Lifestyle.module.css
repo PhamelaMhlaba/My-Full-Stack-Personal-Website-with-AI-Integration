@@ -1,12 +1,12 @@
-.conatainer {
+.container {
     padding: 5rem 0;
     background-color: #ffffff;
 }
 .heroSection {
     text-align: center;
     margin-bottom: 4rem;
-    margin-top: 4rem;
 }
+
 .heroTitle {
     font-size: 3rem;
     font-weight: 700;
@@ -20,4 +20,16 @@
     line-height: 1.6;
     max-width:600px;
     margin: 0 auto;
+}
+.workLifeContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding: 2rem;
+}
+.workLifeBalance {
+    width: 450px;
+    height: 500px;
+    border-radius: 0.5rem;
 }

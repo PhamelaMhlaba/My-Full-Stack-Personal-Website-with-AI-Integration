@@ -15,26 +15,29 @@ export default function LifeStylePage () {
                         Beyond code and alogorithms - Sharing thoughts on proudctivity, work-life balance, and the intersection of technology and life. 
                     </p>
                 </div>
-            </section>
 
-            {/*Over view about tech lifestyle */}
-            <section>
-                <article>
-                    <h2>
+                {/* Work-Life In Tech Content */}
+                <section className={styles.workLifeContainer}>
+                    <div className={styles.descriptionContainer}>
+                    <h2 className={styles.sectionTitle}>
                         Work-Life Integration in Tech
                     </h2>
-                    <p>
+                    <p className={styles.sectionDescription}>
                         As a a Full Stack AI Engineeer, finding balance between staying current with rapidly evolving technology and maintaining personal well-being is crucial. I share strategies for sustainable career growth, continious learning, and mental health in the tech inudstry.
+                        The Key is not perfection balance - It is intentional inegration. By aligining our professional growth with personal values and well-being pratices, we can build sustainiable, fulfilling caereers that do not come at the cost of our health or relationships.                       
                     </p>
-                    <p>
-                        The Key is not perfection balance - It is intentional inegration. By aligining our professional growth with personal values and well-being pratices, we can build sustainiable, fulfilling caereers that do not come at the cost of our health or relationships
-                    </p>
-                    <button>Let's connect</button>
-                </article>
-                <div>
-                    <img src="placeholder-image.jpg for the image on the right hand side" alt="Work-life Integration image" />
-                </div>
+                    </div>
+                    <div className={styles.imageContainer}>
+                        <img
+                            src="/images/work-life.jpg"
+                            alt="Work-Life in Tech"
+                            className={styles.workLifeBalance}
+                        />
+                    </div>
+                </section>
             </section>
+
+            
 
             {/*Insights / Mini Articles */}
             <section>
