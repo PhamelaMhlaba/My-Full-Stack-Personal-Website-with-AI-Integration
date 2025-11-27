@@ -1,17 +1,20 @@
 import React from "react";
+import styles from "./Lifestyle.module.css";
 
 export default function LifeStylePage () {
     return (
 
         <div>
             {/*Hero Section */}
-            <section>
-                <h1>
-                    LifeStyle & Insights 
-                </h1>
-                <p>
-                    Beyond code and alogorithms - Sharing thoughts on proudctivity, work-life balance, and the intersection of technology and life. 
-                </p>
+            <section className={styles.container}>
+                <div className={styles.heroSection}>
+                    <h1 className={styles.heroTitle}>
+                        LifeStyle & Insights 
+                    </h1>
+                    <p className={styles.heroDescription}>
+                        Beyond code and alogorithms - Sharing thoughts on proudctivity, work-life balance, and the intersection of technology and life. 
+                    </p>
+                </div>
             </section>
 
             {/*Over view about tech lifestyle */}
