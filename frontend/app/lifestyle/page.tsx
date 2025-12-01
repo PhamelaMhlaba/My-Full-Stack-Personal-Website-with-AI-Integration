@@ -24,14 +24,16 @@ export default function LifeStylePage () {
                     </h2>
                     <p className={styles.sectionDescription}>
                         As a a Full Stack AI Engineeer, finding balance between staying current with rapidly evolving technology and maintaining personal well-being is crucial. I share strategies for sustainable career growth, continious learning, and mental health in the tech inudstry.
+                        <br />
+                        <br />
                         The Key is not perfection balance - It is intentional inegration. By aligining our professional growth with personal values and well-being pratices, we can build sustainiable, fulfilling caereers that do not come at the cost of our health or relationships.                       
-                    </p>
+                    </p>       
                     </div>
                     <div className={styles.imageContainer}>
                         <img
                             src="/images/work-life.jpg"
                             alt="Work-Life in Tech"
-                            className={styles.workLifeBalance}
+                            className={styles.workLifeBalanceImage}
                         />
                     </div>
                 </section>
