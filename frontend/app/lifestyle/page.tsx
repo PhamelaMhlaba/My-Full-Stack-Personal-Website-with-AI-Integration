@@ -27,7 +27,10 @@ export default function LifeStylePage () {
                         <br />
                         <br />
                         The Key is not perfection balance - It is intentional inegration. By aligining our professional growth with personal values and well-being pratices, we can build sustainiable, fulfilling caereers that do not come at the cost of our health or relationships.                       
-                    </p>       
+                    </p>
+                    <button className={styles.letsConnectButton}>
+                        Let's Connect
+                    </button>    
                     </div>
                     <div className={styles.imageContainer}>
                         <img

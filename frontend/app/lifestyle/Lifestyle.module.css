@@ -48,3 +48,20 @@
     max-width:600px;
     margin: 0;
 }
+.letsConnectButton {
+    margin-top: 3rem;
+    background-color: #9264A6;
+    font-size: 0.95rem;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: translateY(0);
+}
+.letsConnectButton:hover {
+    background: #d8c0e2;
+    transform: translateY(-1px);
+}
