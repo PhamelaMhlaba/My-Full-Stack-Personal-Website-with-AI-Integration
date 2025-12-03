@@ -6,27 +6,27 @@ const LifeStylePage: React.FC = () => {
     const practices = [
         {
             title: "Daily meditation and mindfulness practices",
-            desscription: "Starting each day with 15 minutes of meditation to maintain focus and clarity",
+            description: "Starting each day with 15 minutes of meditation to maintain focus and clarity",
             img: "/images/meditation.jpg"
         },
         {
             title: "Structured learning routines for new technologies",
-            desscription: "Dedicating 1 hour daily to learning a new concept in AI & ML.",
+            description: "Dedicating 1 hour daily to learning a new concept in AI & ML.",
             img: "/images/learning.jpg"
         },
         {
             title: "Building meaningful connections in the tech community",
-            desscription: "Actively participating in tech meetups, conferences, and mentoring and share my learning on LinkedIn.",
+            description: "Actively participating in tech meetups, conferences, and mentoring and share my learning on LinkedIn.",
             img: "/images/connections.jpg"
         },
         {
             title: "Setting boundaries between work and personal time",
-            desscription: "Maintaining a healthy work-life balance through time blocking and digital detox periods.",
+            description: "Maintaining a healthy work-life balance through time blocking and digital detox periods.",
             img: "/images/boundaries.jpg"
         }
     ]
 
-}
+
     return (
 
         <div>
@@ -65,113 +65,24 @@ const LifeStylePage: React.FC = () => {
                         />
                     </div>
                 </section>
-            </section>
-
-            {/* Development Philiophy section*/}
-            <section>
-                <div>
-                    <h2>
-                        My Development Philosophy.
-                    </h2>
-                        <ul>
-                            <li>
-                                <h3>
-                                    Purpose-Driven Philosophy.
-                                </h3>
-                                <p>
-                                    Every line of code should solve a real problem and create genuine value for the user and business. 
-                                </p>
-                            </li>
-                            <li>
-                                <h3>
-                                    Continuous Growth
-                                </h3>
-                                <p>
-                                    Embracing lifelong learning while maintaining sustainable practices that prevent burnout.
-                                </p>
-                            </li>
-                            <li>
-                                <h3>
-                                    Collaborative Impact
-                                </h3>
-                                <p>
-                                    Building not just great software, but also great teams and meaningful profesional reationships.
-                                </p>
-                            </li>
-                        </ul>
-                </div>
-            </section>
-
-            {/* Latest Insights Tips Articles */}
-            <section>
-                <h3>
-                    Latest Insights
-                </h3>
-                <p>
-                    Practical advice and reflections on building a sustainable tech career.
-                </p>
-                <div>
-                    <p>
-                        <span>Productivity</span>
-                        <span>6 minute read </span>
-                    </p>
-                    <h5>
-                        The Developers's guide to Deep Work
-                    </h5>
-                    <p>
-                        Short description placeholder for the blog 
-                    </p>
-                    <a href="#">Read More</a>
-                </div>
-
-                <div>
-                    <p>
-                        <span>Wellness</span>
-                        <span>4 minute read </span>
-                    </p>
-                    <h5>
-                        Preventing Developer Burnout
-                    </h5>
-                    <p>
-                        Short description placeholder for the blog 
-                    </p>
-                    <a href="#">Read More</a>
-                </div>
-
-                <div>
-                    <p>
-                        <span>Learning</span>
-                        <span>5 minute read</span>
-                    </p>
-                    <h5>
-                        Building a scalable learning Routine
-                    </h5>
-                    <p>
-                        Short description placeholder for the blog 
-                    </p>
-                    <a href="#">Read More</a>
-                </div>
-
-                <div>
-                    <p>
-                        <span>Collaboration</span>
-                        <span>4 minute read</span>
-                    </p>
-                    <h5>
-                        The Art of Code Reviews.
-                    </h5>
-                    <p>
-                        Short description placeholder for the blog 
-                    </p>
-                    <a href="#">Read More</a>
-                </div>
-                <button>View All Posts</button>
-            </section>
-
-            {/*Daily Routine Section, still thinking about whether I should add this section or not*/}
-
-            <button>Get In Touch</button>
+                </section>
+                
+            {/* Tips & Practices Section */}
+             <div>
+      {practices.map((practice, index) => (
+        <div key={index}>
+          <h3>{practice.title}</h3>
+          <p>{practice.description}</p>
+          <img src={practice.img} alt={practice.title} />
         </div>
+      ))}
+    </div>
+    </div>
     );
 };
 
+  export default LifeStylePage;
+
+    
+
+           
