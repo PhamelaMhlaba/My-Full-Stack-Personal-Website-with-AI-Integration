@@ -7,22 +7,22 @@ const LifeStylePage: React.FC = () => {
         {
             title: "Daily meditation and mindfulness practices",
             description: "Starting each day with 15 minutes of meditation to maintain focus and clarity",
-            img: "/images/meditation.jpg"
+            img: "/images/tea.jpg"
         },
         {
             title: "Structured learning routines for new technologies",
             description: "Dedicating 1 hour daily to learning a new concept in AI & ML.",
-            img: "/images/learning.jpg"
+            img: "/images/lightbulb.jpg"
         },
         {
             title: "Building meaningful connections in the tech community",
             description: "Actively participating in tech meetups, conferences, and mentoring and share my learning on LinkedIn.",
-            img: "/images/connections.jpg"
+            img: "/images/heart.jpg"
         },
         {
             title: "Setting boundaries between work and personal time",
             description: "Maintaining a healthy work-life balance through time blocking and digital detox periods.",
-            img: "/images/boundaries.jpg"
+            img: "/images/time.jpg"
         }
     ]
 
@@ -68,15 +68,19 @@ const LifeStylePage: React.FC = () => {
                 </section>
                 
             {/* Tips & Practices Section */}
-             <div>
-      {practices.map((practice, index) => (
-        <div key={index}>
-          <h3>{practice.title}</h3>
-          <p>{practice.description}</p>
-          <img src={practice.img} alt={practice.title} />
-        </div>
-      ))}
-    </div>
+            <div className={styles.tipsPracticesContainer}>
+                {practices.map((practice, index) => (
+                <div key={index} className={styles.practiceCard}>
+                    <h3 className={styles.practiceTitle}>{practice.title}</h3>
+                    <p className={styles.practiceDescription}>{practice.description}</p>
+                    <img 
+                        src={practice.img} 
+                        alt={practice.title}
+                        className={styles.iconStyle}
+                    />
+                </div>
+             ))}
+           </div>
     </div>
     );
 };
