@@ -1,7 +1,32 @@
 import React from "react";
 import styles from "./Lifestyle.module.css";
+import { title } from "process";
 
-export default function LifeStylePage () {
+const LifeStylePage: React.FC = () => {
+    const practices = [
+        {
+            title: "Daily meditation and mindfulness practices",
+            desscription: "Starting each day with 15 minutes of meditation to maintain focus and clarity",
+            img: "/images/meditation.jpg"
+        },
+        {
+            title: "Structured learning routines for new technologies",
+            desscription: "Dedicating 1 hour daily to learning a new concept in AI & ML.",
+            img: "/images/learning.jpg"
+        },
+        {
+            title: "Building meaningful connections in the tech community",
+            desscription: "Actively participating in tech meetups, conferences, and mentoring and share my learning on LinkedIn.",
+            img: "/images/connections.jpg"
+        },
+        {
+            title: "Setting boundaries between work and personal time",
+            desscription: "Maintaining a healthy work-life balance through time blocking and digital detox periods.",
+            img: "/images/boundaries.jpg"
+        }
+    ]
+
+}
     return (
 
         <div>
@@ -42,46 +67,6 @@ export default function LifeStylePage () {
                 </section>
             </section>
 
-            
-
-            {/*Insights / Mini Articles */}
-            <section>
-                <ul>
-                    <li>
-                        <h5>
-                            Daily meditation and mindful practices.
-                        </h5>
-                        <p>
-                            Starting each day with 15 minutes of meditation to maintain focus and clarity.
-                        </p>
-                    </li>
-                    <li>
-                        <h5>
-                            Structured learning connections in the tech community
-                        </h5>
-                        <p>
-                            Dedicating 1 hour daily to learning a new concept in AI & ML.
-                        </p>
-                    </li>
-                    <li>
-                        <h5>
-                            Building meaningful connections in the tech community.
-                        </h5>
-                        <p>
-                            Actively participating in tech meetups, conferences, and mentoring and share my learning on LinkedIn.
-                        </p>
-                    </li>
-                    <li>
-                        <h5>
-                            Setting boundaries between work and personal time.
-                        </h5>
-                        <p>
-                            Maintaining a healthy work-life balance through time blocking and digital detox periods. 
-                        </p>
-                    </li>
-                </ul>
-            </section>
-           
             {/* Development Philiophy section*/}
             <section>
                 <div>
