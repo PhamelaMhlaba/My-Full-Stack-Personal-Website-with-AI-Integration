@@ -75,12 +75,17 @@
     background-color: whitesmoke;
     border-radius: 10px;
     padding: 1.5rem;
+    gap: 1rem;
+    display: flex;  
 }
 .iconStyle {
     background-color: #EDE0F3;
     padding: 0.5rem;
     display: flex;
     border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 2rem;
 }
 .practiceTitle {
     font-size: 1rem;

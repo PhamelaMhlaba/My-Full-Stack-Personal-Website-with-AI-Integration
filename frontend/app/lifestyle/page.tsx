@@ -71,13 +71,16 @@ const LifeStylePage: React.FC = () => {
             <div className={styles.tipsPracticesContainer}>
                 {practices.map((practice, index) => (
                 <div key={index} className={styles.practiceCard}>
-                    <h3 className={styles.practiceTitle}>{practice.title}</h3>
-                    <p className={styles.practiceDescription}>{practice.description}</p>
-                    <img 
-                        src={practice.img} 
-                        alt={practice.title}
-                        className={styles.iconStyle}
-                    />
+                    <div className={styles.iconStyle}>
+                        <img 
+                            src={practice.img} 
+                            alt={practice.title}
+                        />
+                    </div>
+                    <div className={styles.textContainer}>
+                        <h3 className={styles.practiceTitle}>{practice.title}</h3>
+                        <p className={styles.practiceDescription}>{practice.description}</p>   
+                    </div>                
                 </div>
              ))}
            </div>
