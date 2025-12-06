@@ -26,6 +26,21 @@ const LifeStylePage: React.FC = () => {
         }
     ]
 
+    const development = [
+        {
+            title: "Purpose-Driven Code",
+            description: "Every line of code should solve a real problem and create genuine value for users and businesses."
+        },
+        {
+            title: "Continuous Growth",
+            description: "Embracing lifelong learning while maintaining sustainable practices that prevent burnout.",
+        },
+        {
+            title: "Collaborative Impact",
+            description: "Building not just great software, but also great teams and meaningful professional relationships."
+        }
+    ]
+
 
     return (
 
@@ -65,7 +80,7 @@ const LifeStylePage: React.FC = () => {
                         />
                     </div>
                 </section>
-                </section>
+            </section>
                 
             {/* Tips & Practices Section */}
             <div className={styles.tipsPracticesContainer}>
@@ -84,6 +99,25 @@ const LifeStylePage: React.FC = () => {
                 </div>
              ))}
            </div>
+
+           {/* My Development Philosophy*/ }
+            <div className={styles.developmentContainer}>
+                <h2 className={styles.title}>
+                    My Development Philosophy
+                </h2>
+                {development.map((development, index) => (
+                    <div key={index} className={styles.developmentCard}>
+                        <div className={styles.developmentTextContainer}>
+                            <h3 className={styles.developmentTitle}>{development.title}</h3>
+                            <p className={styles.developmentDescription}>{development.description}</p>
+                        </div>
+                    </div>
+            ))}
+            </div>
+
+            {/* My Development Philosophy map method*/ }
+            
+             
     </div>
     );
 };
