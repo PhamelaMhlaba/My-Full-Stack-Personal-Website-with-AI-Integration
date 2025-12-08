@@ -133,7 +133,7 @@
 .newsletterDescription {
   color: #6b7280;
   margin: 0 0 0.875rem 0;
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 
 .emailForm {
@@ -239,23 +239,19 @@
 .statItem {
   text-align: center;
   padding: 1.5rem 1rem;
-  background: white;
-  border-radius: 0.75rem;
-  border: 1px solid #f3f4f6;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .statNumber {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #1f2937;
+  color: #9264A6;
   margin: 0 0 0.5rem 0;
   line-height: 1;
 }
 
 .statLabel {
   color: #6b7280;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   margin: 0;
   line-height: 1.3;
