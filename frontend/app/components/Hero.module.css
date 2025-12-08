@@ -12,6 +12,7 @@
   margin: 0 auto;
   padding: 0 1rem;
   width: 100%;
+
 }
 
 .heroContent {
@@ -26,6 +27,7 @@
   grid-template-columns: 1fr;
   gap: 2rem;
   align-items: start;
+  margin-bottom: 4rem;
 }
 
 /* Text Content */
