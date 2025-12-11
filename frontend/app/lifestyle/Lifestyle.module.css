@@ -95,3 +95,48 @@
     font-size: 0.95rem;
     color: #6b7280;
 }
+
+.developmentContainer {
+    background-color: whitesmoke;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 3rem;
+    justify-content: center;
+
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 3rem;
+    grid-column: 1 / -1;
+}
+
+.developmentCard {
+    background-color: brown;
+    width: 70%;
+    height: 100%;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid rgb(216, 213, 213);
+
+
+}
+
+.developmentTextContainer {
+    align-items: center;
+}
+
+.developmentTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.developmentDescription {
+    font-size: 1rem;
+    color: #6b7280;
+}
