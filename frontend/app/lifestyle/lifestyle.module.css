@@ -1,0 +1,135 @@
+.container {
+    padding: 5rem 0;
+    background-color: #ffffff;
+}
+.heroSection {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.heroTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+}
+.heroDescription {
+    font-size: 1.25rem;
+    color: #6b7280;
+    line-height: 1.6;
+    max-width:600px;
+    margin: 0 auto;
+}
+.workLifeContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding: 2rem;
+}
+.workLifeBalanceImage {
+    width: 480px;
+    height: 480px;
+    border-radius: 3rem;
+    padding: 1rem;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.sectionDescription {
+    font-size: 1.2rem;
+    color: #6b7280;
+    line-height: 1.6;
+    max-width:600px;
+    margin: 0;
+}
+.letsConnectButton {
+    margin-top: 3rem;
+    background-color: #9264A6;
+    font-size: 0.95rem;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: translateY(0);
+}
+.letsConnectButton:hover {
+    background: #d8c0e2;
+    transform: translateY(-1px);
+}
+.tipsPracticesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+.practiceCard {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 1.5rem;
+    gap: 1rem;
+    display: flex;  
+}
+.iconStyle {
+    background-color: #EDE0F3;
+    padding: 0.5rem;
+    display: flex;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 2rem;
+}
+.practiceTitle {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.practiceDescription {
+    font-size: 0.95rem;
+    color: #6b7280;
+}
+
+.developmentContainer {
+    background-color: whitesmoke;
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 3rem;
+    justify-content: center; /* ⭐ center the entire 3-column grid */
+    justify-items: center;    /* ⭐ center each card in its column */
+    gap: 5px;
+
+}
+
+
+
+.developmentCard {
+    background-color: brown;
+    width: 66%;
+    height: 80%;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid rgb(216, 213, 213);
+    gap: 5px;
+
+
+}
+
+
+.developmentTitle {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.developmentDescription {
+    font-size: 1rem;
+    color: #6b7280;
+}
