@@ -102,13 +102,20 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 3rem;
-    justify-content: center; /* ⭐ center the entire 3-column grid */
-    justify-items: center;    /* ⭐ center each card in its column */
+    justify-content: center; /*  center the entire 3-column grid */
+    justify-items: center;    /* center each card in its column */
     gap: 5px;
 
 }
 
-
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 3rem;
+    grid-column: 1 / -1;
+}
 
 .developmentCard {
     background-color: brown;
@@ -119,11 +126,11 @@
     border-radius: 12px;
     border: 1px solid rgb(216, 213, 213);
     gap: 5px;
-
-
 }
 
-
+.developmentTextContainer {
+    align-items: center;
+}
 .developmentTitle {
     font-size: 1.7rem;
     font-weight: 600;
