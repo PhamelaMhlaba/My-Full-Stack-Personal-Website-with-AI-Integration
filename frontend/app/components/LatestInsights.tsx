@@ -9,7 +9,7 @@ export default function LatestInsights() {
                 <h3 className={styles.title}>
                     Latest Insights
                 </h3>
-                <p className={styles.headeDescription}>
+                <p className={styles.headerDescription}>
                     Practical advice and reflections on building a sustainable tech career
                 </p>
             </div>
