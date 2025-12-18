@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Lifestyle.module.css";
+import styles from "./lifestyle.module.css";
 import { title } from "process";
 
 const LifeStylePage: React.FC = () => {
@@ -115,7 +115,6 @@ const LifeStylePage: React.FC = () => {
             ))}
             </div>
 
-            {/* My Development Philosophy map method*/ }
             
              
     </div>
