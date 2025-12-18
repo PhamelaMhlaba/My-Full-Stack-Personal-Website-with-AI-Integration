@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./lifestyle.module.css";
-import { title } from "process";
+import LatestInsights from "../components/LatestInsights";
 
 const LifeStylePage: React.FC = () => {
     const practices = [
@@ -114,6 +114,9 @@ const LifeStylePage: React.FC = () => {
                     </div>
             ))}
             </div>
+
+            {/* Hero Section */}
+            <LatestInsights />
 
             
              
