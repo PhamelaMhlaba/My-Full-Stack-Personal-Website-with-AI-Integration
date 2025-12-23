@@ -11,7 +11,8 @@ export default function BlogPost({ post }: Props) {
       {/* Meta info */}
       <div className={styles.meta}>
         <span className={styles.category}>{post.category}</span>
-        <span className={styles.readTime}>⏱ {post.readTime}</span>
+        {/*Import the time icon for readTime */}
+        <span className={styles.readTime}>{post.readTime}</span>
       </div>
 
       {/* Title */}
