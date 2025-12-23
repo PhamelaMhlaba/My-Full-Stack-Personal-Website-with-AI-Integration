@@ -1,4 +1,3 @@
-
 export interface BlogPost {
   id: string;
   title: string;
@@ -52,4 +51,4 @@ export const posts: BlogPost[] = [
   },
 ];
 
-export default BlogPost;
+export default posts;
