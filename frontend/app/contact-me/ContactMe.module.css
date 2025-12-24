@@ -1,0 +1,22 @@
+.contactMeHeader {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 2rem 0;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+}
+
+.headerDescription {
+    font-size: 1.25rem;
+    color: #6b7280;
+    line-height: 1.6;
+    max-width:600px;
+    margin: 0 auto;
+}

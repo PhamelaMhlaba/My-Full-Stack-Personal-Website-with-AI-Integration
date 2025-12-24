@@ -1,17 +1,19 @@
 import React from "react";
+import styles from "./ContactMe.module.css";
 
 export default function ContactMePage () {
     return (
-        <div>
-            {/* Hero/ Introduction */}
-            <section>
-                <h1>
-                    Let's Build Something Amaizing
-                </h1>
-                <p>
-                    Ready to transform your ideas int reality? Let discuss your project and how I can help you achieve your goals.
-                </p>
-            </section>
+            <main className={styles.contactMeContainer}>
+                {/* Hero/ Introduction */}
+                <div className={styles.contactMeHeader}>
+                    <h1 className={styles.title}>
+                        Let's Build Something Amaizing
+                    </h1>
+                    <p className={styles.headerDescription}>
+                        Ready to transform your ideas int reality? Let discuss your project and how I can help you achieve your goals.
+                    </p>
+                </div>
+            
 
             {/*Contact Area: Left form */}
             <section>
@@ -149,6 +151,6 @@ export default function ContactMePage () {
                     </p>
                 </div>
             </section>
-        </div>
+        </main>
     )
 }
