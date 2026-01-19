@@ -184,7 +184,7 @@
 }
 
 /* Focus states for accessibility */
-.ctaButton:focus,
+
 .mobileMenuBtn:focus {
     outline: 2px solid #a855f7;
     outline-offset: 2px;
