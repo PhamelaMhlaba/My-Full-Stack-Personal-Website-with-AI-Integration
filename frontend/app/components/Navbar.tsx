@@ -44,7 +44,7 @@ export default function Navbar() {
         </ul>
 
         {/* Contact CTA Button */}
-        <Link href="/contact" className={styles.ctaButton}>
+        <Link href="/contact-me" className={styles.ctaButton}>
           Contact Me
         </Link>
 
