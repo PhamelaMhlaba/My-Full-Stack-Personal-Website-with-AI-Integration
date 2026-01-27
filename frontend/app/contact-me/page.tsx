@@ -16,9 +16,10 @@ export default function ContactMePage () {
             
 
             {/*Contact Area: Left form */}
-            <section>
-                <div>
-                    <h3>
+            <section className={styles.contactSection}>
+                {/* Get in touch div container */}
+                <div className={styles.contactForm}>
+                    <h3 className={styles.sectionTitle}>
                         Get in Touch
                     </h3>
                     <form>
@@ -72,10 +73,9 @@ export default function ContactMePage () {
                     </form>
                 </div>
 
-                    {/* Contact Info cards*/}
-                    <div>
-                        {/* Direct Contact*/}
-                        <div>
+                {/* direct message div container*/}
+                <div className={styles.contactForm}>
+        
                             <h3>
                                 Direct Contact
                             </h3>
@@ -93,11 +93,10 @@ export default function ContactMePage () {
                                     <p>Book a free consultation</p>
                                 </li>
                             </ul>
-                        </div>
-
-                        {/* Social Links*/}
-                        <section>
-                            <div>
+                
+                </div>
+                {/* Social Links div container*/}
+                <div className={styles.contactForm}>
                                 <h3>
                                     Follow Me
                                 </h3>
@@ -107,8 +106,6 @@ export default function ContactMePage () {
                                     <li><a href="#">Instagram</a></li>
                                     <li><a href="#">Tik Tok</a></li>
                                 </ul>
-                            </div>
-                        </section>
                 </div>
             </section>
 

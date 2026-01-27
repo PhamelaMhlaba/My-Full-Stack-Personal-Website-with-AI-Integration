@@ -115,7 +115,7 @@
 
 .ctaButton:hover {
     background: #9333ea;
-    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+    /* box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3); */
     transform: translateY(-1px);
 }
 
