@@ -22,51 +22,57 @@ export default function ContactMePage () {
                     <h3 className={styles.sectionTitle}>
                         Get in Touch
                     </h3>
-                    <form>
-                        <div>
-                            <label htmlFor="firstName">First Name</label>
-                            <input id="FirstName" name="firstName" type="text" />
+                    <form className={styles.form}>
+                        <div className={styles.nameFields}>
+                            <div className={styles.formColumn}>
+                                <label htmlFor="firstName">First Name</label>
+                                <input id="firstName" name="firstName" type="text" placeholder="John" />
+                                
+                            </div>
+
+                            <div className={styles.formColumn}>
+                                <label htmlFor="lastName">Last Name</label>
+                                <input id="lastName" name="lastName" type="text" placeholder="Peterson" />
+                            </div>
                         </div>
 
-                        <div>
-                            <label htmlFor="LastName">Last Name</label>
-                            <input id="firstName" name="firstName" type="text" />
-                        </div>
+                            <div className={styles.formColumn}>
+                                <label htmlFor="email">Email</label>
+                                <input id="email" name="email" type="email" placeholder="John@example.com" />
+                            </div>
 
-                        <div>
-                            <label htmlFor="email">Email</label>
-                            <input id="email" name="email" type="email" />
-                        </div>
+                            <div className={styles.formColumn}>
+                                <label htmlFor="projectType">Project Type</label>
+                                <select id="projectType" name="projectType" defaultValue=""> 
+                                    <option value="" disabled>
+                                        Select project type
+                                    </option>
+                                    <option>AI Integration</option>
+                                    <option>Web Application</option>
+                                    <option>Consulting</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
 
-                        <div>
-                            <label htmlFor="projectType">Project Type</label>
-                            <select id="projectType" name="projectType" defaultValue="">
-                                <option>AI Integration</option>
-                                <option>Web Application</option>
-                                <option>Consulting</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
+                            <div className={styles.formColumn}>
+                                <label htmlFor="budget">Project Budget</label>
+                                <select id="budget" name="budget" defaultValue="">
+                                    <option value="">Select budget range</option>
+                                    <option>$1k - $5k</option>
+                                    <option>$5k - $10k</option>
+                                    <option>$10k+</option>
+                                </select>
+                            </div>
 
-                        <div>
-                            <label htmlFor="budget">Project Budget</label>
-                            <select id="budget" name="budget" defaultValue="">
-                                <option value="">Select budget range</option>
-                                <option>$1k - $5k</option>
-                                <option>$5k - $10k</option>
-                                <option>$10k+</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label htmlFor="description">Project Description</label>
-                            <textarea
-                                id="description"
-                                name="description"
-                                rows={5}
-                                placeholder="Tell me about your project, goals and any specific requirements..."
-                            />
-                        </div>
+                            <div className={styles.formColumn}>
+                                <label htmlFor="description">Project Description</label>
+                                <textarea
+                                    id="description"
+                                    name="description"
+                                    rows={5}
+                                    placeholder="Tell me about your project, goals and any specific requirements..."
+                                />
+                            </div>
 
                         {/* Submit (placeholder) */}
                         <button type="button">Send Message</button>

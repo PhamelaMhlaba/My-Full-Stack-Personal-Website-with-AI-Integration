@@ -50,3 +50,32 @@
     border-radius: 12px;
     padding: 2rem;
 }
+
+.form {
+  max-width: 700px; /* match name row width */
+  width: 100%;
+}
+
+.nameFields {
+  display: flex;
+  gap: 3rem;
+}
+
+.formColumn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.formColumn input,
+.formColumn select,
+.formColumn textarea {
+  width: 100%;
+  padding: 12px;
+  width: 100%; 
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+
