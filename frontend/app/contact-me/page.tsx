@@ -75,7 +75,12 @@ export default function ContactMePage () {
                             </div>
 
                         {/* Submit (placeholder) */}
-                        <button type="button">Send Message</button>
+                        <div className={styles.formColumn}>
+                            <button type="button" className={styles.ctaButton}>
+                                Send Message
+                            </button>
+                        </div>
+
                     </form>
                 </div>
 
