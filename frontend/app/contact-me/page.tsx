@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./ContactMe.module.css";
+import { Mail, Phone, Calendar } from "lucide-react"; 
 
 export default function ContactMePage () {
     return (
@@ -85,41 +86,50 @@ export default function ContactMePage () {
                 </div>
 
                 {/* direct message div container*/}
-                <div className={styles.contactForm}>
-        
-                            <h3>
-                                Direct Contact
-                            </h3>
-                            <ul>
-                                <li>
-                                    <strong>Email:</strong>
-                                    <p>phamelamhlaba@gmail.com</p>
-                                </li>
-                                <li>
-                                    <strong>Phone:</strong>
-                                    <p>+27 75 324 6472</p>
-                                </li>
-                                <li>
-                                    <strong>Schedule a Call:</strong>
-                                    <p>Book a free consultation</p>
-                                </li>
-                            </ul>
-                
-                </div>
-                {/* Social Links div container*/}
-                <div className={styles.contactForm}>
-                                <h3>
-                                    Follow Me
-                                </h3>
-                                <ul>
-                                    <li><a href="#">LinkedIn</a></li>
-                                    <li><a href="#">Github</a></li>
-                                    <li><a href="#">Instagram</a></li>
-                                    <li><a href="#">Tik Tok</a></li>
-                                </ul>
-                </div>
-            </section>
+                <div className={styles.directContact}>
+                    <h3 className={styles.title}>
+                        Direct Contact
+                    </h3>
 
+                    {/* Email */}
+                    <div className={styles.contactItem}>
+                        <div className={styles.iconWrapper}>
+                            <Mail size={20} />
+                        </div>
+                    </div>
+
+                    <div className={styles.textWrapper}>
+                        <h4>Email</h4>
+                        <p>hello@aideveloper.com</p>
+                    </div>
+        
+
+                    {/* Phone */}
+                    <div className={styles.contactItem}>
+                        <div className={styles.iconWrapper}>
+                            <Phone size={20} />
+                        </div>
+                    </div>
+
+                    <div className={styles.textWrapper}>
+                        <h4>Phone</h4>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+,
+
+                    {/* Schedule Free Call */}
+                    <div className={styles.contactItem}>
+                        <div className={styles.iconWrapper}>
+                            <Calendar size={20} />
+                        </div>
+                    </div>
+
+                    <div className={styles.textWrapper}>
+                        <h4>Schedule a Call</h4>
+                        <p>Book a free consultation</p>
+                    </div>
+                </div>
+    
             {/*FAQ Section*/}
             <section>
                 <h2>Frequently Asked Quenstions </h2>
@@ -159,6 +169,8 @@ export default function ContactMePage () {
                     </p>
                 </div>
             </section>
+            </section>
+    
         </main>
     )
 }

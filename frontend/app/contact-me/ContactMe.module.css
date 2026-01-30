@@ -96,4 +96,47 @@
   box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
 }
 
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.iconWrapper {
+  width: 44px;
+  height: 44px;
+  background-color: #f2e9fb;
+  color: #7c3aed;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textWrapper h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.textWrapper p {
+  font-size: 0.9rem;
+  margin: 4px 0 0;
+  color: #555;
+}
+
+
 
