@@ -96,11 +96,12 @@ export default function ContactMePage () {
                         <div className={styles.iconWrapper}>
                             <Mail size={20} />
                         </div>
-                    </div>
+                    
 
-                    <div className={styles.textWrapper}>
-                        <h4>Email</h4>
-                        <p>hello@aideveloper.com</p>
+                        <div className={styles.textWrapper}>
+                            <h4>Email</h4>
+                            <p>hello@aideveloper.com</p>
+                        </div>
                     </div>
         
 
@@ -109,11 +110,12 @@ export default function ContactMePage () {
                         <div className={styles.iconWrapper}>
                             <Phone size={20} />
                         </div>
-                    </div>
+                
 
-                    <div className={styles.textWrapper}>
-                        <h4>Phone</h4>
-                        <p>+1 (555) 123-4567</p>
+                        <div className={styles.textWrapper}>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
                     </div>
 ,
 
@@ -122,13 +124,14 @@ export default function ContactMePage () {
                         <div className={styles.iconWrapper}>
                             <Calendar size={20} />
                         </div>
-                    </div>
-
-                    <div className={styles.textWrapper}>
-                        <h4>Schedule a Call</h4>
-                        <p>Book a free consultation</p>
+                
+                        <div className={styles.textWrapper}>
+                            <h4>Schedule a Call</h4>
+                            <p>Book a free consultation</p>
+                        </div>
                     </div>
                 </div>
+            </section>
     
             {/*FAQ Section*/}
             <section>
@@ -168,7 +171,7 @@ export default function ContactMePage () {
                         Yes! I can help optimize existing applications, add AI features to current systems, or provide code reviews and architectural guidance for your development team. 
                     </p>
                 </div>
-            </section>
+        
             </section>
     
         </main>
