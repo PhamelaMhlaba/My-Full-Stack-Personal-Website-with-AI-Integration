@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ContactMe.module.css";
-import { Mail, Phone, Calendar } from "lucide-react"; 
+import { Mail, Phone, Calendar, Linkedin, Github, Instagram } from "lucide-react";
+
 
 export default function ContactMePage () {
     return (
@@ -86,48 +87,87 @@ export default function ContactMePage () {
                 </div>
 
                 {/* direct message div container*/}
-                <div className={styles.directContact}>
-                    <h3 className={styles.title}>
-                        Direct Contact
-                    </h3>
+                <div className={styles.rightSideContainer}>
+                    <div className={styles.directContact}>
+                        <h3 className={styles.title}>
+                            Direct Contact
+                        </h3>
 
-                    {/* Email */}
-                    <div className={styles.contactItem}>
-                        <div className={styles.iconWrapper}>
-                            <Mail size={20} />
-                        </div>
+                        {/* Email */}
+                        <div className={styles.contactItem}>
+                            <div className={styles.iconWrapper}>
+                                <Mail size={20} />
+                            </div>
                     
 
-                        <div className={styles.textWrapper}>
-                            <h4>Email</h4>
-                            <p>hello@aideveloper.com</p>
+                            <div className={styles.textWrapper}>
+                                <h4>Email</h4>
+                                <p>phamelamhlaba@gmail.com</p>
+                            </div>
                         </div>
-                    </div>
         
 
-                    {/* Phone */}
-                    <div className={styles.contactItem}>
-                        <div className={styles.iconWrapper}>
-                            <Phone size={20} />
-                        </div>
+                        {/* Phone */}
+                        <div className={styles.contactItem}>
+                            <div className={styles.iconWrapper}>
+                                <Phone size={20} />
+                            </div>
                 
 
-                        <div className={styles.textWrapper}>
-                            <h4>Phone</h4>
-                            <p>+1 (555) 123-4567</p>
+                            <div className={styles.textWrapper}>
+                                <h4>Phone</h4>
+                                <p>+27 75 324 6472</p>
+                            </div>
                         </div>
-                    </div>
 ,
 
-                    {/* Schedule Free Call */}
-                    <div className={styles.contactItem}>
-                        <div className={styles.iconWrapper}>
-                            <Calendar size={20} />
-                        </div>
+                        {/* Schedule Free Call */}
+                        <div className={styles.contactItem}>
+                            <div className={styles.iconWrapper}>
+                                <Calendar size={20} />
+                            </div>
                 
-                        <div className={styles.textWrapper}>
-                            <h4>Schedule a Call</h4>
-                            <p>Book a free consultation</p>
+                            <div className={styles.textWrapper}>
+                                <h4>Schedule a Call</h4>
+                                <p>Book a free consultation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                        {/* Follow Me */}
+                        <div className={styles.followMe}>
+                            <h3 className={styles.title}>Follow Me</h3>
+
+                            <div className={styles.socialIcons}>
+                            <a
+                                href="https://www.linkedin.com/in/phamela-mhlaba/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.socialIconStyle}
+                                aria-label="LinkedIn"
+                            >
+                                <Linkedin size={18} />
+                            </a>
+
+                            <a
+                                href="https://github.com/PhamelaMhlaba"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.socialIconStyle}
+                                aria-label="GitHub"
+                            >
+                                <Github size={18} />
+                            </a>
+
+                            <a
+                                href="https://www.instagram.com/phamela_mhlaba/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.socialIconStyle}
+                                aria-label="Instagram"
+                            >
+                                <Instagram size={18} />
+                            </a>
                         </div>
                     </div>
                 </div>
