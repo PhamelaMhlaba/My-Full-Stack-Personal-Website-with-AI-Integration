@@ -21,11 +21,6 @@
     margin: 0 auto;
 }
 
-.contactSection {
-    width: 50%;
-    margin: 0 auto;
-}
-
 .sectionTitle {
     font-size: 1.9rem;
     font-weight: 700;
@@ -79,7 +74,7 @@
 }
 
 .ctaButton {
-  background: #7c3aed;
+  background: #AA59F7;
   color: white;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
@@ -91,7 +86,7 @@
 }
 
 .ctaButton:hover {
-  background: #6d28d9;
+  background: #D8C0E2;
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
 }
@@ -102,10 +97,16 @@
   margin-bottom: 20px;
 }
 
-.contactList {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.rightSideContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.directContact {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2rem;
 }
 
 .contactItem {
@@ -138,6 +139,36 @@
   margin: 4px 0 0;
   color: #555;
 }
+
+.followMe {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.socialIconStyle {
+  width: 44px;
+  height: 44px;
+  background-color: #f2e9fb;
+  color: #0d0d0e;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialIconStyle:hover {
+  background: #AA59F7;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
+}
+
 
 
 
