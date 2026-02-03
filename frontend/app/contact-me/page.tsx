@@ -89,7 +89,7 @@ export default function ContactMePage () {
                 {/* direct message div container*/}
                 <div className={styles.rightSideContainer}>
                     <div className={styles.directContact}>
-                        <h3 className={styles.title}>
+                        <h3 className={styles.formTitle}>
                             Direct Contact
                         </h3>
 
@@ -136,7 +136,7 @@ export default function ContactMePage () {
 
                         {/* Follow Me */}
                         <div className={styles.followMe}>
-                            <h3 className={styles.title}>Follow Me</h3>
+                            <h3 className={styles.formTitle}>Follow Me</h3>
 
                             <div className={styles.socialIcons}>
                             <a
@@ -174,46 +174,49 @@ export default function ContactMePage () {
             </section>
     
             {/*FAQ Section*/}
-            <section>
-                <h2>Frequently Asked Quenstions </h2>
-                <div>
-                    <h4>
+            <section className={styles.faqSection}>
+                <div className={styles.faqHeader}>
+                    <h2 className={styles.faqTitle}>
+                        Frequently Asked Quenstions 
+                    </h2>
+                </div>
+
+                <div className={styles.faqContainer}>
+                    <h4 className={styles.description}>
                         How long does a typical project take?
                     </h4>
-                    <p>
+                    <p className={styles.descriptionInfo}>
                         Project timelines vary based on complexity, but mots AI inegrations take 4-8 weeks, while full web applications can take 8-16 weeks. I will provide a details timeline during our initial consultation.
                     </p>
                 </div>
 
-                <div>
-                    <h4>
+                <div className={styles.faqContainer}>
+                    <h4 className={styles.description}>
                         Do you work with startups?
                     </h4>
-                    <p>
+                    <p className={styles.descriptionInfo}>
                         Absolutely! I love working with startups and understand the unique challenges they face. I offer flexible pricing and can even concider equity arranagments for the right projects. 
                     </p>
                 </div>
 
-                <div>
-                    <h4>
+                <div className={styles.faqContainer}>
+                    <h4 className={styles.description}>
                         What's included in ongoing support?
                     </h4>
-                    <p>
+                    <p className={styles.descriptionInfo}>
                         All projects include 30 days of fee support after launch. Ongoing support packages include bug fixes, performacne monitoring, feature updates, and priority reponses times. 
                     </p>
                 </div>
 
-                <div>
-                    <h4>
+                <div className={styles.faqContainer}>
+                    <h4 className={styles.description}>
                         Can you help with existing projects?
                     </h4>
-                    <p>
+                    <p className={styles.descriptionInfo}>
                         Yes! I can help optimize existing applications, add AI features to current systems, or provide code reviews and architectural guidance for your development team. 
                     </p>
                 </div>
-        
             </section>
-    
         </main>
     )
 }

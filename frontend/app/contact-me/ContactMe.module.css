@@ -91,7 +91,7 @@
   box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
 }
 
-.title {
+.formTitle {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 20px;
@@ -129,13 +129,13 @@
 }
 
 .textWrapper h4 {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   margin: 0;
 }
 
 .textWrapper p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 4px 0 0;
   color: #555;
 }
@@ -169,6 +169,46 @@
   box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
 }
 
+.faqSection {
+    max-width: 800px;
+    margin: 5rem auto;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.faqHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.faqTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 2rem 0;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+}
+
+.faqContainer {
+    border-radius: 12px;
+    border: 1px solid #e5e7eb; 
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.descriptionInfo {
+  font-size: 1.05rem;
+  margin: 4px 0 0;
+  color: #555;
+}
 
 
 
