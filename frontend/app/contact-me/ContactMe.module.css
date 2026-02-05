@@ -74,7 +74,7 @@
 }
 
 .ctaButton {
-  background: #AA59F7;
+  background: #a855f7;
   color: white;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
@@ -120,7 +120,7 @@
   width: 44px;
   height: 44px;
   background-color: #f2e9fb;
-  color: #7c3aed;
+  color: #a855f7;
   border-radius: 12px;
 
   display: flex;
@@ -164,7 +164,7 @@
 }
 
 .socialIconStyle:hover {
-  background: #AA59F7;
+  background: #a855f7;
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
 }
