@@ -28,8 +28,8 @@ const ClientStories: React.FC = () => {
       <div className={styles.container}>
         {/* Section Header */}
         <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>
-            Client <span className={styles.gradientText}>Success Stories</span>
+          <h2 className={styles.clientSectionTitle}>
+            Client Success Stories
           </h2>
         </div>
 

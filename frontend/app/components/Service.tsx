@@ -4,7 +4,6 @@ import styles from './Service.module.css';
 const Services: React.FC = () => {
   const services = [
     {
-      icon: '🤖',
       title: 'AI-Powered Applications',
       description: 'Full-stack applications with integrated LLM capabilities, from chatbots to intelligent automation systems.',
       features: [
@@ -14,7 +13,6 @@ const Services: React.FC = () => {
       ]
     },
     {
-      icon: '⚙️',
       title: 'ML Pipeline Engineering',
       description: 'End-to-end machine learning pipelines with robust data infrastructure and model deployment.',
       features: [
@@ -24,7 +22,6 @@ const Services: React.FC = () => {
       ]
     },
     {
-      icon: '🚀',
       title: 'Intelligent Automation',
       description: 'Full-stack automation solutions that leverage AI to optimize business processes and workflows.',
       features: [
@@ -40,8 +37,8 @@ const Services: React.FC = () => {
       <div className={styles.container}>
         {/* Section Header */}
         <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>
-            Enterprise <span className={styles.gradientText}>AI Engineering</span>
+          <h2 className={styles.serviceSectionTitle}>
+            Enterprise AI Engineering
           </h2>
           <p className={styles.sectionDescription}>
             Full-stack AI solutions engineered for scale, performance, and business impact
@@ -52,7 +49,6 @@ const Services: React.FC = () => {
         <div className={styles.servicesGrid}>
           {services.map((service, index) => (
             <div key={index} className={styles.serviceCard}>
-              <div className={styles.serviceIcon}>{service.icon}</div>
               <h3 className={styles.serviceTitle}>{service.title}</h3>
               <p className={styles.serviceDescription}>{service.description}</p>
               <ul className={styles.featuresList}>
