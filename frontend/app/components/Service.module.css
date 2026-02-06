@@ -16,14 +16,13 @@
   margin-bottom: 4rem;
 }
 
-.sectionTitle {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #1f2937;
-  margin: 0 0 1rem 0;
-  line-height: 1.2;
+.serviceSectionTitle {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    line-height: 1.2;
+    margin: 0 0 2rem 0;
 }
-
 .gradientText {
   background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
   background-clip: text;
@@ -107,7 +106,7 @@
 }
 
 .ctaButton {
-  background: #7c3aed;
+  background: #a855f7;
   color: white;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
@@ -119,10 +118,11 @@
 }
 
 .ctaButton:hover {
-  background: #6d28d9;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
+    background: #9333ea;
+    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+    transform: translateY(-1px);
 }
+
 
 /* Responsive Design */
 @media (min-width: 768px) {
