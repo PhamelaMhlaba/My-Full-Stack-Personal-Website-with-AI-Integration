@@ -20,7 +20,7 @@ export default function AboutMeCoreSkills() {
         }
     ];
 
-    const skillsButtons =  ["React", "TypeScript", "Next.js", "C3", "Blazor", "Node.js", "Python", "AWS", "TensorFlow","Pytorch", "Numpy", "PostgreSQL", "Docker"];
+    const skillsButtons =  ["React", "TypeScript", "Next.js", "C#", "Blazor", "Node.js", "Python", "TensorFlow","Pytorch", "Numpy", "PostgreSQL", "Docker"];
     return (
         <section className={styles.container}>
             <div className={styles.coreExpertiseHeader}>
