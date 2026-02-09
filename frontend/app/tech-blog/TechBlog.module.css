@@ -22,11 +22,50 @@
     max-width: 600px;
     margin: 0 auto;
 }
+
+.newsletterCard {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  max-width: 28rem;
+  align-items: center;
+}
+
 .newsLetterForm {
-    text-align: center; 
-    margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
 }
+
+.emailInput {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.emailInput:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
 .subscribeButton {
-    color: #f2eff3;
-    background-color: #995aae;
+  background: #10b981;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
 }
+
+.subscribeButton:hover {
+  background: #059669;
+}
+
