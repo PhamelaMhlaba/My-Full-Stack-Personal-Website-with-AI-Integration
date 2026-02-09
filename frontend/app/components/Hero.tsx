@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
                   Join 10,000+ developers getting cutting-edge tips
                 </p>
                 
-                <div className={styles.emailForm}>
+                <div className={styles.newsLetterForm}>
                   <input
                     type="email"
                     placeholder="Enter your email"

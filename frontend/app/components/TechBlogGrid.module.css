@@ -20,10 +20,10 @@
     justify-content: left;
 }
 .category {
-    background-color: #c38ad8;
-    border-radius: 20px;
-    padding: 1px;
-    color: #550f6e;
+    background-color: #a855f7;
+    border-radius: 25px;
+    padding: 3.5px;
+    color: #4d0a8c;
 }
 .readTime {
     color: #6b7280;
@@ -42,7 +42,7 @@
     color: #6b7280;
 }
 .readMore {
-    color: #6d338e;
+    color: #a855f7;
     margin: 0 0 0 14rem;
 }
 
