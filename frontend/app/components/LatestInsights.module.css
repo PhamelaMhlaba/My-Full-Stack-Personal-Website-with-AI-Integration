@@ -38,15 +38,21 @@
 }
 
 .viewAllButtonLink {
-    text-decoration: none;
-    display: inline-block;
-    padding: 12px 24px;
-    border: 1px solid rgb(206, 201, 201);
-    border-radius: 6px;
-    color: black;
-    font-weight: 600;
+  background: #a855f7;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
+
 .viewAllButtonLink:hover {
-    background-color: #f3f4f5;
+    background: #9333ea;
+    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+    transform: translateY(-1px);
 }
