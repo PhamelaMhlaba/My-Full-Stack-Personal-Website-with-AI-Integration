@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Hero.module.css';
+import Link from "next/link";
 
 const Hero: React.FC = () => {
   return (
@@ -28,12 +29,11 @@ const Hero: React.FC = () => {
               </div>
               
               <div className={styles.buttonGroup}>
-                <button type="button" className={styles.primaryButton}>
-                  View AI Solutions
-                </button>
-                <button type="button" className={styles.secondaryButton}>
-                  Free Consultation
-                </button>
+                <div className={styles.primaryButtonContainer}>
+                    <Link href="/ai-assistance" className={styles.primaryButton}>
+                        View AI Solutions
+                    </Link>
+                </div> 
               </div>
               
               <div className={styles.newsletterCard}>
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
                 </div>
                 
                 <p className={styles.newsletterDescription}>
-                  Join 10,000+ developers getting cutting-edge tips
+                  Join 100+ developers getting cutting-edge tips
                 </p>
                 
                 <div className={styles.newsLetterForm}>
