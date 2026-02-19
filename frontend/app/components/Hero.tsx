@@ -1,8 +1,33 @@
+"use client";
+
 import React from 'react';
 import styles from './Hero.module.css';
 import Link from "next/link";
+import emailjs from "emailjs-com";
 
 const Hero: React.FC = () => {
+    const handleSubscribe = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        e.currentTarget,
+        "YOUR_PUBLIC_KEY"
+      )
+      .then(
+        () => {
+          alert("Subscribed successfully!");
+          e.currentTarget.reset();
+        },
+        (error) => {
+          console.error("EmailJS Error:", error);
+          alert("Subscription failed. Please try again.");
+        }
+      );
+  };
+
   return (
     <section className={styles.heroSection}>
       <div className={styles.container}>
@@ -47,14 +72,20 @@ const Hero: React.FC = () => {
                 </p>
                 
                 <div className={styles.newsLetterForm}>
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className={styles.emailInput}
-                  />
-                  <button type="button" className={styles.subscribeButton}>
-                    Subscribe
-                  </button>
+                  {/* User to to be able to subscribe */}
+                  <form onSubmit={handleSubscribe} className={styles.subscribeForm}>
+                    <input
+                        type="email"
+                        name="user_email"
+                        placeholder="Enter your email"
+                        required
+                        className={styles.emailInput}
+                      />
+
+                      <button type="submit" className={styles.subscribeButton}>
+                          Subscribe
+                      </button>
+                  </form>
                 </div>
               </div>
             </div>
