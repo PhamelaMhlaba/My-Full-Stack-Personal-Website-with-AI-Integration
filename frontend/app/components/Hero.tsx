@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
+        "service_skfzem4",
         "YOUR_TEMPLATE_ID",
         e.currentTarget,
         "YOUR_PUBLIC_KEY"
