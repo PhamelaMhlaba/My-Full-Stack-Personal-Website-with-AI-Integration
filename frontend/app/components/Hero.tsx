@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
     emailjs
       .sendForm(
         "service_skfzem4",
-        "YOUR_TEMPLATE_ID",
+        "template_oy6u621",
         e.currentTarget,
         "YOUR_PUBLIC_KEY"
       )
