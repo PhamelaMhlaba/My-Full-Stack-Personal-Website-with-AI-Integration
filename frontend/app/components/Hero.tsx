@@ -14,10 +14,10 @@ const Hero: React.FC = () => {
     try {
       await emailjs
       .sendForm(
-        "service_skfzem4",
-        "template_oy6u621",
+        "service_iuy2l0j",
+        "template_2hbew44",
         form,
-        { publicKey: "Si7luRLFo1x_8Wym5" }
+        "Si7luRLFo1x_8Wym5"
       );
 
       alert("Subscribed Successfully");
