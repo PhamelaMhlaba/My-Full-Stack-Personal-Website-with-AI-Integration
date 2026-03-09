@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
         "service_iuy2l0j",
         "template_2hbew44",
         form,
-        { publicKey: "Si7luRLFo1x_8Wym55"}
+        "Si7luRLFo1x_8Wym5"
       );
 
       alert("Subscribed Successfully");
