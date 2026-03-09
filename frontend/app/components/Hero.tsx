@@ -3,30 +3,35 @@
 import React from 'react';
 import styles from './Hero.module.css';
 import Link from "next/link";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const Hero: React.FC = () => {
-    const handleSubscribe = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubscribe = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs
+    const form = e.currentTarget
+
+    try {
+      await emailjs
       .sendForm(
-        "service_skfzem4",
-        "template_oy6u621",
-        e.currentTarget,
-        "Si7luRLFo1x_8Wym5"
-      )
-      .then(
-        () => {
-          alert("Subscribed successfully!");
-          e.currentTarget.reset();
-        },
-        (error) => {
-          console.error("EmailJS Error:", error);
-          alert("Subscription failed. Please try again.");
-        }
+        "service_iuy2l0j",
+        "template_2hbew44",
+        form,
+        { publicKey: "Si7luRLFo1x_8Wym55"}
       );
-  };
+
+      alert("Subscribed Successfully");
+      form.reset();
+
+    } catch (error: any) {
+      // ✅ Log the full error so you can debug
+      console.error("EmailJS Error status:", error?.status);
+      console.error("EmailJS Error text:", error?.text);
+      console.error("Full error:", error);
+      alert(`Subscription failed: ${error?.text || "Please try again"}`);
+    }
+  }
+      
 
   return (
     <section className={styles.heroSection}>
