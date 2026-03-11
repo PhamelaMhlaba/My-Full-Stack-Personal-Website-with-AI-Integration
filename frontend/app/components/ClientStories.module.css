@@ -114,19 +114,37 @@
   margin: 0 auto;
   margin-bottom: 3rem;
 }
-.ctaButton {
-  background: #a855f7;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
+/* Buttons */
+.button {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
-.ctaButton:hover {
+.primaryButtonContainer {
+    text-align: center;
+    margin-top: 0.15rem;
+}
+
+.primaryButton {
+    background: #a855f7;
+    color: white;
+    padding: 1.1rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: translateY(0);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    z-index: 1001;
+}
+
+.primaryButton:hover {
     background: #9333ea;
     box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
     transform: translateY(-1px);
