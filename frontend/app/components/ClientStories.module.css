@@ -108,11 +108,12 @@
 
 .ctaText {
   font-size: 1.25rem;
-  color: #374151;
+  color: #6b7280;
   line-height: 1.6;
-  margin: 0 0 2rem 0;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
 }
-
 .ctaButton {
   background: #a855f7;
   color: white;
