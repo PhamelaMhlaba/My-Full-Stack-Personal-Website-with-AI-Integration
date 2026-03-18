@@ -2,9 +2,11 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { blogPosts } from "../../components/TechBlogGrid";
 import BlogPostTemplate from "../../components/BlogPostTemplate";
+import ShareBar from "../tech-blog/[id]/ShareBar";
+
 import Image from "next/image";
 import type { BlogPost } from "../types/blog";
-import ShareBar from "./ShareBar";
+
 import styles from "./BlogPostTemplate.module.css";
 
 
@@ -41,7 +43,6 @@ export async function generateMetadata({ params }: PageParams): Promise<Metadata
       description: post.excerpt,
       type: "article",
       publishedTime: post.date,
-      authors: [post.author.name],
       ...(post.coverImageUrl && { images: [{ url: post.coverImageUrl }] }),
     },
     twitter: {
