@@ -11,7 +11,12 @@ interface BlogPost {
   title: string;
   excerpt: string;
   date: string;
-  content: string;   
+  content: string;
+  author: {
+    name: string;
+    role: string;
+    avatarUrl: string;
+  }   
 }
 
 // Move data outside component — no re-creation on every render
@@ -37,7 +42,12 @@ export const blogPosts: BlogPost[] = [
       <h2>Error Handling & Resilience</h2>
       <p>Implement exponential backoff for rate limit errors, graceful degradation when the API 
       is unavailable, and always validate model outputs before rendering them to users.</p>
-    `
+    `,
+    author: {
+    name: "Phamela Mhlaba",
+    role: "AI Developer",
+    avatarUrl: "" // optional
+  }
   },
   {
     id: 2,
