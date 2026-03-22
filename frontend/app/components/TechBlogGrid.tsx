@@ -6,6 +6,7 @@ import Link from 'next/Link';
 
 interface BlogPost {
   id: number;
+  slug: string;
   category: string;
   readTime: string;
   title: string;
@@ -23,6 +24,7 @@ interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: 1,
+    slug: "gpt4-ai-applications",
     category: "AI/ML",
     readTime: "5 min read",
     title: "Building Production-Ready AI Applications with OpenAI GPT-4",
@@ -46,11 +48,12 @@ export const blogPosts: BlogPost[] = [
     author: {
     name: "Phamela Mhlaba",
     role: "AI Developer",
-    avatarUrl: "" // optional
+    avatarUrl: "" 
   }
   },
   {
     id: 2,
+    slug: "advanced-react-patterns",
     category: "React",
     readTime: "8 min read",
     title: "Advanced React Patterns for Scalable Applications",
@@ -70,10 +73,16 @@ export const blogPosts: BlogPost[] = [
       <h2>Render Props for Inversion of Control</h2>
       <p>When you need to decouple behaviour from rendering, render props give consuming components 
       full control over what gets displayed, while the parent manages the logic.</p>
-    `
+    `,
+  author: {
+      name: "Phamela Mhlaba",
+      role: "AI Developer",
+      avatarUrl: ""
+    }
   },
   {
     id: 3,
+    slug: "serverless-aws-lambda",
     category: "DevOps",
     readTime: "12 min read",
     title: "Serverless Architecture: Building Scalable APIs with AWS Lambda",
@@ -94,8 +103,13 @@ export const blogPosts: BlogPost[] = [
       <h2>Observability at Scale</h2>
       <p>Distributed tracing with AWS X-Ray, structured logging with CloudWatch, and custom 
       metrics give you the visibility needed to debug and optimise serverless systems.</p>
-    `
-  }
+     `,
+  author: {
+      name: "Phamela Mhlaba",
+      role: "AI Developer",
+      avatarUrl: ""
+    },
+  },
 ];
 
 export default function TechBlogGrid () { 
@@ -120,7 +134,7 @@ export default function TechBlogGrid () {
                     <div className={styles.postFooter}>
                         <span className={styles.postDate}>{post.date}</span>
                         {/* Correct path + Next.js Link = no 404 */}
-                        <Link href={`/tech-blog/${post.id}`} className={styles.readMore}>
+                        <Link href={`/tech-blog/${post.slug}`} className={styles.readMore}>
                             Read More
                         </Link>
                     </div>
