@@ -1,54 +1,131 @@
-export interface BlogPost {
-  id: string;
-  title: string;
-  excerpt: string;
-  category: string;
-  readTime: string;
-  publishedAt: string;
-  slug: string;
+export interface Author {
+  name: string;
+  role: string;
+  avatarUrl: string;
 }
 
-export const posts: BlogPost[] = [
+export interface BlogPost {
+  id: number;
+  slug: string;
+  category: string;
+  readTime: string;
+  title: string;
+  excerpt: string;
+   // Core dates
+  date: string;
+  displayDate: string;
+
+  // Full content
+  content: string;
+
+  // Branding (VERY IMPORTANT for your vision)
+  author: Author;
+
+  // Optional future fields
+  coverImageUrl?: string;
+  tags?: string[];
+}
+
+
+
+export const blogPosts: BlogPost[] = [
   {
-    id: "1",
-    title: "The Developer's Guide to Deep Work",
-    excerpt:
-      "How I structure my day to maximize focus, minimize distractions, and produce high-quality code consistently.",
+    id: 1,
+    slug: "developers-guide-to-deep-work",
     category: "Productivity",
     readTime: "6 min read",
-    publishedAt: "2025-01-10",
-    slug: "developers-guide-to-deep-work",
+    title: "The Developer's Guide to Deep Work",
+    excerpt: "How I structure my day to maximize focus...",
+
+    date: "2025-01-10",
+    displayDate: "January 10, 2025",
+
+    content: `
+      <p>This is your FULL blog content.</p>
+      <h2>Deep Work</h2>
+      <p>Focus is your biggest asset as a developer.</p>
+    `,
+
+    author: {
+      name: "Phamela Mhlaba",
+      role: "AI Developer",
+      avatarUrl: ""
+    }
   },
-  {
-    id: "2",
-    title: "Preventing Developer Burnout",
-    excerpt:
-      "Recognizing the signs of burnout and implementing strategies to maintain long-term productivity and happiness.",
+    {
+    id: 2,
+    slug: "preventing-developer-burnout",
     category: "Wellness",
     readTime: "4 min read",
-    publishedAt: "2025-01-08",
-    slug: "preventing-developer-burnout",
-  },
-  {
-    id: "3",
-    title: "Building a Sustainable Learning Routine",
-    excerpt:
-      "Creating consistent habits for staying current with rapidly evolving technology.",
+    title: "The Developer's Guide to Deep Work",
+    excerpt: "Recognizing the signs of burnout and implementing strategies to maintain long-term productivity and happiness.",
+  
+
+    date: "2025-01-10",
+    displayDate: "January 10, 2025",
+
+    content: `
+      <p>This is your FULL blog content.</p>
+      <h2>Deep Work</h2>
+      <p>Focus is your biggest asset as a developer.</p>
+    `,
+
+    author: {
+      name: "Phamela Mhlaba",
+      role: "AI Developer",
+      avatarUrl: ""
+    }
+    },
+
+    {
+    id: 3,
+    slug: "sustainable-learning-routine",
     category: "Learning",
     readTime: "5 min read",
-    publishedAt: "2025-01-06",
-    slug: "sustainable-learning-routine",
-  },
-  {
-    id: "4",
-    title: "The Art of Code Reviews",
-    excerpt:
-      "How thoughtful code reviews improve team dynamics and code quality.",
+    title: "Building a Sustainable Learning Routine",
+    excerpt: "Creating consistent habits for staying current with rapidly evolving technology.",
+  
+
+    date: "2025-01-10",
+    displayDate: "January 10, 2025",
+
+    content: `
+      <p>This is your FULL blog content.</p>
+      <h2>Deep Work</h2>
+      <p>Focus is your biggest asset as a developer.</p>
+    `,
+
+    author: {
+      name: "Phamela Mhlaba",
+      role: "AI Developer",
+      avatarUrl: ""
+    }
+    },
+ 
+    {
+    id: 4,
+    slug: "art-of-code-reviews",
     category: "Collaboration",
     readTime: "7 min read",
-    publishedAt: "2025-01-04",
-    slug: "art-of-code-reviews",
-  },
+    title: "The Art of Code Reviews",
+    excerpt: "How thoughtful code reviews improve team dynamics and code quality.",
+  
+
+    date: "2025-01-10",
+    displayDate: "January 10, 2025",
+
+    content: `
+      <p>This is your FULL blog content.</p>
+      <h2>Deep Work</h2>
+      <p>Focus is your biggest asset as a developer.</p>
+    `,
+
+    author: {
+      name: "Phamela Mhlaba",
+      role: "AI Developer",
+      avatarUrl: ""
+    }
+    }, 
 ];
 
-export default posts;
+export default blogPosts;
