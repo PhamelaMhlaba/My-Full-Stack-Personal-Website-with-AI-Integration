@@ -61,8 +61,8 @@ const BASE_URL =
 
 export default async function BlogPostPage({ params }: PageParams) {
   // Await params per Next.js 15 requirement
-  const { id } = await params;
-  const post = blogPosts.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+  const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) notFound();
 
