@@ -9,7 +9,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import type { BlogPost } from "../types/blog";
+import type { BlogPost } from "../data/posts";
 import ShareBar from "./ShareBar";
 import styles from "./BlogPostTemplate.module.css";
 
@@ -184,11 +184,10 @@ function Hero({ post, canonicalUrl }: HeroProps) {
 
           {/* Author — dynamic, driven by post.author, never hardcoded */}
           <AuthorCard
-            name={post.author.name}
-            role={post.author.role}
-            avatarUrl={post.author.avatarUrl}
-          />
-
+            name={post.author?.name || "Unknown Author"}
+            role={post.author?.role || "Contributor"}
+            avatarUrl={post.author?.avatarUrl}
+        />
           {/* Date — dateTime is machine-readable (SEO/a11y), displayDate is human-readable */}
           <div className={styles.metaItem}>
             <CalendarIcon />

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './TechBlogGrid.module.css';
-import Link from 'next/Link';
+import Link from 'next/link';
+
 
 {/* Data Shape of Blog */}
 

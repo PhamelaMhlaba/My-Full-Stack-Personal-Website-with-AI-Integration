@@ -1,11 +1,9 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { blogPosts } from "../../components/TechBlogGrid";
 import BlogPostTemplate from "../../components/BlogPostTemplate";
 import ShareBar from "@/app/components/ShareBar";
-
 import Image from "next/image";
-import type { BlogPost } from "../types/blog";
+import { blogPosts } from "../../data/posts";
 
 import styles from "./BlogPostTemplate.module.css";
 
@@ -31,7 +29,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageParams): Promise<Metadata> {
   const { slug } = await params;
-  const post = blogPosts.find((p) => p.slug === params.slug);
+  const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) return {};
 
@@ -62,6 +60,8 @@ const BASE_URL =
 export default async function BlogPostPage({ params }: PageParams) {
   // Await params per Next.js 15 requirement
   const { slug } = await params;
+
+   console.log("SLUG:", slug); //
   const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) notFound();
@@ -71,3 +71,5 @@ export default async function BlogPostPage({ params }: PageParams) {
 
   return <BlogPostTemplate post={post} canonicalUrl={canonicalUrl} />;
 }
+
+
