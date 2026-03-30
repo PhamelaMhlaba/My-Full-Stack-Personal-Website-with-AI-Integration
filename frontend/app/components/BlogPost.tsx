@@ -1,8 +1,8 @@
 import styles from "./BlogPost.module.css";
-import { BlogPost as BlogPostType } from "../data/posts";
+import type { BlogPost } from "../data/posts";
 
 type Props = {
-  post: BlogPostType;
+  post: BlogPost;
 };
 
 export default function BlogPost({ post }: Props) {
@@ -24,7 +24,7 @@ export default function BlogPost({ post }: Props) {
       {/* Footer */}
       <div className={styles.footer}>
         <time className={styles.date}>
-          {new Date(post.publishedAt).toLocaleDateString("en-US", {
+          {new Date(post.date).toLocaleDateString("en-US", {
             year: "numeric",
             month: "short",
             day: "numeric",
@@ -33,7 +33,7 @@ export default function BlogPost({ post }: Props) {
 
         {/* Future-ready link */}
         <a
-          href={`/blog/${post.slug}`}
+          href={`/tech-blog/${post.slug}`}
           className={styles.readMore}
           aria-label={`Read more about ${post.title}`}
         >
