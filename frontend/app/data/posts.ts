@@ -41,7 +41,10 @@ export const blogPosts: BlogPost[] = [
     displayDate: "January 10, 2025",
 
     content: `
-      <p>This is your FULL blog content.</p>
+      <p>
+          As a developer, your ability to focus deeply is your greatest competitive advantage.
+          In a world full of distractions, mastering deep work is what separates average engineers from exceptional ones.
+      </p>
       <h2>Deep Work</h2>
       <p>Focus is your biggest asset as a developer.</p>
     `,
@@ -65,7 +68,10 @@ export const blogPosts: BlogPost[] = [
     displayDate: "January 10, 2025",
 
     content: `
-      <p>This is your FULL blog content.</p>
+      <p>
+          As a developer, your ability to focus deeply is your greatest competitive advantage.
+          In a world full of distractions, mastering deep work is what separates average engineers from exceptional ones.This is your FULL blog content.
+      </p>
       <h2>Deep Work</h2>
       <p>Focus is your biggest asset as a developer.</p>
     `,
@@ -129,3 +135,4 @@ export const blogPosts: BlogPost[] = [
 ];
 
 export default blogPosts;
+
