@@ -81,30 +81,6 @@ const Footer = () => {
               <li><a href="#" className={styles.footerLink}>Newsletter</a></li>
             </ul>
           </div>
-
-          {/* Newsletter Section */}
-          <div className={styles.newsletterCard}>
-            <h4 className={styles.newsletterTitle}>Stay Updated</h4>
-            <p className={styles.newsletterDescription}>
-              Get weekly AI insights and development tips.
-            </p>
-
-            <div className={styles.newsletterForm}>
-              {/* User to to be able to subscribe */}
-              <form onSubmit={handleSubscribe} className={styles.subscribeForm}>
-              <input
-                type="email"
-                name="user_email"
-                placeholder="Your email"
-                className={styles.newsletterInput}
-                required
-              />
-              <button type="submit" className={styles.subscribeButton}>
-                Subscribe
-              </button>
-              </form>
-            </div>
-          </div>
         </div>
       </div>
 
