@@ -1,7 +1,38 @@
+"use client";
+
 import React from 'react';
 import styles from './Hero.module.css';
+import Link from "next/link";
+import emailjs from "@emailjs/browser";
 
 const Hero: React.FC = () => {
+    const handleSubscribe = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const form = e.currentTarget
+
+    try {
+      await emailjs
+      .sendForm(
+        "service_iuy2l0j",
+        "template_2hbew44",
+        form,
+        "Si7luRLFo1x_8Wym5"
+      );
+
+      alert("Subscribed Successfully");
+      form.reset();
+
+    } catch (error: any) {
+      // ✅ Log the full error so you can debug
+      console.error("EmailJS Error status:", error?.status);
+      console.error("EmailJS Error text:", error?.text);
+      console.error("Full error:", error);
+      alert(`Subscription failed: ${error?.text || "Please try again"}`);
+    }
+  }
+      
+
   return (
     <section className={styles.heroSection}>
       <div className={styles.container}>
@@ -28,12 +59,11 @@ const Hero: React.FC = () => {
               </div>
               
               <div className={styles.buttonGroup}>
-                <button type="button" className={styles.primaryButton}>
-                  View AI Solutions
-                </button>
-                <button type="button" className={styles.secondaryButton}>
-                  Free Consultation
-                </button>
+                <div className={styles.primaryButtonContainer}>
+                    <Link href="/ai-assistance" className={styles.primaryButton}>
+                        View AI Solutions
+                    </Link>
+                </div> 
               </div>
               
               <div className={styles.newsletterCard}>
@@ -43,18 +73,24 @@ const Hero: React.FC = () => {
                 </div>
                 
                 <p className={styles.newsletterDescription}>
-                  Join 10,000+ developers getting cutting-edge tips
+                  Join 100+ developers getting cutting-edge tips
                 </p>
                 
                 <div className={styles.newsLetterForm}>
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className={styles.emailInput}
-                  />
-                  <button type="button" className={styles.subscribeButton}>
-                    Subscribe
-                  </button>
+                  {/* User to to be able to subscribe */}
+                  <form onSubmit={handleSubscribe} className={styles.subscribeForm}>
+                    <input
+                        type="email"
+                        name="user_email"
+                        placeholder="Enter your email"
+                        required
+                        className={styles.emailInput}
+                      />
+
+                      <button type="submit" className={styles.subscribeButton}>
+                          Subscribe
+                      </button>
+                  </form>
                 </div>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './ClientStories.module.css';
+import Link from "next/link";
 
 const ClientStories: React.FC = () => {
   const testimonials = [
@@ -52,9 +53,15 @@ const ClientStories: React.FC = () => {
           <p className={styles.ctaText}>
             Let's discuss how AI can revolutionize your operations and drive growth.
           </p>
-          <button className={styles.ctaButton}>
-            Start Your Project
-          </button>
+        {/* CTA Section */}
+
+        <div className={styles.button}>
+            <div className={styles.primaryButtonContainer}>
+                <Link href ="/contact-me" className={styles.primaryButton}>
+                    Start Your Project       
+                </Link>
+            </div>
+        </div>    
         </div>
       </div>
     </section>

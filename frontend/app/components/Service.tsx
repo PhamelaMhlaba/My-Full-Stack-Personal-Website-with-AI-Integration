@@ -63,12 +63,7 @@ const Services: React.FC = () => {
           ))}
         </div>
 
-        {/* CTA Button */}
-        <div className={styles.ctaContainer}>
-          <button className={styles.ctaButton}>
-            View All Services
-          </button>
-        </div>
+        
       </div>
     </section>
   );
