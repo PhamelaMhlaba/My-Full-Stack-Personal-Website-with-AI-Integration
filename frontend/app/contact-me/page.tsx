@@ -1,9 +1,41 @@
+"use client"
+
 import React from "react";
 import styles from "./ContactMe.module.css";
 import { Mail, Phone, Calendar, Linkedin, Github, Instagram } from "lucide-react";
 
+import emailjs from "@emailjs/browser";
+
 
 export default function ContactMePage () {
+    const handleSendMessage = async (
+        e: React.FormEvent<HTMLFormElement>
+    ) => {
+        e.preventDefault();
+
+        const form = e.currentTarget;
+
+        try {
+            // Email to YOU
+      await emailjs.sendForm(
+        "service_iuy2l0j",
+        "template_oy6u621",
+        form,
+        "Si7luRLFo1x_8Wym5"
+      );
+     
+       alert("Message sent successfully!");
+    
+       form.reset();
+    } catch (error: any) {
+      console.error("EmailJS Error:", error);
+
+      alert(error?.text || "Failed to send message");
+    }
+  };
+
+        
+    }
     return (
             <main className={styles.contactMeContainer}>
                 {/* Hero/ Introduction */}

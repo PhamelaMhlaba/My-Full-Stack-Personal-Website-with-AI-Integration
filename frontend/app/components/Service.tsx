@@ -62,8 +62,6 @@ const Services: React.FC = () => {
             </div>
           ))}
         </div>
-
-        
       </div>
     </section>
   );
