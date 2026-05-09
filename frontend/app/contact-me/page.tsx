@@ -31,11 +31,8 @@ export default function ContactMePage () {
       console.error("EmailJS Error:", error);
 
       alert(error?.text || "Failed to send message");
-    }
-  };
-
-        
-    }
+    } 
+};
     return (
             <main className={styles.contactMeContainer}>
                 {/* Hero/ Introduction */}
@@ -56,7 +53,7 @@ export default function ContactMePage () {
                     <h3 className={styles.sectionTitle}>
                         Get in Touch
                     </h3>
-                    <form className={styles.form}>
+                    <form className={styles.form} onSubmit={handleSendMessage}>
                         <div className={styles.nameFields}>
                             <div className={styles.formColumn}>
                                 <label htmlFor="firstName">First Name</label>
@@ -110,7 +107,7 @@ export default function ContactMePage () {
 
                         {/* Submit (placeholder) */}
                         <div className={styles.formColumn}>
-                            <button type="button" className={styles.ctaButton}>
+                            <button type="submit" className={styles.ctaButton}>
                                 Send Message
                             </button>
                         </div>
