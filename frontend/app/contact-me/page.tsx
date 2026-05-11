@@ -34,8 +34,6 @@ export default function ContactMePage () {
     }
   };
 
-        
-    }
     return (
             <main className={styles.contactMeContainer}>
                 {/* Hero/ Introduction */}
