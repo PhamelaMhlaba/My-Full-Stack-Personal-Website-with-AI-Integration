@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
       form.reset();
 
     } catch (error: any) {
-      // ✅ Log the full error so you can debug
+      // Log the full error so you can debug
       console.error("EmailJS Error status:", error?.status);
       console.error("EmailJS Error text:", error?.text);
       console.error("Full error:", error);

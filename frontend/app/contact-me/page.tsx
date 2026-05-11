@@ -32,8 +32,10 @@ export default function ContactMePage () {
 
       alert(error?.text || "Failed to send message");
     }
-   
-    };
+  };
+
+        
+    }
     return (
             <main className={styles.contactMeContainer}>
                 {/* Hero/ Introduction */}

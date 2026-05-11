@@ -1,7 +1,36 @@
+"use client";
+
 import React from 'react';
 import styles from './Footer.module.css';
+import emailjs from "@emailjs/browser";
 
 const Footer = () => {
+
+  const handleSubscribe = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const form = e.currentTarget
+
+    try {
+      await emailjs
+      .sendForm(
+        "service_iuy2l0j",
+        "template_2hbew44",
+        form,
+        "Si7luRLFo1x_8Wym5"
+      );
+
+      alert("Subscribed Successfully");
+      form.reset();
+
+    } catch (error: any) {
+      // Log the full error so you can debug
+      console.error("EmailJS Error status:", error?.status);
+      console.error("EmailJS Error text:", error?.text);
+      console.error("Full error:", error);
+      alert(`Subscription failed: ${error?.text || "Please try again"}`);
+    }
+  }
   return (
     <footer className={styles.footer}>
       {/* Main Footer Content */}
@@ -54,23 +83,27 @@ const Footer = () => {
           </div>
 
           {/* Newsletter Section */}
-          <div className={styles.newsletterSection}>
-            <h4 className={styles.linksTitle}>Stay Updated</h4>
+          <div className={styles.newsletterCard}>
+            <h4 className={styles.newsletterTitle}>Stay Updated</h4>
             <p className={styles.newsletterDescription}>
               Get weekly AI insights and development tips.
             </p>
-            <form className={styles.newsletterForm}>
+
+            <div className={styles.newsletterForm}>
+              {/* User to to be able to subscribe */}
+              <form onSubmit={handleSubscribe} className={styles.subscribeForm}>
               <input
                 type="email"
+                name="user_email"
                 placeholder="Your email"
-                aria-label="Email for newsletter"
                 className={styles.newsletterInput}
                 required
               />
-              <button type="submit" className={styles.newsletterButton}>
+              <button type="submit" className={styles.subscribeButton}>
                 Subscribe
               </button>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
