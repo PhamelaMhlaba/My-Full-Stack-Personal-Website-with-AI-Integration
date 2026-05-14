@@ -20,24 +20,24 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <ul className={styles.navLinks}>
           <li>
-            <Link href="/" onClick={() => setOpen(false)}>Home</Link>
+            <Link href="/" className={styles.navLink} onClick={() => setOpen(false)}>Home</Link>
           </li>
           <li>
-            <Link href="/about" onClick={() => setOpen(false)}>About Me</Link>
+            <Link href="/about" className={styles.navLink} onClick={() => setOpen(false)}>About Me</Link>
           </li>
           <li>
-            <Link href="/tech-blog" onClick={() => setOpen(false)}>Tech Blog</Link>
+            <Link href="/tech-blog" className={styles.navLink} onClick={() => setOpen(false)}>Tech Blog</Link>
           </li>
           <li>
-            <Link href="/ai-assistance" onClick={() => setOpen(false)}>AI Assistance</Link>
+            <Link href="/ai-assistance" className={styles.navLink} onClick={() => setOpen(false)}>AI Assistance</Link>
           </li>
           <li>
-            <Link href="/lifestyle" onClick={() => setOpen(false)}>Lifestyle</Link>
+            <Link href="/lifestyle" className={styles.navLink} onClick={() => setOpen(false)}>Lifestyle</Link>
           </li>
         </ul>
 
         {/* Contact CTA Button */}
-        <Link href="/contact-me" onClick={() => setOpen(false)} className={styles.ctaButton}>
+        <Link href="/contact-me" className={styles.ctaButton} onClick={() => setOpen(false)}>
           Contact Me
         </Link>
 
@@ -50,7 +50,36 @@ export default function Navbar() {
             <span></span>
           </span>
         </button>
-      </div>  
+      </div>
+
+       {/* Mobile Dropdown Menu */}
+{open && (
+  <div className={styles.mobileMenu}>
+    <Link href="/" className={styles.mobileLink} onClick={() => setOpen(false)}>
+      Home
+    </Link>
+
+    <Link href="/about" className={styles.mobileLink} onClick={() => setOpen(false)}>
+      About Me
+    </Link>
+
+    <Link href="/tech-blog" className={styles.mobileLink} onClick={() => setOpen(false)}>
+      Tech Blog
+    </Link>
+
+    <Link href="/ai-assistance" className={styles.mobileLink} onClick={() => setOpen(false)}>
+      AI Assistance
+    </Link>
+
+    <Link href="/lifestyle" className={styles.mobileLink} onClick={() => setOpen(false)}>
+      Lifestyle
+    </Link>
+
+    <Link href="/contact-me" className={styles.mobileCTA} onClick={() => setOpen(false)}>
+      Contact Me
+    </Link>
+  </div>
+)} 
     </nav>
   );
 }
