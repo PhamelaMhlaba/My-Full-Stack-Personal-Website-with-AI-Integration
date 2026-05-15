@@ -154,7 +154,9 @@ export default function ContactMePage () {
 
                             <div className={styles.textWrapper}>
                                 <h4>Email</h4>
-                                <p>phamelamhlaba@gmail.com</p>
+                                <a href="mailto:phamelamhlaba@gmail.com" className={styles.link}>
+                                    phamelamhlaba@gmail.com
+                                </a>
                             </div>
                         </div>
         
@@ -168,20 +170,9 @@ export default function ContactMePage () {
 
                             <div className={styles.textWrapper}>
                                 <h4>Phone</h4>
-                                <p>+27 75 324 6472</p>
-                            </div>
-                        </div>
-
-
-                        {/* Schedule Free Call */}
-                        <div className={styles.contactItem}>
-                            <div className={styles.iconWrapper}>
-                                <Calendar size={20} />
-                            </div>
-                
-                            <div className={styles.textWrapper}>
-                                <h4>Schedule a Call</h4>
-                                <p>Book a free consultation</p>
+                                <a href="tel:+27753246472" className={styles.link}>
+                                    +27 75 324 6472
+                                </a>
                             </div>
                         </div>
                     </div>
