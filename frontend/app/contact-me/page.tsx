@@ -19,7 +19,7 @@ export default function ContactMePage () {
             // Email to YOU
       await emailjs.sendForm(
         "service_iuy2l0j",
-        "template_oy6u621",
+        "template_oy6u62l",
         form,
         "Si7luRLFo1x_8Wym5"
       );
@@ -31,8 +31,9 @@ export default function ContactMePage () {
       console.error("EmailJS Error:", error);
 
       alert(error?.text || "Failed to send message");
-    } 
-};
+    }
+  };
+
     return (
             <main className={styles.contactMeContainer}>
                 {/* Hero/ Introduction */}
@@ -57,24 +58,46 @@ export default function ContactMePage () {
                         <div className={styles.nameFields}>
                             <div className={styles.formColumn}>
                                 <label htmlFor="firstName">First Name</label>
-                                <input id="firstName" name="firstName" type="text" placeholder="John" />
+                                <input 
+                                    id="firstName" 
+                                    name="firstName" 
+                                    type="text" 
+                                    placeholder="John"
+                                    required
+                                />
                                 
                             </div>
 
                             <div className={styles.formColumn}>
                                 <label htmlFor="lastName">Last Name</label>
-                                <input id="lastName" name="lastName" type="text" placeholder="Peterson" />
+                                <input 
+                                    id="lastName" 
+                                    name="lastName" type="text" 
+                                    placeholder="Peterson" 
+                                    required
+                                    />
                             </div>
                         </div>
 
                             <div className={styles.formColumn}>
                                 <label htmlFor="email">Email</label>
-                                <input id="email" name="email" type="email" placeholder="John@example.com" />
+                                <input 
+                                    id="email" 
+                                    name="email" 
+                                    type="email" 
+                                    placeholder="John@example.com"
+                                    required
+                                     />
                             </div>
 
                             <div className={styles.formColumn}>
                                 <label htmlFor="projectType">Project Type</label>
-                                <select id="projectType" name="projectType" defaultValue=""> 
+                                <select 
+                                    id="projectType" 
+                                    name="projectType" 
+                                    defaultValue=""
+                                    required
+                                    > 
                                     <option value="" disabled>
                                         Select project type
                                     </option>
@@ -131,7 +154,9 @@ export default function ContactMePage () {
 
                             <div className={styles.textWrapper}>
                                 <h4>Email</h4>
-                                <p>phamelamhlaba@gmail.com</p>
+                                <a href="mailto:phamelamhlaba@gmail.com" className={styles.link}>
+                                    phamelamhlaba@gmail.com
+                                </a>
                             </div>
                         </div>
         
@@ -145,20 +170,9 @@ export default function ContactMePage () {
 
                             <div className={styles.textWrapper}>
                                 <h4>Phone</h4>
-                                <p>+27 75 324 6472</p>
-                            </div>
-                        </div>
-,
-
-                        {/* Schedule Free Call */}
-                        <div className={styles.contactItem}>
-                            <div className={styles.iconWrapper}>
-                                <Calendar size={20} />
-                            </div>
-                
-                            <div className={styles.textWrapper}>
-                                <h4>Schedule a Call</h4>
-                                <p>Book a free consultation</p>
+                                <a href="tel:+27753246472" className={styles.link}>
+                                    +27 75 324 6472
+                                </a>
                             </div>
                         </div>
                     </div>

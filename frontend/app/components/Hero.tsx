@@ -21,14 +21,7 @@ const Hero: React.FC = () => {
         form,
         "Si7luRLFo1x_8Wym5"
       );
-      //Email to me (notification)
-    await emailjs.sendForm(
-      "service_iuy2l0j",
-      "template_oy6u621",
-      form,
-      "Si7luRLFo1x_8Wym5"
-    );
-      
+    
       alert("Subscribed Successfully");
       form.reset();
 
