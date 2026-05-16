@@ -222,5 +222,23 @@
   color: #555;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .contactSection {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nameFields {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+
 
 
