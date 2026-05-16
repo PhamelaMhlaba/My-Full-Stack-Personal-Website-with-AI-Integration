@@ -5,6 +5,7 @@
 .heroSection {
     text-align: center;
     margin-bottom: 4rem;
+    padding: 0 1rem;
 }
 
 .heroTitle {
@@ -23,22 +24,27 @@
 }
 .workLifeContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
     align-items: start;
-    padding: 2rem;
+    padding: 1rem;
 }
 .workLifeBalanceImage {
-    width: 480px;
-    height: 480px;
-    border-radius: 3rem;
-    padding: 1rem;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    display: block;
+    margin: 0 auto;
 }
 
 .sectionTitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #1f2937;
+    margin: 0 0 0.75rem 0;
 }
 
 .sectionDescription {
@@ -60,6 +66,7 @@
     cursor: pointer;
     transition: all 0.2s ease;
     transform: translateY(0);
+    display: inline-block;
 }
 .letsConnectButton:hover {
     background: #d8c0e2;
@@ -77,6 +84,7 @@
     padding: 1.5rem;
     gap: 1rem;
     display: flex;  
+    flex-direction: column;
 }
 .iconStyle {
     background-color: #EDE0F3;
@@ -85,28 +93,28 @@
     border-radius: 10px;
     width: fit-content;
     height: fit-content;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 .practiceTitle {
     font-size: 1rem;
     font-weight: 600;
+     margin: 0 0 0.25rem 0;
 }
 .practiceDescription {
     font-size: 0.95rem;
     color: #6b7280;
+    margin: 0 0 0.25rem 0;
 }
 
 .developmentContainer {
     background-color: whitesmoke;
     padding: 4rem 12rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     margin-bottom: 3rem;
     margin-top: 3rem;
-    justify-content: center; /*  center the entire 3-column grid */
     justify-items: center;    /* center each card in its column */
-    gap: 3rem;
-    max-width: 100%;
+    gap: 1.5rem;
 
 }
 
@@ -121,12 +129,10 @@
 
 .developmentCard {
     width: 100%;
-    height: 80%;
-    padding: 1rem;
+    padding: 1.25rem;
     background-color: white;
     border-radius: 12px;
     border: 1px solid rgb(216, 213, 213);
-    max-width: 100%;
 }
 
 .developmentTextContainer {
@@ -135,9 +141,139 @@
 .developmentTitle {
     font-size: 1.6rem;
     font-weight: 600;
+    margin: 0 0 0.5rem 0;
 }
 
 .developmentDescription {
     font-size: 1rem;
     color: #6b7280;
+    margin: 0;
+}
+
+/* ===========================
+   TABLET  (≥ 768px)
+   =========================== */
+@media (min-width: 768px) {
+    .container {
+        padding: 4rem 1.5rem;
+    }
+ 
+    .heroTitle {
+        font-size: 2.5rem;
+    }
+ 
+    .heroDescription {
+        font-size: 1.125rem;
+    }
+ 
+    .workLifeContainer {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+ 
+    .workLifeBalanceImage {
+        margin: 0;                /* let grid handle alignment */
+    }
+ 
+    .sectionTitle {
+        font-size: 1.75rem;
+    }
+ 
+    .tipsPracticesContainer {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+ 
+    .developmentContainer {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3rem 4rem;
+        gap: 2rem;
+    }
+ 
+    .title {
+        font-size: 2.25rem;
+    }
+ 
+    .developmentTitle {
+        font-size: 1.4rem;
+    }
+}
+ 
+/* ===========================
+   DESKTOP  (≥ 1024px)
+   =========================== */
+@media (min-width: 1024px) {
+    .container {
+        padding: 5rem 0;
+    }
+ 
+    .heroTitle {
+        font-size: 3rem;
+    }
+ 
+    .heroDescription {
+        font-size: 1.25rem;
+    }
+ 
+    .heroSection {
+        margin-bottom: 4rem;
+    }
+ 
+    .workLifeContainer {
+        padding: 2rem;
+        gap: 3rem;
+    }
+ 
+    .sectionTitle {
+        font-size: 2rem;
+    }
+ 
+    .sectionDescription {
+        font-size: 1.2rem;
+    }
+ 
+    .letsConnectButton {
+        margin-top: 3rem;
+    }
+ 
+    .tipsPracticesContainer {
+        gap: 2rem;
+        padding: 2rem;
+    }
+ 
+    .developmentContainer {
+        padding: 4rem 8rem;
+        gap: 3rem;
+    }
+ 
+    .title {
+        font-size: 2.7rem;
+    }
+ 
+    .developmentTitle {
+        font-size: 1.6rem;
+    }
+}
+ 
+/* ===========================
+   SMALL MOBILE  (≤ 480px)
+   =========================== */
+@media (max-width: 480px) {
+    .heroTitle {
+        font-size: 1.75rem;
+    }
+ 
+    .sectionTitle {
+        font-size: 1.35rem;
+    }
+ 
+    .tipsPracticesContainer {
+        padding: 0.5rem;
+    }
+ 
+    .developmentContainer {
+        padding: 2rem 0.75rem;
+    }
 }
