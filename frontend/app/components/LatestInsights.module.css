@@ -60,3 +60,55 @@
     box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
     transform: translateY(-1px);
 }
+
+/* Tablet */
+@media (max-width: 768px) {
+    .latesInsightsContainer {
+        padding: 4rem 1.5rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .headerDescription {
+        font-size: 1.1rem;
+    }
+
+    .blogGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* small devices */
+@media (max-width: 480px) {
+    .latesInsightsContainer {
+        padding: 3rem 1rem;
+    }
+
+    .latesInsightsHeader {
+        margin-bottom: 3rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+
+    .headerDescription {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .blogGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .viewAllButtonLink {
+        width: 100%;
+        padding: 0.9rem 1rem;
+        font-size: 0.9rem;
+    }
+}
