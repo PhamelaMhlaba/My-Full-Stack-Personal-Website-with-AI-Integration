@@ -1,10 +1,13 @@
 .container {
-    padding: 5rem 0;
+    padding: 5rem 1rem;
     background: #ffffff;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 .header {
     text-align: center;
     margin-bottom: 4rem;
+    padding: 0 1rem;
 }
 .headerTitle {
     font-size: 3rem;
@@ -12,6 +15,10 @@
     color: #1f2937;
     margin: 0 0 1rem 0;
     line-height: 1.2;
+
+    /* Prevent text overflow */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 .headerDescription {
     font-size: 1.25rem;
@@ -19,12 +26,21 @@
     line-height: 1.6;
     max-width: 600px;
     margin: 0 auto;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
+
+/* =========================
+   PRICING GRID
+========================= */
 .pricingGrid {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin: 0 auto 3rem auto;
+    width: 100%;
 }
 .pricingCard {
     background: white;
@@ -33,45 +49,161 @@
     border: 1px solid #f3f4f6;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
 }
-.pricingCard {
+.pricingCard:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 .pricingTitle {
     text-align: center;
-    font-weight: 500px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
 
 }
 .pricingValue {
     text-align: center;
     font-size: 2rem;
+<<<<<<< HEAD
+    font-weight: 700;
+    color: #7C3BED;
+    margin-bottom: 1rem;
+=======
     color: #a855f7;
+>>>>>>> 1085f656ee8bcc01cf7f910189c786405473f5f8
 }
 .pricingDescription {
     color: #6b7280;
     line-height: 1.6;
     margin: 0 0 1.5rem 0;
+    text-align: center;
 }
 .featuresList {
     color:  black;
     line-height: 1.6;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+
+    /* Prevent feature text overflow */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 .button {
+<<<<<<< HEAD
+     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 48px;
+    background-color: #7C3BED;
+=======
     display: block;
     margin: 0 auto;
     width: 250px;
     height: 40px;
     background-color: #a855f7;
+>>>>>>> 1085f656ee8bcc01cf7f910189c786405473f5f8
     border-radius: 10px;
-    border-style: 2px;
-    font-size: 0.8rem;
+    border: 1px solid #a855f7;
+    font-size: 0.95rem;
     font-weight: 600;   
     color: white;
+<<<<<<< HEAD
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+=======
     border: 1px solid #a855f7
+>>>>>>> 1085f656ee8bcc01cf7f910189c786405473f5f8
 }
 .button:hover {
     background-color: #8f5ee3;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 768px) {
+    .container {
+        padding: 4rem 1rem;
+    }
+
+    .headerTitle {
+        font-size: 2.4rem;
+    }
+
+    .headerDescription {
+        font-size: 1.1rem;
+    }
+
+    .pricingGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .pricingCard {
+        padding: 1.75rem;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 480px) {
+    .container {
+        padding: 3rem 0.75rem;
+    }
+
+    .header {
+        margin-bottom: 2.5rem;
+    }
+
+    .headerTitle {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .headerDescription {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .pricingGrid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .pricingCard {
+        padding: 1.25rem;
+        border-radius: 0.85rem;
+    }
+
+    .pricingTitle {
+        font-size: 1.25rem;
+    }
+
+    .pricingValue {
+        font-size: 1.75rem;
+    }
+
+    .pricingDescription {
+        font-size: 0.95rem;
+    }
+
+    .featuresList {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 0.9rem;
+        min-height: 46px;
+    }
 }
 
 
