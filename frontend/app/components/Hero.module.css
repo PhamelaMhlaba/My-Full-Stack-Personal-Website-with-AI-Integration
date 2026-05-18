@@ -12,6 +12,7 @@
   margin: 0 auto;
   padding: 0 1rem;
   width: 100%;
+
 }
 
 .heroContent {
@@ -26,6 +27,7 @@
   grid-template-columns: 1fr;
   gap: 2rem;
   align-items: start;
+  margin-bottom: 4rem;
 }
 
 /* Text Content */
@@ -50,7 +52,7 @@
 }
 
 .gradientText {
-  background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+  background: linear-gradient(135deg, #a855f7 0%,#a855f7 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -71,37 +73,33 @@
   gap: 0.75rem;
 }
 
-.primaryButton, .secondaryButton {
-  padding: 0.875rem 1.75rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  border: none;
+.primaryButtonContainer {
+    text-align: center;
+    margin-top: 0.15rem;
 }
 
 .primaryButton {
-  background: #7c3aed;
-  color: white;
+    background: #a855f7;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: translateY(0);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    z-index: 1001;
 }
 
 .primaryButton:hover {
-  background: #6d28d9;
-  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
-  transform: translateY(-2px);
-}
-
-.secondaryButton {
-  background: transparent;
-  color: #374151;
-  border: 2px solid #d1d5db;
-}
-
-.secondaryButton:hover {
-  border-color: #7c3aed;
-  color: #7c3aed;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: #9333ea;
+    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+    transform: translateY(-1px);
 }
 
 /* Newsletter */
@@ -131,10 +129,10 @@
 .newsletterDescription {
   color: #6b7280;
   margin: 0 0 0.875rem 0;
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 
-.emailForm {
+.newsLetterForm {
   display: flex;
   gap: 0.5rem;
 }
@@ -237,23 +235,19 @@
 .statItem {
   text-align: center;
   padding: 1.5rem 1rem;
-  background: white;
-  border-radius: 0.75rem;
-  border: 1px solid #f3f4f6;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .statNumber {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #1f2937;
+  color: #a855f7;
   margin: 0 0 0.5rem 0;
   line-height: 1;
 }
 
 .statLabel {
   color: #6b7280;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   margin: 0;
   line-height: 1.3;

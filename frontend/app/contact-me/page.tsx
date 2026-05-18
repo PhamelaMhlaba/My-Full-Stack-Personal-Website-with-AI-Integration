@@ -1,154 +1,265 @@
+"use client"
+
 import React from "react";
+import styles from "./ContactMe.module.css";
+import { Mail, Phone, Calendar, Linkedin, Github, Instagram } from "lucide-react";
+
+import emailjs from "@emailjs/browser";
+
 
 export default function ContactMePage () {
+    const handleSendMessage = async (
+        e: React.FormEvent<HTMLFormElement>
+    ) => {
+        e.preventDefault();
+
+        const form = e.currentTarget;
+
+        try {
+            // Email to YOU
+      await emailjs.sendForm(
+        "service_iuy2l0j",
+        "template_oy6u62l",
+        form,
+        "Si7luRLFo1x_8Wym5"
+      );
+     
+       alert("Message sent successfully!");
+    
+       form.reset();
+    } catch (error: any) {
+      console.error("EmailJS Error:", error);
+
+      alert(error?.text || "Failed to send message");
+    }
+  };
+
     return (
-        <div>
-            {/* Hero/ Introduction */}
-            <section>
-                <h1>
-                    Let's Build Something Amaizing
-                </h1>
-                <p>
-                    Ready to transform your ideas int reality? Let discuss your project and how I can help you achieve your goals.
-                </p>
-            </section>
+            <main className={styles.contactMeContainer}>
+                {/* Hero/ Introduction */}
+                <div className={styles.contactMeHeader}>
+                    <h1 className={styles.title}>
+                        Let's Build Something Amaizing
+                    </h1>
+                    <p className={styles.headerDescription}>
+                        Ready to transform your ideas int reality? Let discuss your project and how I can help you achieve your goals.
+                    </p>
+                </div>
+            
 
             {/*Contact Area: Left form */}
-            <section>
-                <div>
-                    <h3>
+            <section className={styles.contactSection}>
+                {/* Get in touch div container */}
+                <div className={styles.contactForm}>
+                    <h3 className={styles.sectionTitle}>
                         Get in Touch
                     </h3>
-                    <form>
-                        <div>
-                            <label htmlFor="firstName">First Name</label>
-                            <input id="FirstName" name="firstName" type="text" />
+                    <form className={styles.form} onSubmit={handleSendMessage}>
+                        <div className={styles.nameFields}>
+                            <div className={styles.formColumn}>
+                                <label htmlFor="firstName">First Name</label>
+                                <input 
+                                    id="firstName" 
+                                    name="firstName" 
+                                    type="text" 
+                                    placeholder="John"
+                                    required
+                                />
+                                
+                            </div>
+
+                            <div className={styles.formColumn}>
+                                <label htmlFor="lastName">Last Name</label>
+                                <input 
+                                    id="lastName" 
+                                    name="lastName" type="text" 
+                                    placeholder="Peterson" 
+                                    required
+                                    />
+                            </div>
                         </div>
 
-                        <div>
-                            <label htmlFor="LastName">Last Name</label>
-                            <input id="firstName" name="firstName" type="text" />
-                        </div>
+                            <div className={styles.formColumn}>
+                                <label htmlFor="email">Email</label>
+                                <input 
+                                    id="email" 
+                                    name="email" 
+                                    type="email" 
+                                    placeholder="John@example.com"
+                                    required
+                                     />
+                            </div>
 
-                        <div>
-                            <label htmlFor="email">Email</label>
-                            <input id="email" name="email" type="email" />
-                        </div>
+                            <div className={styles.formColumn}>
+                                <label htmlFor="projectType">Project Type</label>
+                                <select 
+                                    id="projectType" 
+                                    name="projectType" 
+                                    defaultValue=""
+                                    required
+                                    > 
+                                    <option value="" disabled>
+                                        Select project type
+                                    </option>
+                                    <option>AI Integration</option>
+                                    <option>Web Application</option>
+                                    <option>Consulting</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
 
-                        <div>
-                            <label htmlFor="projectType">Project Type</label>
-                            <select id="projectType" name="projectType" defaultValue="">
-                                <option>AI Integration</option>
-                                <option>Web Application</option>
-                                <option>Consulting</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
+                            <div className={styles.formColumn}>
+                                <label htmlFor="budget">Project Budget</label>
+                                <select id="budget" name="budget" defaultValue="">
+                                    <option value="">Select budget range</option>
+                                    <option>$1k - $5k</option>
+                                    <option>$5k - $10k</option>
+                                    <option>$10k+</option>
+                                </select>
+                            </div>
 
-                        <div>
-                            <label htmlFor="budget">Project Budget</label>
-                            <select id="budget" name="budget" defaultValue="">
-                                <option value="">Select budget range</option>
-                                <option>$1k - $5k</option>
-                                <option>$5k - $10k</option>
-                                <option>$10k+</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label htmlFor="description">Project Description</label>
-                            <textarea
-                                id="description"
-                                name="description"
-                                rows={5}
-                                placeholder="Tell me about your project, goals and any specific requirements..."
-                            />
-                        </div>
+                            <div className={styles.formColumn}>
+                                <label htmlFor="description">Project Description</label>
+                                <textarea
+                                    id="description"
+                                    name="description"
+                                    rows={5}
+                                    placeholder="Tell me about your project, goals and any specific requirements..."
+                                />
+                            </div>
 
                         {/* Submit (placeholder) */}
-                        <button type="button">Send Message</button>
+                        <div className={styles.formColumn}>
+                            <button type="submit" className={styles.ctaButton}>
+                                Send Message
+                            </button>
+                        </div>
+
                     </form>
                 </div>
 
-                    {/* Contact Info cards*/}
-                    <div>
-                        {/* Direct Contact*/}
-                        <div>
-                            <h3>
-                                Direct Contact
-                            </h3>
-                            <ul>
-                                <li>
-                                    <strong>Email:</strong>
-                                    <p>phamelamhlaba@gmail.com</p>
-                                </li>
-                                <li>
-                                    <strong>Phone:</strong>
-                                    <p>+27 75 324 6472</p>
-                                </li>
-                                <li>
-                                    <strong>Schedule a Call:</strong>
-                                    <p>Book a free consultation</p>
-                                </li>
-                            </ul>
-                        </div>
+                {/* direct message div container*/}
+                <div className={styles.rightSideContainer}>
+                    <div className={styles.directContact}>
+                        <h3 className={styles.formTitle}>
+                            Direct Contact
+                        </h3>
 
-                        {/* Social Links*/}
-                        <section>
-                            <div>
-                                <h3>
-                                    Follow Me
-                                </h3>
-                                <ul>
-                                    <li><a href="#">LinkedIn</a></li>
-                                    <li><a href="#">Github</a></li>
-                                    <li><a href="#">Instagram</a></li>
-                                    <li><a href="#">Tik Tok</a></li>
-                                </ul>
+                        {/* Email */}
+                        <div className={styles.contactItem}>
+                            <div className={styles.iconWrapper}>
+                                <Mail size={20} />
                             </div>
-                        </section>
+                    
+
+                            <div className={styles.textWrapper}>
+                                <h4>Email</h4>
+                                <a href="mailto:phamelamhlaba@gmail.com" className={styles.link}>
+                                    phamelamhlaba@gmail.com
+                                </a>
+                            </div>
+                        </div>
+        
+
+                        {/* Phone */}
+                        <div className={styles.contactItem}>
+                            <div className={styles.iconWrapper}>
+                                <Phone size={20} />
+                            </div>
+                
+
+                            <div className={styles.textWrapper}>
+                                <h4>Phone</h4>
+                                <a href="tel:+27753246472" className={styles.link}>
+                                    +27 75 324 6472
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                        {/* Follow Me */}
+                        <div className={styles.followMe}>
+                            <h3 className={styles.formTitle}>Follow Me</h3>
+
+                            <div className={styles.socialIcons}>
+                            <a
+                                href="https://www.linkedin.com/in/phamela-mhlaba/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.socialIconStyle}
+                                aria-label="LinkedIn"
+                            >
+                                <Linkedin size={18} />
+                            </a>
+
+                            <a
+                                href="https://github.com/PhamelaMhlaba"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.socialIconStyle}
+                                aria-label="GitHub"
+                            >
+                                <Github size={18} />
+                            </a>
+
+                            <a
+                                href="https://www.instagram.com/phamela_mhlaba/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.socialIconStyle}
+                                aria-label="Instagram"
+                            >
+                                <Instagram size={18} />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
-
+    
             {/*FAQ Section*/}
-            <section>
-                <h2>Frequently Asked Quenstions </h2>
-                <div>
-                    <h4>
+            <section className={styles.faqSection}>
+                <div className={styles.faqHeader}>
+                    <h2 className={styles.faqTitle}>
+                        Frequently Asked Quenstions 
+                    </h2>
+                </div>
+
+                <div className={styles.faqContainer}>
+                    <h4 className={styles.description}>
                         How long does a typical project take?
                     </h4>
-                    <p>
+                    <p className={styles.descriptionInfo}>
                         Project timelines vary based on complexity, but mots AI inegrations take 4-8 weeks, while full web applications can take 8-16 weeks. I will provide a details timeline during our initial consultation.
                     </p>
                 </div>
 
-                <div>
-                    <h4>
+                <div className={styles.faqContainer}>
+                    <h4 className={styles.description}>
                         Do you work with startups?
                     </h4>
-                    <p>
+                    <p className={styles.descriptionInfo}>
                         Absolutely! I love working with startups and understand the unique challenges they face. I offer flexible pricing and can even concider equity arranagments for the right projects. 
                     </p>
                 </div>
 
-                <div>
-                    <h4>
+                <div className={styles.faqContainer}>
+                    <h4 className={styles.description}>
                         What's included in ongoing support?
                     </h4>
-                    <p>
+                    <p className={styles.descriptionInfo}>
                         All projects include 30 days of fee support after launch. Ongoing support packages include bug fixes, performacne monitoring, feature updates, and priority reponses times. 
                     </p>
                 </div>
 
-                <div>
-                    <h4>
+                <div className={styles.faqContainer}>
+                    <h4 className={styles.description}>
                         Can you help with existing projects?
                     </h4>
-                    <p>
+                    <p className={styles.descriptionInfo}>
                         Yes! I can help optimize existing applications, add AI features to current systems, or provide code reviews and architectural guidance for your development team. 
                     </p>
                 </div>
             </section>
-        </div>
+        </main>
     )
 }

@@ -18,15 +18,17 @@ export default function TechBlogPage () {
             </p>
 
             {/* Newsletter Form */}
+            <div className={styles.newsletterCard}>
             <div className={styles.newsLetterForm}>
                 <input
                     type="email"
                     placeholder="Enter your email"
                     className={styles.emailInput}
                 />
-                <button className={styles.subscribeButton}>
+                <button type="button" className={styles.subscribeButton}>
                     Subscribe
                 </button>
+            </div>
             </div>
        </div>
     </div>
