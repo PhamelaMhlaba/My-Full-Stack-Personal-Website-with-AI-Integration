@@ -1,7 +1,8 @@
 .latesInsightsHeader {
     text-align: center;
-    margin-bottom: 5rem;
-    padding: 0 1rem; 
+    margin-bottom: 3rem;
+    padding: 0; 
+    width: 100%;
 }
 
 .title {
@@ -30,10 +31,10 @@
 }
 
 .latesInsightsContainer {
-    padding: 6rem 2rem;
-
-    /* Prevents horizontal scrolling */
-     overflow-x: hidden;
+    width: 100%;
+    padding: 3rem 1rem;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .blogGrid {
@@ -42,12 +43,13 @@
     gap: 2.5rem;
     max-width: 1100px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .buttonContainer {
-    text-align: center;
-    margin-top: 4rem;
-    
+    width: 100%;
+    margin-top: 3rem;
+    box-sizing: border-box;
 }
 
 .viewAllButtonLink {
@@ -62,12 +64,12 @@
     transition: all 0.2s ease;
     transform: translateY(0);
     text-decoration: none;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    white-space: nowrap;
-    z-index: 1001;
+    width: 100%;
 
+    box-sizing: border-box;
      /* Prevent button overflow */
     max-width: 100%;
 }
@@ -81,7 +83,7 @@
 /* Tablet */
 @media (max-width: 768px) {
     .latesInsightsContainer {
-        padding: 4rem 1.5rem;
+        padding: 3 1.25rem;
     }
 
     .title {
@@ -89,19 +91,19 @@
     }
 
     .headerDescription {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .blogGrid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.75rem;
     }
 }
 
 /* small devices */
 @media (max-width: 480px) {
     .latesInsightsContainer {
-        padding: 3rem 1rem;
+        padding: 2.5rem 0.75rem;
     }
 
     .latesInsightsHeader {
