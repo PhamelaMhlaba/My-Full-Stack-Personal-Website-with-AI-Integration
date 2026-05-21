@@ -13,8 +13,6 @@ export default function AiAssistancePage() {
             <Service />
              {/* Pricing Section */}
             <Pricing />
-            {/*Client Success Stories Section*/}
-            <ClientStories />
              {/*Our Process Section*/}
              <OurProcess />
 
