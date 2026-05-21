@@ -15,9 +15,6 @@ export default function AiAssistancePage() {
             <Pricing />
              {/*Our Process Section*/}
              <OurProcess />
-
-
-            
         </main>  
     );
 };
