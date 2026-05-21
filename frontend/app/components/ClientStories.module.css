@@ -36,9 +36,20 @@
   display: flex;
   gap: 2rem;
   margin-bottom: 4rem;
-  overflow-x: auto;
   padding: 1rem 0;
-  scrollbar-width: none;
+
+  /* FIX: allow wrapping instead of horizontal scroll */
+  flex-wrap: wrap;
+  justify-content: center;
+
+  /* remove overflow scroll behavior */
+  overflow-x: hidden;
+
+
+
+  
+
+
 }
 
 .testimonialsRow::-webkit-scrollbar {
@@ -53,8 +64,10 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: all 0.3s ease;
-  min-width: 320px;
-  flex: 1;
+  flex: 1 1 300px;
+  max-width: 360px;
+  box-sizing: border-box;
+
 }
 
 .testimonialCard:hover {
@@ -168,6 +181,32 @@
   .sectionTitle {
     font-size: 3.5rem;
   }
+
+  
+ .clientStories {
+    padding: 3rem 0;
+  }
+
+  .sectionHeader {
+    margin-bottom: 3rem;
+  }
+
+  .clientSectionTitle {
+    font-size: 2.2rem;
+  }
+
+  .testimonialsRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .testimonialCard {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 1.25rem;
+  }
+
 }
 
 @media (min-width: 1024px) {
