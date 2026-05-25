@@ -37,19 +37,11 @@
   gap: 2rem;
   margin-bottom: 4rem;
   padding: 1rem 0;
-
-  /* FIX: allow wrapping instead of horizontal scroll */
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 
   /* remove overflow scroll behavior */
-  overflow-x: hidden;
-
-
-
-  
-
-
+  scrollbar-width: none;
 }
 
 .testimonialsRow::-webkit-scrollbar {
@@ -64,9 +56,8 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: all 0.3s ease;
-  flex: 1 1 300px;
-  max-width: 360px;
-  box-sizing: border-box;
+
+  flex: 0 0 320px;
 
 }
 
@@ -170,12 +161,14 @@
   }
   
   .testimonialsRow {
+   flex-direction: row;        /* ← was column, this is the main fix */
+    flex-wrap: nowrap;
+    overflow-x: auto;
     gap: 2.5rem;
-    overflow-x: visible;
   }
   
   .testimonialCard {
-    min-width: auto;
+     flex: 0 0 320px;
   }
   
   .sectionTitle {
@@ -195,12 +188,7 @@
     font-size: 2.2rem;
   }
 
-  .testimonialsRow {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
+  
   .testimonialCard {
     width: 100%;
     max-width: 100%;
@@ -211,7 +199,15 @@
 
 @media (min-width: 1024px) {
   .testimonialsRow {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: visible;
     gap: 3rem;
+  }
+
+  .testimonialCard {
+    flex: 1 1 0;               /* cards grow equally across the full row */
+    min-width: 0;
   }
   
   .clientStories {
@@ -223,6 +219,7 @@
   }
 }
 
+/* Mobile only — vertical stacking */
 @media (max-width: 767px) {
   .clientStories {
     padding: 3rem 0;
@@ -237,7 +234,16 @@
   }
   
   .testimonialCard {
-    padding: 2rem 1.5rem;
-    min-width: 280px;
+     width: 100%;
+    max-width: 100%;
+    flex: 0 0 auto;            /* ← cancels the 320px fixed width */
+    padding: 2rem 1.25rem;
+  }
+
+  .testimonialsRow {
+    flex-direction: column;    /* ← vertical stacking on mobile */
+    align-items: center;
+    overflow-x: hidden;
+    gap: 1.5rem;
   }
 }
