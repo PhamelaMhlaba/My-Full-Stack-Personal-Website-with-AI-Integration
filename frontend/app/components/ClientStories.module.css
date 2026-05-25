@@ -37,19 +37,11 @@
   gap: 2rem;
   margin-bottom: 4rem;
   padding: 1rem 0;
-
-  /* FIX: allow wrapping instead of horizontal scroll */
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 
   /* remove overflow scroll behavior */
-  overflow-x: hidden;
-
-
-
-  
-
-
+  scrollbar-width: none;
 }
 
 .testimonialsRow::-webkit-scrollbar {
@@ -64,9 +56,8 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: all 0.3s ease;
-  flex: 1 1 300px;
-  max-width: 360px;
-  box-sizing: border-box;
+
+  flex: 0 0 320px;
 
 }
 
@@ -198,6 +189,8 @@
   .testimonialsRow {
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
+    overflow-x: hidden;
     gap: 1.5rem;
   }
 
