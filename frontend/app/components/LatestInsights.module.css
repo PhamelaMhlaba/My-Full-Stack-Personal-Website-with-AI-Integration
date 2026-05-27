@@ -1,6 +1,8 @@
 .latesInsightsHeader {
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+    padding: 0; 
+    width: 100%;
 }
 
 .title {
@@ -10,6 +12,10 @@
     margin: 0 0 2rem 0;
     line-height: 1.1;
     letter-spacing: -0.025em;
+
+     /* Prevent horizontal overflow */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .headerDescription {
@@ -18,10 +24,17 @@
     line-height: 1.6;
     max-width:600px;
     margin: 0 auto;
+
+     /* Prevent overflow */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .latesInsightsContainer {
-    padding: 6rem 2rem;
+    width: 100%;
+    padding: 3rem 1rem;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .blogGrid {
@@ -30,11 +43,13 @@
     gap: 2.5rem;
     max-width: 1100px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .buttonContainer {
-    text-align: center;
-    margin-top: 4rem;
+    width: 100%;
+    margin-top: 3rem;
+    box-sizing: border-box;
 }
 
 .viewAllButtonLink {
@@ -49,14 +64,70 @@
     transition: all 0.2s ease;
     transform: translateY(0);
     text-decoration: none;
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    white-space: nowrap;
-    z-index: 1001;
+    justify-content: center;
+    width: 100%;
+
+    box-sizing: border-box;
+     /* Prevent button overflow */
+    max-width: 100%;
 }
 
 .viewAllButtonLink:hover {
     background: #9333ea;
     box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
     transform: translateY(-1px);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .latesInsightsContainer {
+        padding: 3 1.25rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .headerDescription {
+        font-size: 1rem;
+    }
+
+    .blogGrid {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+}
+
+/* small devices */
+@media (max-width: 480px) {
+    .latesInsightsContainer {
+        padding: 2.5rem 0.75rem;
+    }
+
+    .latesInsightsHeader {
+        margin-bottom: 3rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+
+    .headerDescription {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .blogGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .viewAllButtonLink {
+        width: 100%;
+        padding: 0.9rem 1rem;
+        font-size: 0.9rem;
+    }
 }

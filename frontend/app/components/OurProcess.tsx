@@ -42,7 +42,7 @@ const OurProcess: React.FC =  () => {
                     <div key={index} className={styles.ourProcessCard}>
                     <h1 className={styles.ourProcessValue}>{ourProcess.value}</h1>
                     <h4 className={styles.ourProcessTitle}>{ourProcess.title}</h4>
-                    <p className={styles.ourProcessDescription}>{ourProcess.description}</p>
+                    <p className={styles.ourProcessCardDescription}>{ourProcess.description}</p>
                     </div> 
                 ))}
             </div>

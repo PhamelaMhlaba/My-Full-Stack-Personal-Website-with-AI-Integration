@@ -12,6 +12,8 @@ const Hero: React.FC = () => {
     const form = e.currentTarget
 
     try {
+
+      //Email to user confirmation 
       await emailjs
       .sendForm(
         "service_iuy2l0j",
@@ -19,7 +21,7 @@ const Hero: React.FC = () => {
         form,
         "Si7luRLFo1x_8Wym5"
       );
-
+    
       alert("Subscribed Successfully");
       form.reset();
 

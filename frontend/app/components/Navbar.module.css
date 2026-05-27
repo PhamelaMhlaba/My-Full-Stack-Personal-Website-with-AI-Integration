@@ -17,8 +17,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 2rem;
     height: 80px;
-    position: relative;
 }
 
 /* Logo/Brand Section */
@@ -48,13 +48,12 @@
 .navLinks {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 3rem;
     list-style: none;
     margin: 0;
     padding: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    flex: 1;
 }
 
 .navLink {
@@ -133,6 +132,15 @@
     z-index: 1001;
 }
 
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+}
+
+
 .hamburger span {
     display: block;
     width: 100%;
@@ -188,4 +196,38 @@
 .mobileMenuBtn:focus {
     outline: 2px solid #a855f7;
     outline-offset: 2px;
+}
+
+/* Mobile Dropdown Menu */
+.mobileMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 1.5rem;
+    background: white;
+
+    border-top: 1px solid #f3f4f6;
+}
+
+.mobileLink {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.mobileLink:hover {
+    color: #a855f7;
+}
+
+.mobileCTA {
+    background: #a855f7;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    font-weight: 500;
 }
