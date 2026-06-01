@@ -44,18 +44,17 @@ const Footer = () => {
             <p className={styles.brandDescription}>
               Engineering intelligent solutions that bridge AI capabilities with robust full-stack applications.
             </p>
+
+            {/* Follow Me */}
             <div className={styles.socialLinks}>
-              <a href="#" className={styles.socialLink} aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/phamela-mhlaba/" className={styles.socialLink} aria-label="LinkedIn">
                 <span>LinkedIn</span>
               </a>
-              <a href="#" className={styles.socialLink} aria-label="GitHub">
+              <a href="https://github.com/PhamelaMhlaba" className={styles.socialLink} aria-label="GitHub">
                 <span>GitHub</span>
               </a>
-              <a href="#" className={styles.socialLink} aria-label="Twitter">
-                <span>Twitter</span>
-              </a>
-              <a href="#" className={styles.socialLink} aria-label="YouTube">
-                <span>YouTube</span>
+              <a href="https://www.instagram.com/phamela_mhlaba/" className={styles.socialLink} aria-label="Instagram">
+                <span>Instagram</span>
               </a>
             </div>
           </div>
