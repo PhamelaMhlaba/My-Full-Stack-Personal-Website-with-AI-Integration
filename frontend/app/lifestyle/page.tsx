@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./lifestyle.module.css";
-import LatestInsights from "../components/LatestInsights";
+
 
 const LifeStylePage: React.FC = () => {
     const practices = [
@@ -40,7 +40,6 @@ const LifeStylePage: React.FC = () => {
             description: "Building not just great software, but also great teams and meaningful professional relationships."
         }
     ]
-
 
     return (
 
@@ -113,13 +112,7 @@ const LifeStylePage: React.FC = () => {
                         </div>
                     </div>
             ))}
-            </div>
-
-            {/* Hero Section */}
-            <LatestInsights />
-
-            
-             
+            </div> 
     </div>
     );
 };
