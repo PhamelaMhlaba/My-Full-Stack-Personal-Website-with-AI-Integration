@@ -1,7 +1,36 @@
+"use client";
+
 import React from 'react';
 import styles from './Footer.module.css';
+import emailjs from "@emailjs/browser";
 
 const Footer = () => {
+
+  const handleSubscribe = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const form = e.currentTarget
+
+    try {
+      await emailjs
+      .sendForm(
+        "service_iuy2l0j",
+        "template_2hbew44",
+        form,
+        "Si7luRLFo1x_8Wym5"
+      );
+
+      alert("Subscribed Successfully");
+      form.reset();
+
+    } catch (error: any) {
+      // Log the full error so you can debug
+      console.error("EmailJS Error status:", error?.status);
+      console.error("EmailJS Error text:", error?.text);
+      console.error("Full error:", error);
+      alert(`Subscription failed: ${error?.text || "Please try again"}`);
+    }
+  }
   return (
     <footer className={styles.footer}>
       {/* Main Footer Content */}
@@ -15,18 +44,17 @@ const Footer = () => {
             <p className={styles.brandDescription}>
               Engineering intelligent solutions that bridge AI capabilities with robust full-stack applications.
             </p>
+
+            {/* Follow Me */}
             <div className={styles.socialLinks}>
-              <a href="#" className={styles.socialLink} aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/phamela-mhlaba/" className={styles.socialLink} aria-label="LinkedIn">
                 <span>LinkedIn</span>
               </a>
-              <a href="#" className={styles.socialLink} aria-label="GitHub">
+              <a href="https://github.com/PhamelaMhlaba" className={styles.socialLink} aria-label="GitHub">
                 <span>GitHub</span>
               </a>
-              <a href="#" className={styles.socialLink} aria-label="Twitter">
-                <span>Twitter</span>
-              </a>
-              <a href="#" className={styles.socialLink} aria-label="YouTube">
-                <span>YouTube</span>
+              <a href="https://www.instagram.com/phamela_mhlaba/" className={styles.socialLink} aria-label="Instagram">
+                <span>Instagram</span>
               </a>
             </div>
           </div>
@@ -51,26 +79,6 @@ const Footer = () => {
               <li><a href="#" className={styles.footerLink}>Free Tools</a></li>
               <li><a href="#" className={styles.footerLink}>Newsletter</a></li>
             </ul>
-          </div>
-
-          {/* Newsletter Section */}
-          <div className={styles.newsletterSection}>
-            <h4 className={styles.linksTitle}>Stay Updated</h4>
-            <p className={styles.newsletterDescription}>
-              Get weekly AI insights and development tips.
-            </p>
-            <form className={styles.newsletterForm}>
-              <input
-                type="email"
-                placeholder="Your email"
-                aria-label="Email for newsletter"
-                className={styles.newsletterInput}
-                required
-              />
-              <button type="submit" className={styles.newsletterButton}>
-                Subscribe
-              </button>
-            </form>
           </div>
         </div>
       </div>

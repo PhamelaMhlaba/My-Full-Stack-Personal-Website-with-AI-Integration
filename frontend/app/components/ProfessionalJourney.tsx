@@ -5,16 +5,19 @@ export default function ProfessionalJourney() {
 
     const professionalExperiences = [
         {
+            year: "2025",
             title: "Full- Stack AI Engineer",
             company: "Proto Care pty ltd",
             description: "Developed the Healttech Holistic Patient Platform"
         },
         {
+            year: "2025",
             title: "Project Manager Intern",
             company: "Proto Care Pty (ltd)",
             description: "Led Cross-Functional teams distributed in South Africa and ensured that the team met Product goals",
         },
         {
+            year: "2024",
             title: "Full Stack Engineer",
             company: "Project Y",
             description: "Buildt a Full-Stack Application that helps travellers in South Africa with activities to do based on their prefernces"
@@ -24,7 +27,7 @@ export default function ProfessionalJourney() {
         <section className={styles.professionalJourneyContainer}>
             {/* Section Header */}
             <div className={styles.header}>
-                <h2 className={styles.title}>
+                <h2 className={styles.professionalTitle}>
                     Professional Journey
                 </h2>
             </div>
@@ -33,7 +36,12 @@ export default function ProfessionalJourney() {
             <div className={styles.timeLine}>
                 {professionalExperiences.map((experience, index) => (
                     <div key={index} className={styles.timelineItem}>
-                        <div className={styles.timeLineItem}>
+                        {/* Year Badge on the left side of the timeline item */}
+                        <div className={styles.yearBadge}>
+                            {experience.year}
+                        </div>
+                        
+                        <div className={styles.timeLineItemContainer}>
                             {/* Put in the job details in the box*/}
                             <h3 className={styles.jobTitle}>{experience.title}</h3>
                             <p className={styles.company}>{experience.company}</p>
