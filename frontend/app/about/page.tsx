@@ -45,26 +45,6 @@ export default function AboutPage() {
                                 I specialize in translating complex AI capabilities into intuitive user experiences, building the entire technology stack from data pipelines to deployment infrastructure. My approach combines software engineering best practices with cutting-edge AI research to deliver reliable, scalable solutions.
                             </p>
                         </div>
-
-                        {/* Statistics Grid */}
-                        <div className={styles.statsGrid}>
-                            <div className={styles.statCard}>
-                                <span className={styles.statNumber}>8+</span>
-                                <span className={styles.statLabel}>Projects Delivered</span>
-                            </div>
-                            <div className={styles.statCard}>
-                                <span className={styles.statNumber}>8+</span>
-                                <span className={styles.statLabel}>Happy Clients</span>
-                            </div>
-                            <div className={styles.statCard}>
-                                <span className={styles.statNumber}>2+</span>
-                                <span className={styles.statLabel}>Years Experience</span>
-                            </div>
-                            <div className={styles.statCard}>
-                                <span className={styles.statNumber}>24/7</span>
-                                <span className={styles.statLabel}>Support Available</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
 

@@ -71,6 +71,7 @@
 /* Content Column */
 .contentColumn {
     padding-top: 0;
+    margin-top: 0;
 }
 
 .bioTitle {
@@ -89,61 +90,10 @@
 }
 
 .bioText p {
-    font-size: 0.899rem;
-    line-height: 1.7;
-    color: #4b5563;
-    margin: 0;
-}
-
-/* Statistics Grid */
-.statsGrid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-}
-
-.statCard {
-    background: #f8fafc;
-    padding: 0.1rem;
-    border-radius: 12px;
-    border: 1px solid #e2e8f0;
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    /* these make the grid a square */
-    aspect-ratio: 1 / 1; /* Makes element square */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* Set a max-width to control size */
-    max-width: 100px;
-    margin: 0 auto;
-}
-
-.statCard:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.1);
-}
-
-.statNumber {
-    display: block;
-    font-size: 1rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 1;
-    margin-bottom: 0.1rem;
-}
-
-.statLabel {
-    display: block;
-    font-size: 1rem;
+    font-size: 1.20rem;
+    line-height: 1.6;
     color: #6b7280;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    margin: 0;
 }
 
 /* Responsive Design */

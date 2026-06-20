@@ -10,26 +10,47 @@
     margin-bottom: 4rem;
 }
 
-.title {
-    font-size: 3.5rem;
-    font-weight: 800;
-    color: #000000;
+.professionalTitle {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1f2937;
     margin: 0 0 2rem 0;
-    line-height: 1.1;
-    letter-spacing: -0.025em;
+    line-height: 1.2;
 }
 
 .timeline {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem 0;
 }
 
-.timeLineItem {
-    position: relative;
-    padding-left: 2rem;
+.timelineItem {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.yearBadge {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    background-color: #a855f7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(168, 57, 242, 0.3);
+} 
+
+.timeLineItemContainer {
+    flex: 1;
+    padding: 1rem 0;;
 }
 
 .timeLineItem::before {
@@ -43,7 +64,7 @@
     border-radius: 50%;
     border: 3px solid #ffffff;
     box-shadow: 0 0 0 3px #a839f2;
-}
+} 
 
 .jobTitle {
     font-size: 1.5rem;
