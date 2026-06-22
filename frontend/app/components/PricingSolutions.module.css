@@ -96,33 +96,41 @@
   font-size: 1.1rem;
 }
 
+/* Buttons */
 .button {
-     display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
 
-    width: 100%;
-    min-height: 48px;
-    background-color: #7C3BED;
-    display: block;
-    margin: 0 auto;
-    width: 250px;
-    height: 40px;
-    background-color: #a855f7;
-    border-radius: 10px;
-    border: 1px solid #a855f7;
-    font-size: 0.95rem;
-    font-weight: 600;   
+.primaryButtonContainer {
+    text-align: center;
+    margin-top: 0.15rem;
+}
+
+.primaryButton {
+    background: #a855f7;
     color: white;
+    padding: 1.1rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
-    border: 1px solid #a855f7
-}
-.button:hover {
-    background-color: #8f5ee3;
+    transition: all 0.2s ease;
+    transform: translateY(0);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    z-index: 1001;
 }
 
+.primaryButton:hover {
+    background: #9333ea;
+    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+    transform: translateY(-1px);
+}
 /* =========================
    TABLET
 ========================= */

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './PricingSolutions.module.css';
+import Link from 'next/dist/client/link';
 
 const Pricing: React.FC = () => {
     const pricing = [
@@ -65,7 +66,15 @@ const Pricing: React.FC = () => {
                             </li>
                            ))}
                         </ul>
-                        <button className={styles.button}>Get Started</button>
+
+                        {/* CTA Button */}
+                        <div className={styles.button}>
+                            <div className={styles.primaryButtonContainer}>
+                                <Link href ="/contact-me" className={styles.primaryButton}>
+                                    Get Started       
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                 ))}
             </div>
