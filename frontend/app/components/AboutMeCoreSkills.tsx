@@ -6,7 +6,7 @@ export default function AboutMeCoreSkills() {
         {
             title: "Frontend Engineering",
             description: "Creating responsive, performant user interfaces with modern frameworks and libraries.",
-            skills:["React", "Javascript", "TypeScript", "C#", "Blazor", "Bootsrap", "Tailwind CSS"]
+            skills: ["React", "Javascript", "TypeScript", "C#", "Blazor", "Bootsrap", "Tailwind CSS"]
         },
         {
             title: "Backend Engineering",
@@ -56,6 +56,7 @@ export default function AboutMeCoreSkills() {
                   <ul className={styles.skillsList}>
                     {category.skills.map((skill, skillIndex) => (
                       <li key={skillIndex} className={styles.skillItem}>
+                        <span className={styles.checkIcon}>✓</span>
                         {skill}
                       </li>
                     ))}
