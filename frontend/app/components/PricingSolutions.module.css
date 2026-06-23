@@ -96,7 +96,10 @@
   font-size: 1.1rem;
 }
 
+<<<<<<< HEAD
 /* Buttons */
+=======
+>>>>>>> feature-ai-assistance
 .button {
   display: flex;
   flex-direction: column;
