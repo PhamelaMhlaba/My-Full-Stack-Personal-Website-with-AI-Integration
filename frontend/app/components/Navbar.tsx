@@ -37,7 +37,7 @@ export default function Navbar() {
         </ul>
 
         {/* Contact CTA Button */}
-        <Link href="/contact-me" className={styles.ctaButton} onClick={() => setOpen(false)}>
+        <Link href="/contact-me" className="btn-primary" onClick={() => setOpen(false)}>
           Contact Me
         </Link>
 
