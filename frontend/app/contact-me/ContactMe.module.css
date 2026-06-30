@@ -56,6 +56,13 @@
   gap: 3rem;
 }
 
+.formColumn :global(.btn-primary) {
+  justify-content: center;
+  align-self: center;
+  width: auto;
+}
+
+
 .formColumn {
     display: flex;
     flex-direction: column;
@@ -73,23 +80,6 @@
   border-radius: 6px;
 }
 
-.ctaButton {
-  background: #a855f7;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.ctaButton:hover {
-  background: #D8C0E2;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
-}
 
 .formTitle {
   font-size: 1.25rem;

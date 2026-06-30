@@ -70,7 +70,7 @@ const Pricing: React.FC = () => {
                         {/* CTA Button */}
                         <div className={styles.button}>
                             <div className={styles.primaryButtonContainer}>
-                                <Link href ="/contact-me" className={styles.primaryButton}>
+                                <Link href ="/contact-me" className="btn-primary">
                                     Get Started       
                                 </Link>
                             </div>
