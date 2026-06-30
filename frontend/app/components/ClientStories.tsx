@@ -57,7 +57,7 @@ const ClientStories: React.FC = () => {
 
         <div className={styles.button}>
             <div className={styles.primaryButtonContainer}>
-                <Link href ="/contact-me" className={styles.primaryButton}>
+                <Link href ="/contact-me" className="btn-primary">
                     Start Your Project       
                 </Link>
             </div>

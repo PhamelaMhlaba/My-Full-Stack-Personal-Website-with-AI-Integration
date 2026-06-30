@@ -1,6 +1,7 @@
 import React, { ReactNode} from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import "./globals.css";
 
 //Metadata for SEO and accessibility
 export const metatdat = {

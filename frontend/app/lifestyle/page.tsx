@@ -66,10 +66,7 @@ const LifeStylePage: React.FC = () => {
                         <br />
                         <br />
                         The Key is not perfection balance - It is intentional inegration. By aligining our professional growth with personal values and well-being pratices, we can build sustainiable, fulfilling caereers that do not come at the cost of our health or relationships.                       
-                    </p>
-                    <button className={styles.letsConnectButton}>
-                        Let's Connect
-                    </button>    
+                    </p>   
                     </div>
                     <div className={styles.imageContainer}>
                         <img

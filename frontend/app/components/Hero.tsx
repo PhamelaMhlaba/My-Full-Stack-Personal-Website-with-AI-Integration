@@ -60,14 +60,10 @@ const Hero: React.FC = () => {
                 </p>
               </div>
               
-              <div className={styles.buttonGroup}>
-                <div className={styles.primaryButtonContainer}>
-                    <Link href="/ai-assistance" className={styles.primaryButton}>
+                    <Link href="/ai-assistance" className="btn-primary">
                         View AI Solutions
                     </Link>
-                </div> 
-              </div>
-              
+    
               <div className={styles.newsletterCard}>
                 <div className={styles.newsletterHeader}>
                   <span className={styles.newsletterIcon}>📊</span>
