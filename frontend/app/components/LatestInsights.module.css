@@ -14,39 +14,42 @@
     width: 100%;
 }
 
-.buttonContainer {
-    width: 100%;
-    margin-top: 3rem;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
+/* ===== PAGINATION ===== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
 }
 
-.viewAllButtonLink {
-    background: #a855f7;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.75rem;
-    font-weight: 500;
-    font-size: 0.95rem;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    transform: translateY(0);
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    box-sizing: border-box;
-     /* Prevent button overflow */
-    max-width: 100%;
+.pageBtn {
+  background: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-.viewAllButtonLink:hover {
-    background: #9333ea;
-    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
-    transform: translateY(-1px);
+.pageBtn:hover:not(:disabled) {
+  border-color: #a855f7;
+  color: #a855f7;
+}
+
+.pageBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.activePage {
+  background: #a855f7;
+  border-color: #a855f7;
+  color: white;
+  font-weight: 600;
 }
 
 /* Tablet */
