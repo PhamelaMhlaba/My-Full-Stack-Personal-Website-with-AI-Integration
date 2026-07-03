@@ -6,24 +6,24 @@ const Pricing: React.FC = () => {
     const pricing = [
         {
             title: 'Starter',
-            value: "$2000",
+            value: "$500",
             description: 'Full-Stack applications with integrated LLM capabilities, from intelligent chatbots to automated workflow',
             feature: [
-                'Custom LLM inegration',
+                'Custom LLM integration',
                 'Real-time data processing',
                 'Scalable backend architecture',
                 'Production monitoring'
             ]
         },
         {
-            title: 'Professional',
-            value: "$7000",
-            description: 'Production-ready machine learning infrastrcture with automated training, deployment, and monitoring systems',
+            title: 'AI Agents',
+            value: "$1200",
+            description: 'Intelligent AI agents that automate complex tasks, \nmake decisions, and integrate seamlessly with your \nexisting business workflows.',
             feature: [
-                'MLOps infrastructure',
-                'Automated model desployment',
-                'Performance montoring',
-                'Data pipeline optimzation',
+                'Custom AI agent development',
+                'Multi-agent workflow automation',
+                'LLM-powered decision making',
+                'Tool & API integration for agents',
             ]
         },
         {
