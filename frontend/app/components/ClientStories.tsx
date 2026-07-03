@@ -6,9 +6,9 @@ const ClientStories: React.FC = () => {
   const testimonials = [
     {
       stars: '★★★★★',
-      quote: '“The AI chatbot transformed our customer service. Response time decreased by 80% and customer satisfaction increased significantly.”',
-      name: 'Sarah Johnson',
-      position: 'CEO, TechStartup Inc.'
+      quote: '“Phamela helped bring the Family Management sidebar in our Proto Care Patient Portal to life. Throughout the project, she demonstrated dedication, a willingness to learn and perseverance in turning designs into a working feature. I am grateful for her contribution and look forward to seeing where her career takes her.”',
+      name: 'Suzette Ferreira',
+      position: 'Founder & CEO, Proto Care (Pty) Ltd'
     },
     {
       stars: '★★★★★',
