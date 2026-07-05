@@ -60,9 +60,33 @@ const Hero: React.FC = () => {
                 </p>
               </div>
               
+              <div className={styles.ctaGroup}>
                     <Link href="/ai-assistance" className="btn-primary">
                         View AI Solutions
                     </Link>
+
+                    <a
+                        href="/Phamela_Mhlaba_Resume_2026.pdf"
+                        download="Phamela_Mhlaba_Resume_2026.pdf"
+                        className={styles.btnSecondary}
+                    >
+                      <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                      >
+                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                          <polyline points="7 10 12 15 17 10" />
+                          <line x1="12" y1="15" x2="12" y2="3" />
+                      </svg>
+                      Download my Resume
+                   </a>
+              </div>
     
               <div className={styles.newsletterCard}>
                 <div className={styles.newsletterHeader}>
