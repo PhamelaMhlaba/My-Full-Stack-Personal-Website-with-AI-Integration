@@ -16,7 +16,6 @@
   display: inline-flex;
   align-items: center;
   white-space: nowrap;
-  z-index: 1001;
 }
 
 .btn-primary:hover {
