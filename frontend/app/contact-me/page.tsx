@@ -27,12 +27,22 @@ export default function ContactMePage () {
        alert("Message sent successfully!");
     
        form.reset();
+
+       // reset select styling back to placeholder-grey
+form.querySelectorAll('select').forEach((select) => {
+    select.classList.remove('hasValue');
+});
     } catch (error: any) {
       console.error("EmailJS Error:", error);
 
       alert(error?.text || "Failed to send message");
     }
   };
+
+    const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        e.target.classList.toggle('hasValue', e.target.value !== '');
+    };
+
 
     return (
             <main className={styles.contactMeContainer}>
@@ -97,6 +107,7 @@ export default function ContactMePage () {
                                     name="projectType" 
                                     defaultValue=""
                                     required
+                                    onChange={handleSelectChange}
                                     > 
                                     <option value="" disabled>
                                         Select project type
@@ -110,11 +121,15 @@ export default function ContactMePage () {
 
                             <div className={styles.formColumn}>
                                 <label htmlFor="budget">Project Budget</label>
-                                <select id="budget" name="budget" defaultValue="">
+                                <select id="budget" 
+                                        name="budget" 
+                                        defaultValue=""
+                                        onChange={handleSelectChange}
+                                        >
                                     <option value="">Select budget range</option>
-                                    <option>$1k - $5k</option>
-                                    <option>$5k - $10k</option>
-                                    <option>$10k+</option>
+                                    <option>$200</option>
+                                    <option>$500</option>
+                                    <option>$1000</option>
                                 </select>
                             </div>
 

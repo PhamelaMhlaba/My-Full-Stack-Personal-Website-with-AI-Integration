@@ -78,7 +78,26 @@
   width: 100%; 
   border: 1px solid #ccc;
   border-radius: 6px;
+  font-family: inherit;
 }
+
+/* Select text is grey until a real option is chosen */
+.formColumn select {
+  color: #6b717d;
+}
+
+.formColumn select.hasValue {
+  color: #1f2937;
+}
+
+/* Grey placeholder text - matches firstName/lastName look */
+.formColumn input::placeholder,
+.formColumn textarea::placeholder,
+.formColumn option::placeholder {
+  color: #6b717d;
+  opacity: 1;
+}
+
 
 
 .formTitle {
