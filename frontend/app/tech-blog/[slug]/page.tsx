@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import BlogPostTemplate from "../../components/BlogPostTemplate";
 import ShareBar from "@/app/components/ShareBar";
 import Image from "next/image";
-import { blogPosts } from "../../data/posts";
+import { getAllPosts, getPostBySlug } from "@/lib/posts";
 
 import styles from "./BlogPostTemplate.module.css";
 
@@ -20,7 +20,7 @@ interface PageParams {
 // All known posts get full static HTML — zero server work at request time.
 
 export function generateStaticParams() {
-  return blogPosts.map((post) => ({ slug: post.slug, }));
+  return getAllPosts().map((post) => ({ slug: post.slug, }));
 }
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -29,7 +29,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageParams): Promise<Metadata> {
   const { slug } = await params;
-  const post = blogPosts.find((p) => p.slug === slug);
+  const post =  getPostBySlug(slug);
 
   if (!post) return {};
 
@@ -62,7 +62,7 @@ export default async function BlogPostPage({ params }: PageParams) {
   const { slug } = await params;
 
    console.log("SLUG:", slug); //
-  const post = blogPosts.find((p) => p.slug === slug);
+  const post = await getPostBySlug(slug);
 
   if (!post) notFound();
 

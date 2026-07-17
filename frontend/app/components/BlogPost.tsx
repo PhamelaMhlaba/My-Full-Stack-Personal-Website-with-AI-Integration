@@ -1,5 +1,6 @@
 import styles from "./BlogPost.module.css";
-import type { BlogPost } from "../data/posts";
+import Link from "next/link";
+import type { BlogPost } from "@/lib/posts";
 
 type Props = {
   post: BlogPost;
@@ -32,13 +33,13 @@ export default function BlogPost({ post }: Props) {
         </time>
 
         {/* Future-ready link */}
-        <a
+        <Link
           href={`/tech-blog/${post.slug}`}
           className={styles.readMore}
           aria-label={`Read more about ${post.title}`}
         >
           Read More →
-        </a>
+        </Link>
       </div>
     </article>
   );

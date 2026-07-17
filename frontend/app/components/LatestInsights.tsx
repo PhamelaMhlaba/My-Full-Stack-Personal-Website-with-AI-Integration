@@ -1,19 +1,23 @@
 "use client"
 
 import React, { useState } from "react";
-import  Posts  from "../data/posts";
+import type { BlogPost as BlogPostType } from "@/lib/posts";
 import styles from  "./LatestInsights.module.css";
 import BlogPost from "./BlogPost";
 
 
 const POSTS_PER_PAGE = 4;
 
-export default function LatestInsights() {
+interface LatestInsightsProps {
+  posts: BlogPostType[];
+}
+
+export default function LatestInsights({ posts }: LatestInsightsProps) {
     const [currentPage, setCurrentPage] = useState(1);
 
-    const totalPages = Math.ceil(Posts.length / POSTS_PER_PAGE);
+    const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
     const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
-    const currentPosts = Posts.slice(startIndex, startIndex + POSTS_PER_PAGE);
+    const currentPosts = posts.slice(startIndex, startIndex + POSTS_PER_PAGE);
 
     const goToPage = (page: number) => {
     if (page < 1 || page > totalPages) return;
@@ -25,7 +29,7 @@ export default function LatestInsights() {
             {/* Tech Blog Grid */}
             <div className={styles.blogGrid}>
                 {currentPosts.map((post) => (
-                 <BlogPost key={post.id} post={post} />
+                 <BlogPost key={post.slug} post={post} />
                 ))} 
             </div>
             
