@@ -12,6 +12,7 @@ import Image from "next/image";
 import type { BlogPost } from "../data/posts";
 import ShareBar from "./ShareBar";
 import styles from "./BlogPostTemplate.module.css";
+import { MDXRemote } from "next-mdx-remote/rsc";
 
 // Component Props
 
@@ -228,10 +229,9 @@ interface ArticleBodyProps {
 function ArticleBody({ content }: ArticleBodyProps) {
   return (
     <article className={styles.articleBody}>
-      <div
-        className={styles.articleContent}
-        dangerouslySetInnerHTML={{ __html: content }}
-      />
+      <div className={styles.articleContent}>
+        <MDXRemote source={content} />
+      </div>
     </article>
   );
 }
