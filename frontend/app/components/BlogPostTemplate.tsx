@@ -9,7 +9,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import type { BlogPost } from "../data/posts";
+import type { BlogPost } from "@/lib/posts";
 import ShareBar from "./ShareBar";
 import styles from "./BlogPostTemplate.module.css";
 import { MDXRemote } from "next-mdx-remote/rsc";
@@ -192,7 +192,13 @@ function Hero({ post, canonicalUrl }: HeroProps) {
           {/* Date — dateTime is machine-readable (SEO/a11y), displayDate is human-readable */}
           <div className={styles.metaItem}>
             <CalendarIcon />
-            <time dateTime={post.date}>{post.displayDate}</time>
+            <time dateTime={post.date}>
+                {new Date(post.date).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+              })}
+            </time>
           </div>
 
           {/* Read time estimate */}
