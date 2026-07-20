@@ -1,8 +1,34 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef } from "react";
 import styles from "./lifestyle.module.css";
 
 
 const LifeStylePage: React.FC = () => {
+
+    const videoRef = useRef<HTMLVideoElement>(null);
+
+    useEffect(() => {
+        const video = videoRef.current;
+        if (!video) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    video.currentTime = 0;
+                    video.play().catch(() => {});
+                } else {
+                    video.pause();
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        observer.observe(video);
+
+        return () => observer.disconnect();
+    }, []);
+
     const practices = [
         {
             title: "Daily meditation and mindfulness practices",
@@ -69,10 +95,14 @@ const LifeStylePage: React.FC = () => {
                     </p>   
                     </div>
                     <div className={styles.imageContainer}>
-                        <img
-                            src="/images/work-life.jpg"
-                            alt="Work-Life in Tech"
+                        <video
+                            ref={videoRef}
+                            src="/videos/work-life.mp4"
                             className={styles.workLifeBalanceImage}
+                            muted
+                            playsInline
+                            preload="metadata"
+                            aria-label="Work-life integration in tech"
                         />
                     </div>
                 </section>
