@@ -65,7 +65,7 @@ const LifeStylePage: React.FC = () => {
                         As a a Full Stack AI Engineeer, finding balance between staying current with rapidly evolving technology and maintaining personal well-being is crucial. I share strategies for sustainable career growth, continious learning, and mental health in the tech inudstry.
                         <br />
                         <br />
-                        The Key is not perfection balance - It is intentional inegration. By aligining our professional growth with personal values and well-being pratices, we can build sustainiable, fulfilling caereers that do not come at the cost of our health or relationships.                       
+                        The Key is not perfection balance - It is intentional integration. By aligining our professional growth with personal values and well-being pratices, we can build sustainiable, fulfilling careers that do not come at the cost of our health or relationships.                       
                     </p>   
                     </div>
                     <div className={styles.imageContainer}>
