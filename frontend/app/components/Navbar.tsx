@@ -26,6 +26,9 @@ export default function Navbar() {
             <Link href="/about" className={styles.navLink} onClick={() => setOpen(false)}>About Me</Link>
           </li>
           <li>
+            <Link href="/projects" className={styles.navLink} onClick={() => setOpen(false)}>Projects</Link>
+          </li>
+          <li>
             <Link href="/tech-blog" className={styles.navLink} onClick={() => setOpen(false)}>Tech Blog</Link>
           </li>
           <li>
@@ -61,6 +64,10 @@ export default function Navbar() {
 
     <Link href="/about" className={styles.mobileLink} onClick={() => setOpen(false)}>
       About Me
+    </Link>
+
+    <Link href="/projects" className={styles.mobileLink} onClick={() => setOpen(false)}>
+      Projects
     </Link>
 
     <Link href="/tech-blog" className={styles.mobileLink} onClick={() => setOpen(false)}>
