@@ -13,7 +13,7 @@ export const projects: Project[] = [
   {
     slug: "personal-portfolio",
     title: "Full Stack Personal Website with AI Integration",
-    description: "My personal portfolio site — built with MERN Stack, featuring a dynamic MDX-powered blog,",
+    description: "My personal portfolio site - built with MERN Stack, featuring a dynamic MDX-powered blog,",
     techStack: ["Next.js", "TypeScript", "CSS Modules", "Vercel"],
     imageUrl: "/images/projects/portfolio.jpg",
     liveUrl: "https://phamelamhlaba.vercel.app",

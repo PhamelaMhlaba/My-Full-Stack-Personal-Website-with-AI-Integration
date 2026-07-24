@@ -10,7 +10,7 @@ export default function ProjectsPage() {
       <section className={styles.heroSection}>
         <h1 className={styles.heroTitle}>Projects</h1>
         <p className={styles.heroDescription}>
-          A collection of what I've built — from full stack applications to AI-powered tools.
+          A collection of what I've built - from full stack applications to AI-powered tools.
         </p>
       </section>
 
