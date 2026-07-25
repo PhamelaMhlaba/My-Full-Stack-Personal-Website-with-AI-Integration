@@ -20,6 +20,17 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/PhamelaMhlaba/My-Full-Stack-Personal-Website-with-AI-Integration",
     status: "completed",
   },
+
+  {
+  slug: "ai-productivity-assistant",
+  title: "Elevate AI — Productivity Assistant",
+  description: "A modern AI-powered workplace productivity platform that consolidates multiple AI tools into one seamless SaaS experience. Built using Lovable's AI-assisted development platform and rapidly iterated into a production-ready application. Includes a smart email generator with tone and audience customization, a meeting notes summarizer, an AI task planner with priority matrix scheduling, a research assistant, an interactive AI chat assistant, a prompt library, and a productivity analytics dashboard. Built and designed around responsible AI principles, prompting users to verify outputs and avoid sharing confidential data.",
+  techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "OpenAI API", "Lovable"],
+  imageUrl: "/images/projects/ai-productivity-assistant.jpg",
+  liveUrl: "https://phamela-mhlaba-ai-powered.lovable.app/app",
+  githubUrl: "https://github.com/PhamelaMhlaba/AI-Productivity-Assistant",
+  status: "completed",
+},
 ];
 
 export function getAllProjects(): Project[] {
