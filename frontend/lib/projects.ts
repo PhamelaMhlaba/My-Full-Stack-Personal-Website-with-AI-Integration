@@ -31,6 +31,18 @@ export const projects: Project[] = [
   githubUrl: "https://github.com/PhamelaMhlaba/AI-Productivity-Assistant",
   status: "completed",
 },
+
+{
+  slug: "protocare",
+  title: "ProtoCare — Health Data Platform",
+  description: "A health-tech platform empowering users with complete visibility and ownership of their health data, helping them make informed decisions for a healthier future. Contributed to the main company website as part of a team, building with C#, Blazor, and .NET to deliver a robust, secure web application for health data management.",
+  techStack: ["C#", "Blazor", ".NET"],
+  imageUrl: "/images/projects/protocare.jpg",
+  liveUrl: "https://proto.care/",
+  githubUrl: "https://github.com/ProtocareMainWebsite/ProtoCareMainWebsite",
+  status: "completed",
+},
+
 ];
 
 export function getAllProjects(): Project[] {
