@@ -1,0 +1,131 @@
+.hero {
+  position: relative;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 3rem 2rem;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.3));
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.backLink {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.backLink:hover {
+  color: #ffffff;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.completed {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.inProgress {
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 0.75rem 0;
+}
+
+.sectionText {
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.techBadge {
+  padding: 0.35rem 0.8rem;
+  background: #f3f4f6;
+  color: #374151;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.liveLink {
+  color: #a855f7;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.liveLink:hover {
+  text-decoration: underline;
+}
+
+.githubLink {
+  color: #6b7280;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.githubLink:hover {
+  color: #1f2937;
+  text-decoration: underline;
+}

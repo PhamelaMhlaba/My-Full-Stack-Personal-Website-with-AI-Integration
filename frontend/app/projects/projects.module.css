@@ -1,12 +1,14 @@
 .container {
-  padding: 5rem 2rem;
-  max-width: 1200px;
+  padding: 5rem 0;
+  max-width: 100%;
   margin: 0 auto;
+  overflow-x: hidden; /* prevents scroller content from ever affecting page width */
 }
 
 .heroSection {
   text-align: center;
   margin-bottom: 3rem;
+  padding: 0 2rem;
 }
 
 .heroTitle {
@@ -23,18 +25,20 @@
   margin: 0 auto;
 }
 
-.projectsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 550px));
-  gap: 2rem;
-  justify-content: center;
+.scrollerWrapper {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 1rem 2rem 2rem;
+}
+
+.scroller {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
 }
 
 @media (max-width: 768px) {
   .heroTitle {
     font-size: 2rem;
-  }
-  .projectsGrid {
-    grid-template-columns: 1fr;
   }
 }
