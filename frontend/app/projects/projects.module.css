@@ -1,44 +1,69 @@
 .container {
   padding: 5rem 0;
-  max-width: 100%;
-  margin: 0 auto;
-  overflow-x: hidden; /* prevents scroller content from ever affecting page width */
+  overflow: hidden;
 }
 
 .heroSection {
   text-align: center;
   margin-bottom: 3rem;
-  padding: 0 2rem;
 }
 
 .heroTitle {
   font-size: 3rem;
   font-weight: 700;
-  color: #1f2937;
-  margin: 0 0 1rem 0;
 }
 
 .heroDescription {
-  font-size: 1.25rem;
   color: #6b7280;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.2rem;
 }
 
 .scrollerWrapper {
   width: 100%;
-  overflow-x: hidden;
-  padding: 1rem 2rem 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Fade effect on both sides */
+.scrollerWrapper::before,
+.scrollerWrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 10;
+}
+
+.scrollerWrapper::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.scrollerWrapper::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
 }
 
 .scroller {
   display: flex;
-  gap: 1.5rem;
+  gap: 24px;
   width: max-content;
+  animation: scroll 30s linear infinite;
 }
 
-@media (max-width: 768px) {
-  .heroTitle {
-    font-size: 2rem;
+.scroller:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
   }
 }
