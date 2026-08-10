@@ -13,6 +13,9 @@ import type { BlogPost } from "@/lib/posts";
 import ShareBar from "./ShareBar";
 import styles from "./BlogPostTemplate.module.css";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import LikeButton from "./LikeButton";
+import BlogComments from "./BlogComments";
+import BlogSubscribe from "./BlogSubscribe";
 
 // Component Props
 
@@ -254,6 +257,18 @@ export default function BlogPostTemplate({
     <main className={styles.page}>
       <Hero post={post} canonicalUrl={canonicalUrl} />
       <ArticleBody content={post.content} />
+      
+      <div className={styles.engagementSection}>
+        <LikeButton slug={post.slug} />
+      </div>
+
+      <div className={styles.subscribeSection}>
+        <BlogSubscribe />
+      </div>
+
+      <div className={styles.commentsSection}>
+        <BlogComments />
+      </div>
     </main>
   );
 }

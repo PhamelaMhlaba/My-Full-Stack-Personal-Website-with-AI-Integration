@@ -1,0 +1,30 @@
+.likeButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #6b7280;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.likeButton:hover {
+  border-color: #a855f7;
+  color: #a855f7;
+}
+
+.liked {
+  background: #a855f7;
+  border-color: #a855f7;
+  color: #ffffff;
+}
+
+.liked:hover {
+  background: #9333ea;
+  color: #ffffff;
+}
