@@ -14,8 +14,8 @@ export default function BlogComments() {
     script.crossOrigin = "anonymous";
 
     // ⚠️ Replace these with YOUR values from https://giscus.app
-    script.setAttribute("data-repo", "PhamelaMhlaba/YOUR_REPO_NAME");
-    script.setAttribute("data-repo-id", "YOUR_REPO_ID");
+    script.setAttribute("data-repo", "PhamelaMhlaba/My-Full-Stack-Personal-Website-with-AI-Integration");
+    script.setAttribute("data-repo-id", "R_kgDOPaCpxQ");
     script.setAttribute("data-category", "General");
     script.setAttribute("data-category-id", "YOUR_CATEGORY_ID");
     script.setAttribute("data-mapping", "pathname");
