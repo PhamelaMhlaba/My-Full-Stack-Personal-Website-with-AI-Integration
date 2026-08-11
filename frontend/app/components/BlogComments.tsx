@@ -17,9 +17,12 @@ export default function BlogComments() {
     script.setAttribute("data-repo", "PhamelaMhlaba/My-Full-Stack-Personal-Website-with-AI-Integration");
     script.setAttribute("data-repo-id", "R_kgDOPaCpxQ");
     script.setAttribute("data-category", "General");
-    script.setAttribute("data-category-id", "YOUR_CATEGORY_ID");
+    script.setAttribute("data-category-id", "DIC_kwDOPaCpxc4DDD_d");
     script.setAttribute("data-mapping", "pathname");
+     script.setAttribute("data-strict", "0");
     script.setAttribute("data-reactions-enabled", "1");
+    script.setAttribute("data-emit-metadata", "0");
+    script.setAttribute("data-input-position", "bottom");
     script.setAttribute("data-theme", "light");
     script.setAttribute("data-lang", "en");
 
