@@ -2,32 +2,41 @@
 
 import { useEffect, useRef } from "react";
 
-export default function BlogComments() {
+interface BlogCommentsProps {
+  slug: string;
+  title: string;
+  url: string;
+}
+
+export default function BlogComments({ slug, title, url }: BlogCommentsProps) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!ref.current || ref.current.hasChildNodes()) return;
+    if (!ref.current) return;
+
+    ref.current.innerHTML = "";
+
+    const cusdisDiv = document.createElement("div");
+    cusdisDiv.id = "cusdis_thread";
+    cusdisDiv.setAttribute("data-host", "https://cusdis.com");
+    cusdisDiv.setAttribute("data-app-id", "0cb4543e-4b7e-414e-9cda-cb074eb6e93d");
+    cusdisDiv.setAttribute("data-page-id", slug);
+    cusdisDiv.setAttribute("data-page-url", url);
+    cusdisDiv.setAttribute("data-page-title", title);
+    cusdisDiv.setAttribute("data-theme", "light");
+
+    ref.current.appendChild(cusdisDiv);
 
     const script = document.createElement("script");
-    script.src = "https://giscus.app/client.js";
+    script.src = "https://cusdis.com/js/cusdis.es.js";
     script.async = true;
-    script.crossOrigin = "anonymous";
+    script.defer = true;
+    document.body.appendChild(script);
 
-    // ⚠️ Replace these with YOUR values from https://giscus.app
-    script.setAttribute("data-repo", "PhamelaMhlaba/My-Full-Stack-Personal-Website-with-AI-Integration");
-    script.setAttribute("data-repo-id", "R_kgDOPaCpxQ");
-    script.setAttribute("data-category", "General");
-    script.setAttribute("data-category-id", "DIC_kwDOPaCpxc4DDD_d");
-    script.setAttribute("data-mapping", "pathname");
-     script.setAttribute("data-strict", "0");
-    script.setAttribute("data-reactions-enabled", "1");
-    script.setAttribute("data-emit-metadata", "0");
-    script.setAttribute("data-input-position", "bottom");
-    script.setAttribute("data-theme", "light");
-    script.setAttribute("data-lang", "en");
-
-    ref.current.appendChild(script);
-  }, []);
+    return () => {
+      script.remove();
+    };
+  }, [slug, title, url]);
 
   return <div ref={ref} />;
 }

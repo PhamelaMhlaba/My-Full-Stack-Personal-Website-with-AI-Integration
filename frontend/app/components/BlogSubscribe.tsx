@@ -1,23 +1,40 @@
 "use client";
 
-import { useState } from "react";
 import styles from "./BlogSubscribe.module.css";
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 
 export default function BlogSubscribe() {
-  const [email, setEmail] = useState("");
+  const formRef = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!formRef.current) return;
     // Reuses same EmailJS setup as your Hero newsletter form.
     // Swap this block for your actual emailjs.send(...) call if different.
     try {
-      setStatus("success");
-      setEmail("");
-    } catch {
-      setStatus("error");
+      //Email to user confirmation 
+      await emailjs
+      .sendForm(
+        "service_iuy2l0j",
+        "template_2hbew44",
+        formRef.current,
+        "Si7luRLFo1x_8Wym5"
+      );
+    
+      alert("Subscribed Successfully");
+      formRef.current?.reset();
+
+    } catch (error: any) {
+      // Log the full error so you can debug
+      console.error("EmailJS Error status:", error?.status);
+      console.error("EmailJS Error text:", error?.text);
+      console.error("Full error:", error);
+      alert(`Subscription failed: ${error?.text || "Please try again"}`);
     }
-  };
+  }
+      
 
   return (
     <div className={styles.subscribeBlock}>
@@ -29,8 +46,7 @@ export default function BlogSubscribe() {
       <form onSubmit={handleSubmit} className={styles.form}>
         <input
           type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          name="email"
           placeholder="Enter your email"
           required
           className={styles.input}

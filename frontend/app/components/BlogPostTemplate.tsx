@@ -267,7 +267,7 @@ export default function BlogPostTemplate({
       </div>
 
       <div className={styles.commentsSection}>
-        <BlogComments />
+        <BlogComments slug={post.slug} title={post.title} url={canonicalUrl}/>
       </div>
     </main>
   );
