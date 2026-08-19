@@ -1,6 +1,7 @@
 import React, { ReactNode} from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ChatWidget from "./components/ChatWidget";
 import "./globals.css";
 
 //Metadata for SEO and accessibility
@@ -34,6 +35,9 @@ export default function RootLayout ({ children } : RootLayoutProps) {
 
         {/* Global Footer */}
         <Footer />
+
+        {/* Global AI Chat Widget */}
+        <ChatWidget />
       </body>
     </html>
   );
