@@ -18,6 +18,7 @@ const ChatWidget: React.FC = () => {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [showQuickReplies, setShowQuickReplies] = useState(false);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
@@ -62,14 +63,24 @@ const ChatWidget: React.FC = () => {
                 </p>
               </div>
             </div>
-            <button
-              className={styles.closeBtn}
-              onClick={() => setIsOpen(false)}
-              aria-label="Close chat"
-            >
-              ✕
-            </button>
-          </div>
+            <div className={styles.headerActions}>
+                <button
+                    className={styles.backBtn}
+                    onClick={() => setShowQuickReplies(true)}
+                    aria-label="Show quick questions"
+                    title="Show quick questions"
+             >
+                    ↺
+                </button>
+                <button
+                    className={styles.closeBtn}
+                    onClick={() => setIsOpen(false)}
+                    aria-label="Close chat"
+                >
+                    ✕
+                </button>
+            </div>
+            </div>
 
           <div className={styles.body} ref={scrollRef}>
             <div className={styles.botBubble}>
@@ -88,13 +99,16 @@ const ChatWidget: React.FC = () => {
 
             {loading && <div className={styles.botBubble}>Typing…</div>}
 
-            {messages.length === 0 && (
-              <div className={styles.quickReplies}>
-                {QUICK_QUESTIONS.map((q) => (
-                  <button
-                    key={q}
-                    className={styles.quickReplyBtn}
-                    onClick={() => sendMessage(q)}
+            {(messages.length === 0 || showQuickReplies) && (
+                <div className={styles.quickReplies}>
+                    {QUICK_QUESTIONS.map((q) => (
+                        <button
+                            key={q}
+                            className={styles.quickReplyBtn}
+                            onClick={() => {
+                                setShowQuickReplies(false);
+                                sendMessage(q);
+                 }}
                   >
                     {q}
                   </button>
@@ -121,6 +135,7 @@ const ChatWidget: React.FC = () => {
             </button>
           </form>
         </div>
+
       )}
 
       <button

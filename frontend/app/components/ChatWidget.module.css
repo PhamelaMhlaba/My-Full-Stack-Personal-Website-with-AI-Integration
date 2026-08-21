@@ -186,3 +186,22 @@
 .sendBtn:hover {
   background: #7c3aed;
 }
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.backBtn {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.backBtn:hover {
+  opacity: 0.8;
+}
