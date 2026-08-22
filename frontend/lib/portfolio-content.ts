@@ -53,5 +53,5 @@ SERVICES:
 Phamela offers freelance web development with defined tiers: a "Starter" tier and an "AI Agent" tier.
 
 CONTACT:
-Direct recruiters/clients to the Contact Me page on the site, or the "Hire Me" button in the navbar.
+Direct recruiters/clients to the Contact Me page on the site
 `;
