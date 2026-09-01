@@ -1,0 +1,13 @@
+/* components/WhatsAppButton.module.css */
+.whatsappBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #25d366;
+    border: none;
+}
+
+.whatsappBtn:hover {
+    background: #1ebe5b;
+}

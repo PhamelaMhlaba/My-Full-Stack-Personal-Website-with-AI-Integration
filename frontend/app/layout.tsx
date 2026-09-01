@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ChatWidget from "./components/ChatWidget";
 import "./globals.css";
+import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 
 //Metadata for SEO and accessibility
 export const metatdat = {
@@ -31,6 +32,7 @@ export default function RootLayout ({ children } : RootLayoutProps) {
         {/* Main Page Content */}
         <main className="flex-grow container mx-auto px-4 py-6">
           {children}
+          <WhatsAppFloatingButton />
         </main>
 
         {/* Global Footer */}

@@ -231,6 +231,21 @@
   color: #555;
 }
 
+.whatsappCta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    width: 100%;
+    background: #25d366;
+    border: none;
+}
+
+.whatsappCta:hover {
+    background: #1ebe5b;
+}
+
 @media (max-width: 768px) {
   .contactSection {
     grid-template-columns: 1fr;
@@ -243,6 +258,7 @@
     gap: 1rem;
   }
 }
+
 
 
 
