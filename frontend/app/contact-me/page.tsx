@@ -5,6 +5,8 @@ import styles from "./ContactMe.module.css";
 import { Mail, Phone, Calendar, Linkedin, Github, Instagram } from "lucide-react";
 
 import emailjs from "@emailjs/browser";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
+import { getWhatsAppLink } from "@/lib/whatsapp";
 
 
 export default function ContactMePage () {
@@ -190,7 +192,46 @@ form.querySelectorAll('select').forEach((select) => {
                                 </a>
                             </div>
                         </div>
+                        
+                        <div className={styles.textWrapper}>
+                                <h4>Phone</h4>
+                                <a href="tel:+27753246472" className={styles.link}>
+                                    +27 75 324 6472
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* WhatsApp */}
+                        <div className={styles.contactItem}>
+                            <div className={styles.iconWrapper}>
+                                <WhatsAppIcon size={20} />
+                            </div>
+
+                            <div className={styles.textWrapper}>
+                                <h4>WhatsApp</h4>
+                                <a
+                                    href={getWhatsAppLink()}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={styles.link}
+                                >
+                                    Chat with me directly
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* Prominent WhatsApp CTA */}
+                        <a
+                            href={getWhatsAppLink()}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`btn-primary ${styles.whatsappCta}`}
+                        >
+                            <WhatsAppIcon size={18} />
+                            Message on WhatsApp
+                        </a>
                     </div>
+                    
 
                         {/* Follow Me */}
                         <div className={styles.followMe}>
