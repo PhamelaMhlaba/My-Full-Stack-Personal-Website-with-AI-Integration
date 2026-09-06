@@ -7,6 +7,7 @@ import styles from './WhatsAppButton.module.css';
 
 export default function WhatsAppButton() {
   return (
+    <a
     
       href={getWhatsAppLink()}
       target="_blank"
