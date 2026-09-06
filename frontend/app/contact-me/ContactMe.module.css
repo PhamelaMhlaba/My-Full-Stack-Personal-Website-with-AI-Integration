@@ -235,9 +235,11 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    width: 100%;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+    width: auto;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
     background: #25d366;
     border: none;
 }

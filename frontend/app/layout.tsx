@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ChatWidget from "./components/ChatWidget";
 import "./globals.css";
-import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
+import WhatsAppFloatingButton from '@/app/components/WhatsAppFloatingButton';
 
 //Metadata for SEO and accessibility
 export const metatdat = {

@@ -5,7 +5,7 @@ import styles from "./ContactMe.module.css";
 import { Mail, Phone, Calendar, Linkedin, Github, Instagram } from "lucide-react";
 
 import emailjs from "@emailjs/browser";
-import WhatsAppIcon from "@/components/WhatsAppIcon";
+import WhatsAppIcon from "@/app/components/WhatsAppIcon";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
 
@@ -189,33 +189,6 @@ form.querySelectorAll('select').forEach((select) => {
                                 <h4>Phone</h4>
                                 <a href="tel:+27753246472" className={styles.link}>
                                     +27 75 324 6472
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div className={styles.textWrapper}>
-                                <h4>Phone</h4>
-                                <a href="tel:+27753246472" className={styles.link}>
-                                    +27 75 324 6472
-                                </a>
-                            </div>
-                        </div>
-
-                        {/* WhatsApp */}
-                        <div className={styles.contactItem}>
-                            <div className={styles.iconWrapper}>
-                                <WhatsAppIcon size={20} />
-                            </div>
-
-                            <div className={styles.textWrapper}>
-                                <h4>WhatsApp</h4>
-                                <a
-                                    href={getWhatsAppLink()}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className={styles.link}
-                                >
-                                    Chat with me directly
                                 </a>
                             </div>
                         </div>

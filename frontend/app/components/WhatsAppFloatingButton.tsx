@@ -7,6 +7,7 @@ import styles from './WhatsAppFloatingButton.module.css';
 
 export default function WhatsAppFloatingButton() {
   return (
+    <a
     
       href={getWhatsAppLink()}
       target="_blank"
